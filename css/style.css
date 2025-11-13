@@ -1,0 +1,10 @@
+/* Variables (colors, fonts) */
+/* TODO: root-Stile hinzufügen */
+:root {
+  --main-color: #b56b45;
+}
+
+/* General styles and reset */
+body {
+  background: var(--main-color);
+}
