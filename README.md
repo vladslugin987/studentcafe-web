@@ -12,7 +12,7 @@ Das ist die Website vom Café für Studierende. Hier findest du das Menü, die �
  - HTML5, CSS3, JavaScript
  - PHP
 
-## Aufgabenverteilung:
+## Aufgabenverteilung 13.11.:
 Daniil Bavin - Menü (menu.html)
 Lia Duppel - Kontakt (contact.html)
 Sarah Hofmann - Über uns (about.html)
