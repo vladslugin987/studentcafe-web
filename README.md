@@ -1,4 +1,16 @@
-# Grundlagen der Web-Technologien
+# Café für Studierende 
 
-## Techstack
-HTML5, CSS3, JavaScript, PHP
+Das ist die Website vom Café für Studierende. Hier findest du das Menü, die Öffnungszeiten, den Weg zu uns und vieles mehr.
+
+## Funktionen
+ - Übersicht über das aktuelle Menü
+ - Informationen zu Öffnungszeiten und Standort
+ - Kontaktformular für Reservierungen oder Fragen
+ - to be continued...
+
+## Technologien
+ - HTML5, CSS3, JavaScript
+ - PHP
+
+## Autoren
+[Daniil Bavin](https://github.com/DanII007oO), [Lia Duppel](https://github.com/liaacharlotte), [Sarah Hofmann](https://github.com/sarahh7015-cyber), [Vladislav Slugin](https://github.com/vladslugin987)
