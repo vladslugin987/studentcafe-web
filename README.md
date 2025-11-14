@@ -13,10 +13,10 @@ Das ist die Website vom Café für Studierende. Hier findest du das Menü, die �
  - PHP
 
 ## Aufgabenverteilung 13.11.:
-Daniil Bavin - Menü (menu.html)
-Lia Duppel - Kontakt (contact.html)
-Sarah Hofmann - Über uns (about.html)
-Vladislav Slugin - Homepage (index.html)
+ - Daniil Bavin - Menü (menu.html)
+ - Lia Duppel - Kontakt (contact.html)
+ - Sarah Hofmann - Über uns (about.html)
+ - Vladislav Slugin - Homepage (index.html)
 
 
 
