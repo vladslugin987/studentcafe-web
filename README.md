@@ -13,12 +13,16 @@ Das ist die Website vom Café für Studierende. Hier findest du das Menü, die �
  - PHP
 
 ## Aufgabenverteilung 13.11.:
- - Daniil Bavin - Menü (menu.html)
+ - Daniil Bavin - Speisekarte (menu.html)
  - Lia Duppel - Kontakt (contact.html)
  - Sarah Hofmann - Über uns (about.html)
  - Vladislav Slugin - Homepage (index.html)
 
-
+## Aufgabenverteilung 20.11.:
+ - Daniil Bavin - Speisekarte (menu.html), Zwischenergebnis: Zielgruppen
+ - Lia Duppel - Kontakt (contact.html), Zwischenergebnis: Kurzbeschreibung und Sitemap
+ - Sarah Hofmann - Über uns (about.html), Zwischenergebnis: Funktionen
+ - Vladislav Slugin - Homepage (index.html), Zwischenergebnis: Ziele des Projekts
 
 ## Autoren
 [Daniil Bavin](https://github.com/DanII007oO), [Lia Duppel](https://github.com/liaacharlotte), [Sarah Hofmann](https://github.com/sarahh7015-cyber), [Vladislav Slugin](https://github.com/vladslugin987)
