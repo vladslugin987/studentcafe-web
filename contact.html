@@ -65,13 +65,14 @@
 
     <div>
 
-      <h1>Kontaktinformationen</h1>
+      <!--<h1>Kontaktinformationen</h1>-->
       <p>
         Hochschule Trier <br>
         Café - Gebäude Y <br>
         Schneidershof, <br>
         54293 Trier <br>
-
+      </p>
+      <p>
         Telefon: 0651/1234567890 <br>
         Email: café_fiktional@hochschule-trier.de <br>
       </p>
@@ -79,32 +80,43 @@
     </div>
 
     <div>
-      <p>Reservierung</p>
+      <h2>Tisch reservieren</h2>
 
-      <form action="/formular.html"> <!-- Hier stehen die Eingabefelder -->
+      <form action="index.html">
+
+        <!-- notes: 
+         <legend>Reservierung</legend> 
+          <label for="">First name:</label><br>
+         -->
 
         <fieldset>
-          <legend>Reservierung</legend>
-          <label for="">First name:</label><br>
-          <input type="text" id="fname" size="40" value=""><br>
+          <h4>Wer?</h4>
+          <input type="text" id="fname" placeholder="Name"><br>
 
-          <label for="lname">Last name:</label><br>
-          <input type="text" id="lname" name="lname" value=""><br>
+          <label for="personenanzahl">Personenanzahl?</label> <br>
+          <input type="number" id="personenanzahl" min="0" max="20" placeholder="0"><br>
 
-          <label for="start_date">Start date</label>
-          <input type="date" name="start_date" id="start_date" value="2010-12-01"><br>
+          <h4>Wann?</h4>
+          <label for="zeitraum"></label>
+          <input type="datetime-local" id="zeitraum"> <br>
+          <!--
+          <label for="date">Tag:</label>
+          <input type="date" id="date" value=""><br>
+          <label for="uhrzeit">Uhrzeit:</label>
+          <input type="time" id="uhrzeit" min="0" max="1000"><br>
+          -->
+          <h4>Kontakt</h4>
+          <input type="email" id="email" placeholder="Email"><br>
 
-          <label for="estimated_hours">Wie viele Personen?</label>
-          <input type="number" name="estimated_hours" min="0" max="1000" id="estimated_hours"><br>
-
-          <label for="email">Email contact</label>
-
-          <input type="email" name="email" placeholder="email@web.de" id="email"><br>
-
-          <textarea name="tipp" cols="50" rows="5">Anmerkungen</textarea> <br>
+          <input type="tel" id="phone" placeholder="Telefonnummer"> <br>
 
 
-          <input type="submit" value="RESERVIEREN">
+          <textarea name="tipp" cols="50" rows="3" placeholder="Anmerkungen"></textarea> <br>
+
+
+          <input type="submit" value="RESERVIEREN"> <br>
+
+          <input type="reset" value="zurücksetzen">
         </fieldset>
 
 
@@ -112,33 +124,39 @@
 
     </div>
 
-    <div>
-      <h2>Kontaktformular</h2>
+    <div id="kontaktformular">
+      <!--Kontaktformular-->
 
-      <form action="/formular.html"> <!-- Hier stehen die Eingabefelder -->
+      <h2>Schreib uns!</h2>
+
+      <form action="index.html"> <!-- Hier stehen die Eingabefelder -->
 
         <fieldset>
-          <legend>titel</legend>
-          <label for=""></label><br>
-          <input type="text" id="fname" size="40" value="" placeholder="Name"><br>
+          <!-- Notizen: 
+           size="40" 
+           <label for="email">Email Adresse</label><br> 
+           name="email" value=""  
+           placeholder="email@web.de"
+           
+          -->
+          <input type="text" id="fname" placeholder="Name"><br>
 
-          <label for="email">Email Adresse</label><br>
-          <input type="email" name="email" placeholder="email@web.de" id="email"><br>
+          <input type="email" id="email" placeholder="Email"><br>
 
-          <input name="betreff" placeholder="Betreff" rows="5"></input> <br>
+          <input type="text" name="betreff" placeholder="Betreff" rows="5"></input> <br>
 
-          <textarea name="tipp" cols="50" rows="5">Ihre Nachricht</textarea> <br>
+          <textarea name="tipp" cols="50" rows="5" placeholder="Nachricht"></textarea> <br>
 
           <input type="submit" value="Nachricht abschicken">
+
         </fieldset>
     </div>
 
     <div>
-      <h2>Öffnungszeiten</h2>
+      <h2>Unsere Öffnungszeiten</h2>
 
       <p>
-        Montag – Freitag: 10 – 20 Uhr <br>
-        Samstag: 12 – 18 Uhr <br>
+        Montag – Samstag: 10 – 20 Uhr <br>
         Sonn- und Feiertags: geschlossen <br>
       </p>
 
@@ -149,11 +167,12 @@
       <h2>Anfahrt</h2>
 
       <p>
-        Google Maps Karte
-        So erreichen sie uns:
+
+        So erreicht ihr das Café:
 
       </p>
 
+      <!--Google Maps Karte-->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5153.636833161561!2d6.630078076272422!3d49.77067257147038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47957cbf62945a49%3A0xc5683715504c26c5!2sHochschule%20Trier%20%E2%80%93%20Trier%20University%20of%20Applied%20Sciences!5e0!3m2!1sde!2sde!4v1764098047458!5m2!1sde!2sde"
         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
