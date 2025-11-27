@@ -11,6 +11,8 @@
   <!-- Local CSS -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+
   <title>Café für Studierende</title>
 </head>
 
@@ -63,7 +65,7 @@
   <main>
     <h1>KONTAKT</h1>
 
-    <div>
+    <div id="kontaktinfos">
 
       <!--<h1>Kontaktinformationen</h1>-->
 
@@ -86,7 +88,17 @@
 
     </div>
 
-    <div>
+    <div id="oeffnungszeiten">
+      <h2>Unsere Öffnungszeiten</h2>
+
+      <p>
+        Montag – Samstag: 10 – 20 Uhr <br>
+        Sonn- und Feiertags: geschlossen <br>
+      </p>
+
+    </div>
+
+    <div id="reservieren">
       <h2>Tisch reservieren</h2>
 
       <form action="index.html">
@@ -100,8 +112,9 @@
           <h4>Wer?</h4>
           <input type="text" id="fname" placeholder="Name"><br>
 
-          <label for="personenanzahl">Personenanzahl?</label> <br>
-          <input type="number" id="personenanzahl" min="0" max="20" placeholder="0"><br>
+          <!--<label for="personenanzahl">Personenanzahl?</label> <br>-->
+
+          <input type="number" id="personenanzahl" min="0" max="20" placeholder="Personenanzahl" size="40"><br>
 
           <h4>Wann?</h4>
           <label for="zeitraum"></label>
@@ -159,15 +172,7 @@
         </fieldset>
     </div>
 
-    <div>
-      <h2>Unsere Öffnungszeiten</h2>
 
-      <p>
-        Montag – Samstag: 10 – 20 Uhr <br>
-        Sonn- und Feiertags: geschlossen <br>
-      </p>
-
-    </div>
 
     <div id="anfahrt">
 
@@ -190,6 +195,7 @@
 
     </div>
   </main>
+
   <footer>
     <p>WS 2025/2026, Grundlagen der Web-Technologien</p>
     <p>Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin</p>

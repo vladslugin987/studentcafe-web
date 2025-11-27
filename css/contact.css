@@ -1,0 +1,23 @@
+body main div {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: white;
+}
+
+#kontaktinfos {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    column-gap: 10px;
+}
+
+/*form {
+    margin: 3rem;
+}*/
+
+form fieldset input {
+
+    padding: 1rem;
+}
