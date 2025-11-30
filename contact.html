@@ -42,6 +42,16 @@
         </span>
       </button>
     </div>
+
+    <div class="top-left">
+
+      <span>Öffnungszeiten:
+
+        Mo-Sa: 10–20 Uhr
+      </span>
+
+    </div>
+
     <div class="logo-section">
       <div class="logo-container">
         <div class="logo">
@@ -72,22 +82,22 @@
       <div>
         <img src="/images/location_contact.svg" alt="">
         <p>
-          Hochschule Trier <br>
           Café - Gebäude Y <br>
-          Schneidershof, <br>
+          Hochschule Trier <br>
+          Schneidershof <br>
           54293 Trier <br>
         </p>
       </div>
       <div>
         <img src="/images/phone_contact.svg" alt="">
         <p>
-          Telefon: 0651/1234567890 <br>
+          <!--Tel.: --> 0651/1234567890
         </p>
-      </div>
-      <div>
+
+
         <img src="/images/mail_contact.svg" alt="">
         <p>
-          Email: café_fiktional@hochschule-trier.de <br>
+          <!--Email:--> café@hochschule-trier.de <br>
         </p>
       </div>
     </section>
@@ -113,36 +123,36 @@
           <label for="">First name:</label><br>
          -->
 
-          <fieldset>
-            <h4>Wer?</h4>
-            <input type="text" id="fname" placeholder="Name"><br>
 
-            <!--<label for="personenanzahl">Personenanzahl?</label> <br>-->
+          <h3>Wer?</h3>
+          <input type="text" id="fname" placeholder="Name" class="feld"><br>
 
-            <input type="number" id="personenanzahl" min="0" max="20" placeholder="Personenanzahl" size="40"><br>
+          <!--<label for="personenanzahl">Personenanzahl?</label> <br>-->
 
-            <h4>Wann?</h4>
-            <label for="zeitraum"></label>
-            <input type="datetime-local" id="zeitraum"> <br>
-            <!--
+          <input type="number" id="personenanzahl" min="0" max="20" placeholder="Personenanzahl" class="feld"><br>
+
+          <h3>Wann?</h3>
+          <label for="zeitraum"></label>
+          <input type="datetime-local" id="zeitraum" class="feld"> <br>
+          <!--
           <label for="date">Tag:</label>
           <input type="date" id="date" value=""><br>
           <label for="uhrzeit">Uhrzeit:</label>
           <input type="time" id="uhrzeit" min="0" max="1000"><br>
           -->
-            <h4>Kontakt</h4>
-            <input type="email" id="email" placeholder="Email"><br>
+          <h3>Kontakt</h3>
+          <input type="email" id="email" class="feld" placeholder="Email"><br>
 
-            <input type="tel" id="phone" placeholder="Telefonnummer"> <br>
-
-
-            <textarea name="tipp" cols="50" rows="3" placeholder="Anmerkungen"></textarea> <br>
+          <input type="tel" id="phone" class="feld" placeholder="Telefonnummer"> <br>
 
 
-            <input type="submit" value="RESERVIEREN">
+          <textarea name="tipp" placeholder="Anmerkungen"></textarea> <br>
 
-            <input type="reset" value="zurücksetzen">
-          </fieldset>
+
+          <input type="submit" class="feature-link" value="RESERVIEREN">
+
+          <input type="reset" class="feature-link" value="zurücksetzen">
+
 
 
         </form>
@@ -156,25 +166,26 @@
 
         <form action="index.html"> <!-- Hier stehen die Eingabefelder -->
 
-          <fieldset>
-            <!-- Notizen: 
+          <!--  <fieldset>
+           Notizen: 
            size="40" 
            <label for="email">Email Adresse</label><br> 
            name="email" value=""  
            placeholder="email@web.de"
            
           -->
-            <input type="text" id="fname" placeholder="Name"><br>
+          <input type="text" id="fname" class="feld" placeholder="Name"><br>
 
-            <input type="email" id="email" placeholder="Email"><br>
+          <input type="email" id="email" class="feld" placeholder="Email"><br>
 
-            <input type="text" name="betreff" placeholder="Betreff" rows="5"></input> <br>
+          <input type="text" name="betreff" class="feld" placeholder="Betreff" rows="5"></input> <br>
 
-            <textarea name="tipp" cols="50" rows="5" placeholder="Nachricht"></textarea> <br>
+          <textarea name="tipp" placeholder="Nachricht"></textarea> <br>
 
-            <input type="submit" value="Nachricht abschicken">
+          <input type="submit" class="feature-link" value="Nachricht abschicken">
 
-          </fieldset>
+          <!--- </fieldset> -->
+
       </section>
     </div>
 
@@ -195,7 +206,7 @@
         <!--Google Maps Karte-->
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4200.750856207123!2d6.630072713218397!3d49.7706725713513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47957cbf62945a49%3A0xc5683715504c26c5!2sHochschule%20Trier%20%E2%80%93%20Trier%20University%20of%20Applied%20Sciences!5e1!3m2!1sde!2sde!4v1764507416930!5m2!1sde!2sde"
-          width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br>
 
