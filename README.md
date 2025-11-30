@@ -24,7 +24,7 @@ Das ist die Website vom Café für Studierende. Hier findest du das Menü, die �
  - Sarah Hofmann - Über uns (about.html), Zwischenergebnis: Funktionen
  - Vladislav Slugin - Homepage (index.html), Zwischenergebnis: Ziele des Projekts
 
-## Aufgabenverteilung 27.11.:
+## Aufgabenverteilung 29.11.:
  - Daniil Bavin - Speisekarte (menu.html), Gästebuch
  - Lia Duppel - Kontakt (contact.html), Content und Gestaltung
  - Sarah Hofmann - Über uns (about.html), Veranstaltungskalender
