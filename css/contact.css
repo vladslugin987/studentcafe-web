@@ -1,7 +1,13 @@
-body main div {
+body main section {
     margin: 2rem 0;
     padding: 1rem;
-    background: white;
+
+}
+
+.bg {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: var(--main-color);
 }
 
 #kontaktinfos {
@@ -13,11 +19,45 @@ body main div {
     column-gap: 10px;
 }
 
+#oeffnungszeiten {
+    text-align: center;
+}
+
+.formulare {
+    display: flex;
+
+}
+
 /*form {
     margin: 3rem;
 }*/
 
-form fieldset input {
-
+form input,
+form textarea {
+    margin: 1rem 0;
     padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#anfahrt {
+    text-align: center;
+}
+
+
+#anfahrt a {
+    margin: 1rem 0 0 0;
+    font-size: 15px;
 }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Variables (colors, fonts) */
 :root {
   /* Main colors */
@@ -14,7 +18,8 @@
   --link-hover-color: #4fa1a8;
 
   /* Other */
-  --accent-color: #aee8f2; /* For Buttons */
+  --accent-color: #aee8f2;
+  /* For Buttons */
   --border-color: rgba(0, 0, 0, 0.1);
 
   /* Font */
@@ -240,13 +245,11 @@ nav {
   margin: 40px auto;
   border: none;
   border-radius: 10px;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--main-color) 0px,
-    var(--main-color) 12px,
-    transparent 12px,
-    transparent 20px
-  );
+  background: repeating-linear-gradient(90deg,
+      var(--main-color) 0px,
+      var(--main-color) 12px,
+      transparent 12px,
+      transparent 20px);
   opacity: 0.9;
 }
 

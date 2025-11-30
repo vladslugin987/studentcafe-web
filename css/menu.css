@@ -27,11 +27,11 @@
 .img-container {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  margin-top: 40px;  
-  display: grid;  
+  margin-top: 40px;
+  display: grid;
 }
 
-.img-item{
+.img-item {
   width: 100%;
   max-width: 300px;
   margin-bottom: 50px;
@@ -49,7 +49,7 @@
   margin-top: 20px;
   text-align: center;
 }
-        
+
 .description {
   font-size: 12px;
   margin-top: 10px;
@@ -63,5 +63,3 @@
   color: var(--title-color);
   text-align: center;
 }
-
-
