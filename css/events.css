@@ -1,14 +1,60 @@
+/* Grundabstände für Überschriften und Absätze auf der Veranstaltungsseite */
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-a {
-    margin: 1rem 0;
-    padding: 1rem 0;
+p {
+  margin: 1rem 0;
 }
 
-a {
-    background-color: var(--main-color);
+/* Aktuelle Events */
+.events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Events */
+.event-card {
+  background-color: var(--main-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  flex: 1 1 220px;
+}
+
+.event-meta {
+  font-size: 0.9rem;
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+}
+
+.event-button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1.2rem;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.event-button:hover {
+  background-color: var(--link-hover-color);
+}
+
+/* Zusätzlicher Abschnitt mit weiterführenden Links */
+#more-info {
+  margin-top: 2rem;
+}
+
+.feature-link {
+  margin-bottom: 0.75rem;
+}
+
+.feature-link:last-child {
+  margin-bottom: 0;
 }
