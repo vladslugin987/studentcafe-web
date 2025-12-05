@@ -265,13 +265,11 @@ nav {
   margin: 40px auto;
   border: none;
   border-radius: 10px;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--main-color) 0px,
-    var(--main-color) 12px,
-    transparent 12px,
-    transparent 20px
-  );
+  background: repeating-linear-gradient(90deg,
+      var(--main-color) 0px,
+      var(--main-color) 12px,
+      transparent 12px,
+      transparent 20px);
   opacity: 0.9;
 }
 
