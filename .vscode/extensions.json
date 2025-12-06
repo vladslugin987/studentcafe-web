@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ritwickdey.liveserver",
+    "formulahendry.auto-rename-tag",
+    "esbenp.prettier-vscode",
+    "bmewburn.vscode-intelephense-client",
+    "christian-kohler.path-intellisense"
+  ]
+}

@@ -1,0 +1,130 @@
+body main section {
+    margin: 1rem 0;
+    padding: 1rem;
+
+}
+
+.bg {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: var(--main-color);
+}
+
+
+#kontaktinfos {
+
+    display: flex;
+    justify-items: flex-start;
+    column-gap: 60px;
+    justify-content: center;
+    margin: 0;
+
+}
+
+#kontaktinfos div {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    column-gap: 10px;
+
+}
+
+#kontaktinfos p,
+#oeffnungszeiten p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5
+}
+
+#oeffnungszeiten {
+    text-align: center;
+}
+
+/*
+.formulare {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*form {
+    margin: 3rem;
+}*/
+#reservieren h2,
+#kontaktformular h2 {
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--title-color);
+}
+
+#reservieren h3,
+#kontaktformular h3 {
+    padding-top: 1rem;
+    margin: 0;
+    color: var(--title-color);
+}
+
+#reservieren form,
+#kontaktformular form {
+    padding: 0 1rem 1rem 1rem;
+    margin: 0 1rem 1rem 1rem;
+    color: var(--title-color);
+}
+
+form input,
+form textarea {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.104);
+    border: #aee8f2;
+    background-color: var(--main-color);
+}
+
+form textarea {
+    width: 40vw;
+    height: 100px;
+    color: var(--title-color);
+}
+
+.feld {
+    width: 40vw;
+    height: 60px;
+    color: var(--title-color);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#anfahrt {
+    text-align: center;
+    color: var(--title-color);
+}
+
+
+#anfahrt a {
+    margin: 1rem 0 0 0;
+    font-size: 15px;
+}
+
+iframe {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
