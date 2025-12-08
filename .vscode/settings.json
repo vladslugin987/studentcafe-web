@@ -6,5 +6,6 @@
   },
   "prettier.tabWidth": 2,
   "prettier.semi": true,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "liveServer.settings.port": 5501
 }
