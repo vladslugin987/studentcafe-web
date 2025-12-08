@@ -11,8 +11,6 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gallery.css">
-
 
     <title>Café für Studierende</title>
 </head>
@@ -78,48 +76,24 @@
 
     <main>
 
-        <h1>Gallerie</h1>
-        <p> Impressionen aus unserem Café: </p>
+        <h1>Impressum</h1>
 
-        <!-- The grid: four columns -->
-        <div class="row">
-            <div class="column">
-                <img src="/images/detailaufnahme_der_kaffeebar.png" alt="Nature" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="/images/gemuetliche_sessel_und_tische_mit_laptop_anschluessen.png" alt="Snow"
-                    onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="/images/lachende_studierende_in_einer_gruppe.png" alt="Mountains" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="/images/detailaufnahme_der_kaffeebar.png" alt="Nature" onclick="myFunction(this);">
-            </div>
 
-        </div>
 
-        <!-- The expanding image container -->
-        <div class="container">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <p>[Unternehmensname] <br>
 
-            <!-- Expanded image -->
-            <img id="expandedImg" style="width:100%">
+            [Vor-, Nachname]<br>
 
-            <!-- Image text -->
-            <div id="imgtext"></div>
-        </div>
+            [Straße + Nummer]<br>
+            [PLZ + Ort]<br>
 
-        <script>
-            function myFunction(imgs) {
-                var expandImg = document.getElementById("expandedImg");
-                var imgText = document.getElementById("imgtext");
-                expandImg.src = imgs.src;
-                imgText.innerHTML = imgs.alt;
-                expandImg.parentElement.style.display = "block";
-            }
-        </script>
+            Telefon: [Telefon]<br>
+            E-Mail: [E-Mail]</p>
+
+        <h2>Projketinformationen</h2>
+
+        <p>WS 2025/2026, Grundlagen der Web-Technologien</p>
+        <p>Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin</p>
 
 
     </main>
