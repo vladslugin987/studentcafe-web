@@ -1,0 +1,80 @@
+/* Grundgeruest des Kalenders */
+.calendar-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--main-color); /* Weiß */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.calendar-container h2 {
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+/* Kalender-Grid (7 Spalten) */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+/* Namen der Wochentage */
+.day-name {
+  font-weight: bold;
+  color: var(--accent-color);
+  padding: 10px 0;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 5px;
+}
+
+/* Einzelne Tage */
+.day {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  position: relative;
+  cursor: default;
+  min-height: 40px;
+  text-align: center;
+}
+
+.day.empty {
+  background-color: transparent;
+}
+
+/* Tage mit Events hervorheben */
+.day.event-day {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Details zu Events (beim drübergehen mit Maus) */
+.event-popover {
+  display: none;
+  position: absolute;
+  bottom: 100%; /* erscheint über dem Tag */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 150px;
+  padding: 8px;
+  background-color: var(--title-color);
+  color: var(--main-color);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.day.event-day:hover .event-popover {
+  display: block;
+}

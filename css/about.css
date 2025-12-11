@@ -1,0 +1,83 @@
+/* Weiße Box */
+main section {
+  background-color: var(--main-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Innen- und Außenabstand */
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+/* Allgemeine Layout-Anpassungen */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--title-color);
+}
+
+section h2,
+section h3 {
+  color: var(--title-color);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Galerie */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  width: calc(
+    33.333% - 10px
+  ); /* stellt sicher dass drei Bilder nebeneinander passen */
+  max-width: 230px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery a {
+  display: block;
+  text-align: right;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Mitarbeiter Portraits */
+.team-member {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+/* Social Links */
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.social-links li {
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
