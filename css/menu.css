@@ -217,10 +217,9 @@ nav {
   }
 
   body.page-home .img-item {
-    width: 250px;
-    max-width: 250px;
+    width: 270px;
+    max-width: 270px;
   }
-
 }
 
 
@@ -273,10 +272,4 @@ nav {
   footer {
     padding: 20px 12px;
   }
-
-    body.page-home .img-item {
-    width: 333px;
-    max-width: 333px;
-  }
-
 }
