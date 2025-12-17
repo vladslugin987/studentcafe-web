@@ -271,8 +271,4 @@ nav {
     width: 300px;
     max-width: 300px;
   }
-
-  body.page-home .img-section {
-    background: var(--main-color);
-  }
 }
