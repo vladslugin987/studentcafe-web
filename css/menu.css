@@ -242,15 +242,15 @@ nav {
     letter-spacing: 2px;
   }
 
-  .section-subtitle {
+  body.page-home .section-subtitle {
     font-size: 22px;
   }
 
-    .section-title {
+  body.page-home .section-title {
     font-size: 26px;
   }
 
-  .section-subtitle {
+  body.page-home .section-subtitle {
     font-size: 24px;
   }
 
@@ -259,7 +259,7 @@ nav {
     font-size: 16px;
   }
 
-  .description {
+  body.page-home .description {
     font-size: 14px;
   }
 
