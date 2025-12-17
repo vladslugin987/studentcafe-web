@@ -111,7 +111,6 @@ nav {
     row-gap: 10px;
   }
 
-
   body.page-home .nav-item {
     flex: 1 1 calc(33.33% - 12px);
     min-width: 160px;
@@ -212,13 +211,8 @@ nav {
     font-size: 16px;
   }
 
-  .description {
+   body.page-home .description {
     font-size: 12px;
-  }
-
-  body.page-home .img-item {
-    width: 270px;
-    max-width: 270px;
   }
 }
 
@@ -253,11 +247,11 @@ nav {
   }
 
     .section-title {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   .section-subtitle {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   #categoryDropdown {
@@ -266,10 +260,15 @@ nav {
   }
 
   .description {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   footer {
     padding: 20px 12px;
+  }
+
+  body.page-home .img-item {
+    width: 300px;
+    max-width: 300px;
   }
 }
