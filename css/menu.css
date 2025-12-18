@@ -111,7 +111,6 @@ nav {
     row-gap: 10px;
   }
 
-
   body.page-home .nav-item {
     flex: 1 1 calc(33.33% - 12px);
     min-width: 160px;
@@ -121,7 +120,7 @@ nav {
   body {
     background: var(--secondary-color);
     max-width: 100%;
-    padding: 90;
+    padding: 0;
   }
 
   body.page-home {
@@ -191,26 +190,23 @@ nav {
     flex: 1 1 calc(50% - 10px);
     min-width: 0;
     padding: 10px;
-    font-size: 12px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 9px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 2px solid white;
   }
 
   /*Body*/
-  
-  body {
-    background: var(--secondary-color);
-    max-width: 100%;
-    padding: 0;
-  }
-
   body.page-home {
     padding: 0 14px;
   }
 
-  .section-title {
+  body.page-home .section-title {
     font-size: 20px;
   }
 
-  .section-subtitle {
+  body.page-home .section-subtitle {
     font-size: 18px;
   }
 
@@ -219,12 +215,9 @@ nav {
     font-size: 16px;
   }
 
-  .description {
+  body.page-home .description {
     font-size: 12px;
   }
-
-
-
 }
 
 
@@ -242,6 +235,11 @@ nav {
   body.page-home .nav-item {
     flex: 1 1 100%;
     min-width: 0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 9px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 2px solid white;
   }
 
   body.page-home .banner {
@@ -253,19 +251,15 @@ nav {
     letter-spacing: 2px;
   }
 
-  .img-item {
-    width: 100%;
-  }
-
-  .section-subtitle {
+  body.page-home .section-subtitle {
     font-size: 22px;
   }
 
-    .section-title {
+  body.page-home .section-title {
     font-size: 20px;
   }
 
-  .section-subtitle {
+  body.page-home .section-subtitle {
     font-size: 18px;
   }
 
@@ -274,12 +268,16 @@ nav {
     font-size: 16px;
   }
 
-  .description {
-    font-size: 12px;
+  body.page-home .description {
+    font-size: 14px;
   }
 
   footer {
     padding: 20px 12px;
   }
 
+  body.page-home .img-item {
+    width: 300px;
+    max-width: 300px;
+  }
 }
