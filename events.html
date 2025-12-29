@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Café für Studierende</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
-  <!-- Local CSS -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/events.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Café für Studierende</title>
-</head>
-
-<body>
-  <header>
-    <div class="top-right">
-      <!-- <button class="login-btn">
+  <body>
+    <header>
+      <div class="top-right">
+        <!-- <button class="login-btn">
         <span class="user-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
             <path fill-rule="evenodd"
@@ -40,103 +42,115 @@
           <span class="cart-count">0</span>
         </span>
       </button> -->
-      <span> <img src="images/schedule.svg" alt="">
-        <!-- Öffnungszeiten: -->
-        Mo-Sa: 10–20 Uhr
-      </span> <br>
-      <a href="contact.html#reservieren" class="feature-link">Reservieren</a>
+        <span>
+          <img src="images/schedule.svg" alt="" />
+          <!-- Öffnungszeiten: -->
+          Mo-Sa: 10–20 Uhr
+        </span>
+        <br />
+        <a href="contact.html#reservieren" class="feature-link">Reservieren</a>
+      </div>
 
-    </div>
-
-    <div class="logo-section">
-      <div class="logo-container">
-        <div class="logo">
-          <img src="images/logo.png" alt="Café für Studierende Logo" />
-        </div>
-        <div class="banner">
-          <div class="brand-name">Café für Studierende</div>
-          <div class="tagline">Irgendein cooler Text</div>
+      <div class="logo-section">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="images/logo.png" alt="Café für Studierende Logo" />
+          </div>
+          <div class="banner">
+            <div class="brand-name">Café für Studierende</div>
+            <div class="tagline">Irgendein cooler Text</div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <nav>
-      <a href="index.html" class="nav-item">HOME</a>
-      <a href="menu.html" class="nav-item">SPEISEKARTE</a>
-      <a href="events.html" class="nav-item">VERANSTALTUNGEN</a>
-      <a href="about.html" class="nav-item">ÜBER UNS</a>
-      <a href="contact.html" class="nav-item">KONTAKT</a>
-      <a href="guest.html" class="nav-item">GÄSTEBUCH</a>
-    </nav>
-  </header>
+      <nav>
+        <a href="index.html" class="nav-item">HOME</a>
+        <a href="menu.html" class="nav-item">SPEISEKARTE</a>
+        <a href="events.html" class="nav-item">VERANSTALTUNGEN</a>
+        <a href="about.html" class="nav-item">ÜBER UNS</a>
+        <a href="contact.html" class="nav-item">KONTAKT</a>
+        <a href="guest.html" class="nav-item">GÄSTEBUCH</a>
+      </nav>
+    </header>
 
-  <main>
-    <h1>VERANSTALTUNGEN</h1>
-    <p>
-      Hier findest du unsere aktuellen Events im Café sowie einen Überblick
-      über kommende Termine im Semester.
-    </p>
-
-    <!-- Aktuelle Events -->
-    <section id="upcoming-events">
-      <h2>Aktuelle Events</h2>
-
-      <div class="events-grid">
-        <article class="event-card">
-          <h3>Kaffeeverkostung für Erstsemester</h3>
-          <p class="event-meta">Montag, 15.01.2026 • 18:00–20:00 Uhr</p>
-          <p>
-            Probiert verschiedene Kaffeesorten und lernt andere Studierende in
-            entspannter Atmosphäre kennen.
-          </p>
-          <a href="contact.html#reservieren" class="event-button">Platz reservieren</a>
-        </article>
-
-        <article class="event-card">
-          <h3>Lernnacht vor den Prüfungen</h3>
-          <p class="event-meta">Freitag, 30.01.2026 • ab 19:00 Uhr</p>
-          <p>
-            Gemeinsames Lernen bis spät in die Nacht mit Snacks und Kaffee.
-          </p>
-          <a href="contact.html#reservieren" class="event-button">Tisch reservieren</a>
-        </article>
-
-        <article class="event-card">
-          <h3>Open-Mic-Abend</h3>
-          <p class="event-meta">Samstag, 14.02.2026 • 20:00 Uhr</p>
-          <p>
-            Musik, Poetry, Comedy – die Bühne gehört euch. Anmeldung für
-            Auftritte über das Kontaktformular.
-          </p>
-          <a href="contact.html#kontaktformular" class="event-button">Als Act anmelden</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- TODO: Veranstaltungskalender -->
-    <section id="calendar">
-      <h2>Veranstaltungskalender</h2>
-      <a href="calender.html">link</a>
-    </section>
-
-    <!-- Links zu anderen Seiten -->
-    <section id="more-info">
-      <h2>Mehr erfahren</h2>
+    <main>
+      <h1>VERANSTALTUNGEN</h1>
       <p>
-        Du möchtest ein eigenes Event vorschlagen oder Impressionen aus
-        unserem Café sehen?
+        Hier findest du unsere aktuellen Events im Café sowie einen Überblick
+        über kommende Termine im Semester.
       </p>
-      <a href="contact.html#kontaktformular" class="feature-link">Kontaktformular</a>
-      <br />
-      <a href="about.html#history" class="feature-link">Galerie</a>
-    </section>
-  </main>
-  <footer>
-    <p>WS 2025/2026, Grundlagen der Web-Technologien</p>
-    <p>Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin</p>
-    <a href="impressum.html">Impressum</a>
-    <a href="datenschutz.html">Datenschutzerklärung</a>
-  </footer>
-</body>
 
+      <!-- Aktuelle Events -->
+      <section id="upcoming-events">
+        <h2>Aktuelle Events</h2>
+
+        <div class="events-grid">
+          <article class="event-card">
+            <h3>Kaffeeverkostung für Erstsemester</h3>
+            <p class="event-meta">Montag, 15.01.2026 • 18:00–20:00 Uhr</p>
+            <p>
+              Probiert verschiedene Kaffeesorten und lernt andere Studierende in
+              entspannter Atmosphäre kennen.
+            </p>
+            <a href="contact.html#reservieren" class="event-button"
+              >Platz reservieren</a
+            >
+          </article>
+
+          <article class="event-card">
+            <h3>Lernnacht vor den Prüfungen</h3>
+            <p class="event-meta">Freitag, 30.01.2026 • ab 19:00 Uhr</p>
+            <p>
+              Gemeinsames Lernen bis spät in die Nacht mit Snacks und Kaffee.
+            </p>
+            <a href="contact.html#reservieren" class="event-button"
+              >Tisch reservieren</a
+            >
+          </article>
+
+          <article class="event-card">
+            <h3>Open-Mic-Abend</h3>
+            <p class="event-meta">Samstag, 14.02.2026 • 20:00 Uhr</p>
+            <p>
+              Musik, Poetry, Comedy – die Bühne gehört euch. Anmeldung für
+              Auftritte über das Kontaktformular.
+            </p>
+            <a href="contact.html#kontaktformular" class="event-button"
+              >Als Act anmelden</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- TODO: Veranstaltungskalender -->
+      <section id="calendar">
+        <h2>Veranstaltungskalender</h2>
+        <p>
+          Du möchtest wissen, wann demnächst spannende Lern- und/ oder
+          Freizeitevents anstehen?
+        </p>
+        <a href="calender.html" class="feature-link">Veranstaltungskalender</a>
+      </section>
+
+      <!-- Links zu anderen Seiten -->
+      <section id="more-info">
+        <h2>Mehr erfahren</h2>
+        <p>
+          Du möchtest ein eigenes Event vorschlagen oder Impressionen aus
+          unserem Café sehen?
+        </p>
+        <a href="contact.html#kontaktformular" class="feature-link"
+          >Kontaktformular</a
+        >
+        <br />
+        <a href="about.html#history" class="feature-link">Galerie</a>
+      </section>
+    </main>
+    <footer>
+      <p>WS 2025/2026, Grundlagen der Web-Technologien</p>
+      <p>Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin</p>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutzerklärung</a>
+    </footer>
+  </body>
 </html>
