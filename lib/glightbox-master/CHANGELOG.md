@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## 3.3.1
+
+- Fixed: handle optional slide trigger node for max height calculation
+- Improved: types.d.ts mark some params as optional
+
+## 3.3.0
+
+- New: glightbox types #411
+- New: extend provider regex for ytb shorts #404
+- Fixed: Fix height calculation for lightbox with description and height set #426
+- Fixed: Don't set any font-family #424
+
+## 3.2.0
+
+- New: Support for videos without extension
+- Updated: Plyr to 3.6.12
+- Fixed: Inline content not centered on tablets #295
+- Fixed: Duplicated CSS properties #293
+- Fixed: YouTube video button not clickable on iOS #298
+
 ## 3.1.0
 
 - New: Added Avif image support [@dramspro](https://github.com/biati-digital/glightbox/pull/266)
@@ -11,7 +31,6 @@ All notable changes to this project will be documented in this file.
 - Fixed: Image description/shadow off on mobile device #268
 - Fixed: You can zoom next slide image if current slide is not full height #261
 - Fixed: Draggable option not working with "setElements" #257
-
 
 ## 3.0.9
 
