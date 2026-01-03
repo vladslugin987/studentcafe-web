@@ -1,59 +1,173 @@
- /*--GALLERY*/
- * {
-     box-sizing: border-box;
- }
+img {
+    width: 100%
+}
 
- img {
-     width: 100%
- }
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
 
- /* The grid: Four equal columns that floats next to each other */
- .column {
-     float: left;
-     width: 25%;
-     padding: 10px;
- }
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
 
- /* Style the images inside the grid */
- .column img {
-     opacity: 0.8;
-     cursor: pointer;
- }
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
 
- .column img:hover {
-     opacity: 1;
- }
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
 
- /* Clear floats after the columns */
- .row:after {
-     content: "";
-     display: table;
-     clear: both;
- }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
 
- /* The expanding image container (positioning is needed to position the close button and the text) */
- .container {
-     position: relative;
-     display: none;
- }
+/* .row>.column {
+    padding: 0 8px;
+} */
 
- /* Expanding image text */
- #imgtext {
-     position: absolute;
-     bottom: 15px;
-     left: 15px;
-     color: white;
-     font-size: 20px;
- }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
- /* Closable button inside the image */
- .closebtn {
-     position: absolute;
-     top: 10px;
-     right: 15px;
-     color: white;
-     font-size: 35px;
-     cursor: pointer;
- }
+/* Create four equal columns that floats next to eachother 
+.column2 {
+    float: left;
+    width: 25%;
+} */
 
- /*GALLERY--*/
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.891);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    /* background-color: #732121; */
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 30vw;
+    max-height: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text 
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+} 
+
+img.demo {
+    opacity: 0.6;
+}*/
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
