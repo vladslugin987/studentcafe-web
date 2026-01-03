@@ -14,11 +14,12 @@ body main section {
 #kontaktinfos {
 
     display: flex;
-    justify-items: flex-start;
+    /* justify-items: flex-start; */
     column-gap: 60px;
     justify-content: center;
-    margin: 0;
-
+    margin: 0 3vw;
+    padding: 20px;
+    background-color: var(--main-color);
 }
 
 #kontaktinfos div {
@@ -28,6 +29,7 @@ body main section {
     justify-content: flex-start;
     justify-items: flex-start;
     column-gap: 10px;
+
 
 }
 
@@ -40,6 +42,9 @@ body main section {
 
 #oeffnungszeiten {
     text-align: center;
+    margin: 0 3vw;
+    padding: 20px;
+    background-color: var(--main-color);
 }
 
 /*
