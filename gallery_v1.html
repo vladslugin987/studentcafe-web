@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+
+    <title>Café für Studierende</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-right">
+            <!-- <button class="login-btn">
+        <span class="user-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd"
+              d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+        <span>Anmelden</span>
+      </button>
+
+      <button class="cart-btn">
+        <span class="cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd"
+              d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z"
+              clip-rule="evenodd" />
+          </svg>
+
+          <span class="cart-count">0</span>
+        </span>
+      </button> -->
+            <span> <img src="images/schedule.svg" alt="">
+                <!-- Öffnungszeiten: -->
+                Mo-Sa: 10–20 Uhr
+            </span> <br>
+            <a href="contact.html#reservieren" class="feature-link">Reservieren</a>
+
+        </div>
+
+        <div class="logo-section">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Café für Studierende Logo">
+                </div>
+                <div class="banner">
+                    <div class="brand-name">Café für Studierende</div>
+                    <div class="tagline">Irgendein cooler Text</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <nav>
+                <a href="index.html" class="nav-item">HOME</a>
+                <a href="menu.html" class="nav-item">SPEISEKARTE</a>
+                <a href="events.html" class="nav-item">VERANSTALTUNGEN</a>
+                <a href="about.html" class="nav-item">ÜBER UNS</a>
+                <a href="contact.html" class="nav-item">KONTAKT</a>
+                <a href="guest.html" class="nav-item">GÄSTEBUCH</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Galerie</h1>
+        <p> Impressionen aus unserem Café: </p>
+
+        <!-- The grid: four columns -->
+        <div class="row">
+            <div class="column">
+                <img src="images/gallery/groß/cafe_img_1.jpg" alt="text" onclick="openModal();currentSlide(1)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_2.jpg" alt="text" onclick="openModal();currentSlide(2)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_3.jpg" alt="text" onclick="openModal();currentSlide(3)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_4.jpg" alt="text" onclick="openModal();currentSlide(4)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_5.jpg" alt="text" onclick="openModal();currentSlide(5)"
+                    class="hover-shadow cursor">
+            </div>
+
+            <div class="column">
+
+                <img src="images/gallery/groß/cafe_img_6.jpg" alt="text" onclick="openModal();currentSlide(6)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_7.jpg" alt="text" onclick="openModal();currentSlide(7)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_8.jpg" alt="text" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_9.jpg" alt="text" onclick="openModal();currentSlide(9)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_10.jpg" alt="text" onclick="openModal();currentSlide(10)"
+                    class="hover-shadow cursor">
+            </div>
+
+            <div class="column">
+
+                <img src="images/gallery/groß/cafe_img_11.jpg" alt="text" onclick="openModal();currentSlide(11)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_12.jpg" alt="text" onclick="openModal();currentSlide(12)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_13.jpg" alt="text" onclick="openModal();currentSlide(13)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_14.jpg" alt="text" onclick="openModal();currentSlide(14)"
+                    class="hover-shadow cursor">
+
+            </div>
+
+            <div class="column">
+                <img src="images/gallery/groß/cafe_img_15.jpg" alt="text" onclick="openModal();currentSlide(15)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_16.jpg" alt="text" onclick="openModal();currentSlide(16)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_17.jpg" alt="text" onclick="openModal();currentSlide(17)"
+                    class="hover-shadow cursor">
+                <img src="images/gallery/groß/cafe_img_18.jpg" alt="text" onclick="openModal();currentSlide(18)"
+                    class="hover-shadow cursor">
+            </div>
+
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_1_klein.jpg" alt="text">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_2_klein.jpg" alt="text2">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_3_klein.jpg" alt="text3">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_4_klein.jpg" alt="text4">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_5_klein.jpg" alt="text">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_6_klein.jpg" alt="text2">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_7_klein.jpg" alt="text3">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_8_klein.jpg" alt="text4">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_9_klein.jpg" alt="text">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_10_klein.jpg" alt="text2">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">11 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_11_klein.jpg" alt="text3">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">12 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_12_klein.jpg" alt="text4">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">13 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_13_klein.jpg" alt="text3">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">14 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_14_klein.jpg" alt="text4">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">15 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_15_klein.jpg" alt="text">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">16 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_16_klein.jpg" alt="text2">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">17 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_17_klein.jpg" alt="text2">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">18 / 18</div>
+                    <img src="images/gallery/klein/cafe_img_18_klein.jpg" alt="text2">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text --
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                --Thumbnail image controls--  
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_1_klein.jpg" onclick="currentSlide(1)"
+                        alt="text">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_2_klein.jpg" onclick="currentSlide(2)"
+                        alt="text1">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_3_klein.jpg" onclick="currentSlide(3)"
+                        alt="text2">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_4_klein.jpg" onclick="currentSlide(4)"
+                        alt="text3">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_5_klein.jpg" onclick="currentSlide(5)"
+                        alt="text">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_6_klein.jpg" onclick="currentSlide(6)"
+                        alt="text1">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_7_klein.jpg" onclick="currentSlide(7)"
+                        alt="text2">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_8_klein.jpg" onclick="currentSlide(8)"
+                        alt="text3">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_9_klein.jpg" onclick="currentSlide(9)"
+                        alt="text">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_10_klein.jpg" onclick="currentSlide(10)"
+                        alt="text1">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_11_klein.jpg" onclick="currentSlide(11)"
+                        alt="text2">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_12_klein.jpg" onclick="currentSlide(12)"
+                        alt="text3">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_13_klein.jpg" onclick="currentSlide(13)"
+                        alt="text3">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_14_klein.jpg" onclick="currentSlide(14)"
+                        alt="text">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_15_klein.jpg" onclick="currentSlide(15)"
+                        alt="text1">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_16_klein.jpg" onclick="currentSlide(16)"
+                        alt="text2">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_17_klein.jpg" onclick="currentSlide(17)"
+                        alt="text1">
+                </div>
+                <div class="column2">
+                    <img class="demo" src="images/gallery/klein/cafe_img_18_klein.jpg" onclick="currentSlide(18)"
+                        alt="text2">
+                </div> -->
+            </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>WS 2025/2026, Grundlagen der Web-Technologien</p>
+        <p>Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin</p>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+
+    </footer>
+
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+
+</body>
+
+</html>
