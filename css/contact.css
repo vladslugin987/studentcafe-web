@@ -129,13 +129,10 @@ iframe {
     padding: 10px;
 }
 
-
-
-
-/* Nur für index.html */
+/* von index.html */
 
 body.page-home {
-    max-width: 65vw;
+    max-width: 75vw;
     padding: 0 20px;
 }
 
