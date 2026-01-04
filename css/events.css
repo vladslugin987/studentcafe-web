@@ -1,27 +1,52 @@
-/* Grundabstände für Überschriften und Absätze auf der Veranstaltungsseite */
-h1,
-h2,
-h3,
-p {
+/* Nur events.html */
+.events-page h1,
+.events-page h2,
+.events-page h3,
+.events-page p {
   margin: 1rem 0;
 }
 
-/* Aktuelle Events */
-.events-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 1.5rem;
-  margin-top: 1rem;
+.events-page h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--title-color);
 }
 
-/* Events */
+.events-page h2,
+.events-page h3 {
+  color: var(--title-color);
+}
+
+/* Weiße Karten */
+.events-page section {
+  background-color: var(--main-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.events-intro {
+  text-align: center;
+}
+
+/* Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Karte */
 .event-card {
   background-color: var(--main-color);
-  padding: 1.5rem;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  flex: 1 1 220px;
+  border-left: 6px solid var(--accent-color);
 }
 
 .event-meta {
@@ -30,31 +55,27 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.event-button {
-  display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.5rem 1.2rem;
-  background-color: var(--accent-color);
-  color: var(--main-color);
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.event-button:hover {
-  background-color: var(--link-hover-color);
-}
-
-/* Zusätzlicher Abschnitt mit weiterführenden Links */
 #more-info {
   margin-top: 2rem;
 }
 
-.feature-link {
+.events-page .feature-link {
   margin-bottom: 0.75rem;
 }
 
-.feature-link:last-child {
+.events-page .feature-link:last-child {
   margin-bottom: 0;
+}
+
+.events-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .events-page section {
+    padding: 20px;
+    margin: 20px auto;
+  }
 }
