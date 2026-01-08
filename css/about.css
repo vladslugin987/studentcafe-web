@@ -8,6 +8,7 @@ main section {
   padding: 30px;
   margin: 30px auto;
   max-width: 900px;
+  line-height: 1.6;
 }
 
 /* Allgemeine Layout-Anpassungen */
