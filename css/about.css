@@ -81,3 +81,9 @@ section h3 {
   margin-bottom: 8px;
   color: var(--text-color);
 }
+
+.social-links img {
+  width: 27px;
+  height: 27px;
+  margin-right: 10px;
+}
