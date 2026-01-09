@@ -365,7 +365,8 @@ body.page-home #nav {
     padding: 0 10px;
   }
 
-  h1{
+  h1,
+  h2 {
     position: sticky;
     top: 165px;
     z-index: 3;
