@@ -51,6 +51,7 @@ section h3 {
   width: fit-content;
   margin-top: 15px;
   margin-left: auto;
+  background-color: var(--background-color);
 }
 
 /* Liste unter "Was uns besonders macht" */
