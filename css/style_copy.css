@@ -263,6 +263,10 @@ body.page-home #nav {
 /* Große Tablets / kleine Desktops */
 @media (max-width: 1024px) {
   body.page-home {
+    max-width: 100%;
+  }
+
+  body.page-home {
     padding: 0 18px;
   }
 
@@ -279,7 +283,7 @@ body.page-home #nav {
 
   body.page-home nav {
     row-gap: 10px;
-    margin: 0px 13vw;
+    margin: 0;
   }
 
   #nav {
@@ -287,8 +291,9 @@ body.page-home #nav {
   }
 
   body.page-home .nav-item {
-    /* flex: 1 1 calc(33.33% - 12px); */
+    flex: 1 1 calc(33.33% - 12px);
     min-width: 160px;
+    max-width: none;
   }
 
   .nav-footer a {
@@ -328,11 +333,11 @@ body.page-home #nav {
   }
 
   body.page-home .nav-item {
-    /* flex: 1 1 calc(50% - 10px); */
+    flex: 1 1 calc(50% - 10px);
     min-width: 0;
     padding: 10px;
     font-size: 12px !important;
-    max-width: 40vw;
+    max-width: none;
   }
 
   .nav-footer a {
