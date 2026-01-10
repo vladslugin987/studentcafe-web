@@ -168,10 +168,15 @@ nav {
   transition: all 0.3s ease;
 }
 
-.nav-item:hover,
-.nav-item.active-nav {
+.nav-item:hover {
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--line-color);
+}
+
+/* Активная вкладка в хедере — фон как у кнопки "RESERVIEREN" */
+.nav-item.active-nav {
+  background-color: var(--color2);
+  color: var(--line-color);
 }
 
 .feature-link {
