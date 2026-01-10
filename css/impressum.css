@@ -1,0 +1,61 @@
+.impressum-content h1,
+.impressum-content h2,
+.impressum-content h3,
+.impressum-content p {
+  margin: 1rem 0;
+}
+
+.impressum-content h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--title-color);
+}
+
+.impressum-content h2,
+.impressum-content h3 {
+  color: var(--title-color);
+}
+
+.impressum-card {
+  background-color: var(--main-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.impressum-card a {
+  color: var(--link-color);
+  overflow-wrap: anywhere;
+}
+
+/* Divider */
+.impressum-content .divider {
+  width: 80%;
+  height: 3px;
+  margin: 30px auto;
+  border: none;
+  border-radius: 10px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--main-color) 0px,
+    var(--main-color) 12px,
+    transparent 12px,
+    transparent 20px
+  );
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .impressum-card {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .impressum-content .divider {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
