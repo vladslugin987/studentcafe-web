@@ -1,331 +1,595 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/impressum.css" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
 
     <title>Café für Studierende</title>
-</head>
+  </head>
 
-<body class="page-home">
+  <body class="page-home datenschutz-page">
     <header id="header">
-        <div class="top-right">
-            <a href="reservieren.html" class="feature-link" id="reservieren-link">RESERVIEREN</a>
+      <div class="top-right">
+        <a href="reservieren.html" class="feature-link" id="reservieren-link"
+          >RESERVIEREN</a
+        >
 
-            <span>
-                Öffnungszeiten: <br>
-                Mo. bis Sa. 10 - 20 Uhr
-            </span>
+        <span>
+          Öffnungszeiten: <br />
+          Mo. bis Sa. 10 - 20 Uhr
+        </span>
+      </div>
+
+      <div class="logo-section">
+        <div class="logo-container">
+          <div class="logo">
+            <img
+              src="images/logo/logo_mittext.png"
+              id="logo-img"
+              alt="Logo des Studierendecafé Studierbar"
+            />
+          </div>
         </div>
+      </div>
 
-        <div class="logo-section">
-            <div class="logo-container">
-                <div class="logo">
-                    <img src="images/logo/logo_mittext.png" id="logo-img" alt="Logo des Studierendecafé Studierbar" />
-                </div>
-            </div>
+      <nav id="mainnav">
+        <div id="menutoggle">
+          <div></div>
         </div>
-
-        <nav id="mainnav">
-
-            <div id="menutoggle">
-                <div></div>
-            </div>
-            <div id="nav">
-                <a href="index.html" id="home-nav" class="nav-item">HOME</a>
-                <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
-                <a href="events.html" id="events-nav" class="nav-item">VERANSTALTUNGEN</a>
-                <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
-                <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
-                <a href="guest.html" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
-            </div>
-        </nav>
+        <div id="nav">
+          <a href="index.html" id="home-nav" class="nav-item">HOME</a>
+          <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
+          <a href="events.html" id="events-nav" class="nav-item"
+            >VERANSTALTUNGEN</a
+          >
+          <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
+          <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
+          <a href="guest.html" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
+        </div>
+      </nav>
     </header>
 
-    <main>
+    <main class="impressum-content">
+      <h1>Datenschutzerklärung</h1>
 
-        <h1>Datenschutzerklärung</h1>
-
-
+      <section class="impressum-card" id="datenschutz-intro">
         <h2 class="wp-block-heading">Datenschutzerklärung</h2>
 
+        <p>
+          Personenbezogene Daten (nachfolgend zumeist nur „Daten“ genannt)
+          werden von uns nur im Rahmen der Erforderlichkeit sowie zum Zwecke der
+          Bereitstellung eines funktionsfähigen und nutzerfreundlichen
+          Internetauftritts, inklusive seiner Inhalte und der dort angebotenen
+          Leistungen, verarbeitet.
+        </p>
 
+        <p>
+          Gemäß
+          <a
+            href="http://dejure.org/gesetze/DSGVO/4.html"
+            target="_blank"
+            title="Art. 4 DSGVO: Begriffsbestimmungen"
+            >Art. 4 Ziffer 1</a
+          >. der Verordnung (EU) 2016/679, also der Datenschutz-Grundverordnung
+          (nachfolgend nur „DSGVO“ genannt), gilt als „Verarbeitung“ jeder mit
+          oder ohne Hilfe automatisierter Verfahren ausgeführter Vorgang oder
+          jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten,
+          wie das Erheben, das Erfassen, die Organisation, das Ordnen, die
+          Speicherung, die Anpassung oder Veränderung, das Auslesen, das
+          Abfragen, die Verwendung, die Offenlegung durch Übermittlung,
+          Verbreitung oder eine andere Form der Bereitstellung, den Abgleich
+          oder die Verknüpfung, die Einschränkung, das Löschen oder die
+          Vernichtung.
+        </p>
 
-        <p>Personenbezogene Daten (nachfolgend zumeist nur „Daten“ genannt) werden von uns nur im Rahmen der
-            Erforderlichkeit sowie zum Zwecke der Bereitstellung eines funktionsfähigen und nutzerfreundlichen
-            Internetauftritts, inklusive seiner Inhalte und der dort angebotenen Leistungen, verarbeitet.</p>
-
-
-
-        <p>Gemäß <a href="http://dejure.org/gesetze/DSGVO/4.html" target="_blank"
-                title="Art. 4 DSGVO: Begriffsbestimmungen">Art. 4 Ziffer 1</a>. der Verordnung (EU) 2016/679, also der
-            Datenschutz-Grundverordnung (nachfolgend nur „DSGVO“ genannt), gilt als „Verarbeitung“ jeder mit oder ohne
-            Hilfe automatisierter Verfahren ausgeführter Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit
-            personenbezogenen Daten, wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die
-            Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung,
-            Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung,
-            das Löschen oder die Vernichtung.</p>
-
-
-
-        <p>Mit der nachfolgenden Datenschutzerklärung informieren wir Sie insbesondere über Art, Umfang, Zweck, Dauer
-            und Rechtsgrundlage der Verarbeitung personenbezogener Daten, soweit wir entweder allein oder gemeinsam mit
-            anderen über die Zwecke und Mittel der Verarbeitung entscheiden. Zudem informieren wir Sie nachfolgend über
-            die von uns zu Optimierungszwecken sowie zur Steigerung der Nutzungsqualität eingesetzten Fremdkomponenten,
-            soweit hierdurch Dritte Daten in wiederum eigener Verantwortung verarbeiten.</p>
-
-
+        <p>
+          Mit der nachfolgenden Datenschutzerklärung informieren wir Sie
+          insbesondere über Art, Umfang, Zweck, Dauer und Rechtsgrundlage der
+          Verarbeitung personenbezogener Daten, soweit wir entweder allein oder
+          gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung
+          entscheiden. Zudem informieren wir Sie nachfolgend über die von uns zu
+          Optimierungszwecken sowie zur Steigerung der Nutzungsqualität
+          eingesetzten Fremdkomponenten, soweit hierdurch Dritte Daten in
+          wiederum eigener Verantwortung verarbeiten.
+        </p>
 
         <p>Unsere Datenschutzerklärung ist wie folgt gegliedert:</p>
 
+        <p>
+          I. Informationen über uns als Verantwortliche<br />II. Rechte der
+          Nutzer und Betroffenen<br />III. Informationen zur Datenverarbeitung
+        </p>
+      </section>
 
+      <div class="divider"></div>
 
-        <p>I. Informationen über uns als Verantwortliche<br>II. Rechte der Nutzer und Betroffenen<br>III. Informationen
-            zur Datenverarbeitung</p>
+      <section class="impressum-card" id="datenschutz-i">
+        <h3 class="wp-block-heading">
+          I. Informationen über uns als Verantwortliche
+        </h3>
 
+        <p>
+          Verantwortlicher Anbieter dieses Internetauftritts im
+          datenschutzrechtlichen Sinne ist:
+        </p>
 
+        [Firma]<br />[Vorname, Nachname]<br />[Straße, Hausnummer]<br />[Postleitzahl,
+        Ort]
 
-        <h3 class="wp-block-heading">I. Informationen über uns als Verantwortliche</h3>
-
-
-
-        <p>Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:</p>
-
-
-
-        [Firma]<br>[Vorname, Nachname]<br>[Straße, Hausnummer]<br>[Postleitzahl, Ort]
-
-
-
-        <p>Telefon: [Telefonnummer]<br>Telefax: [Faxnummer]<br>E-Mail: [E-Mail]
-
-
-
+        <p>
+          Telefon: [Telefonnummer]<br />Telefax: [Faxnummer]<br />E-Mail:
+          [E-Mail]
         </p>
         <p>Datenschutzbeauftragte/r beim Anbieter ist:</p>
 
+        [DSB – Vorname, Nachname]<br />Telefon: [DSB – Telefonnummer]<br />Telefax:
+        [DSB – Faxnummer]<br />E-Mail: [DSB – E-Mail] [nachfolgende Angaben sind
+        zu ergänzen, sofern ein Externer Datenschutzbeauftragter bestellt ist]
+        [DSB-Extern – Straße, Hausnummer]<br />[DSB-Extern – Postleitzahl, Ort]
+      </section>
 
+      <div class="divider"></div>
 
-        [DSB – Vorname, Nachname]<br>Telefon: [DSB – Telefonnummer]<br>Telefax: [DSB – Faxnummer]<br>E-Mail: [DSB –
-        E-Mail]
-
-
-
-        [nachfolgende Angaben sind zu ergänzen, sofern ein Externer Datenschutzbeauftragter bestellt ist]
-
-
-
-        [DSB-Extern – Straße, Hausnummer]<br>[DSB-Extern – Postleitzahl, Ort]
-
-
-
+      <section class="impressum-card" id="datenschutz-ii">
         <h3 class="wp-block-heading">II. Rechte der Nutzer und Betroffenen</h3>
 
-
-
-        <p>Mit Blick auf die nachfolgend noch näher beschriebene Datenverarbeitung haben die Nutzer und Betroffenen das
-            Recht</p>
-
-
+        <p>
+          Mit Blick auf die nachfolgend noch näher beschriebene
+          Datenverarbeitung haben die Nutzer und Betroffenen das Recht
+        </p>
 
         <ul class="wp-block-list">
-            <li>auf Bestätigung, ob sie betreffende Daten verarbeitet werden, auf Auskunft über die verarbeiteten Daten,
-                auf weitere Informationen über die Datenverarbeitung sowie auf Kopien der Daten (vgl. auch <a
-                    href="http://dejure.org/gesetze/DSGVO/15.html" target="_blank"
-                    title="Art. 15 DSGVO: Auskunftsrecht der betroffenen Person">Art. 15 DSGVO</a>);</li>
+          <li>
+            auf Bestätigung, ob sie betreffende Daten verarbeitet werden, auf
+            Auskunft über die verarbeiteten Daten, auf weitere Informationen
+            über die Datenverarbeitung sowie auf Kopien der Daten (vgl. auch
+            <a
+              href="http://dejure.org/gesetze/DSGVO/15.html"
+              target="_blank"
+              title="Art. 15 DSGVO: Auskunftsrecht der betroffenen Person"
+              >Art. 15 DSGVO</a
+            >);
+          </li>
 
+          <li>
+            auf Berichtigung oder Vervollständigung unrichtiger bzw.
+            unvollständiger Daten (vgl. auch
+            <a
+              href="http://dejure.org/gesetze/DSGVO/16.html"
+              target="_blank"
+              title="Art. 16 DSGVO: Recht auf Berichtigung"
+              >Art. 16 DSGVO</a
+            >);
+          </li>
 
+          <li>
+            auf unverzügliche Löschung der sie betreffenden Daten (vgl. auch
+            <a
+              href="http://dejure.org/gesetze/DSGVO/17.html"
+              target="_blank"
+              title='Art. 17 DSGVO: Recht auf Löschung ("Recht auf Vergessenwerden")'
+              >Art. 17 DSGVO</a
+            >), oder, alternativ, soweit eine weitere Verarbeitung gemäß
+            <a
+              href="http://dejure.org/gesetze/DSGVO/17.html"
+              target="_blank"
+              title='Art. 17 DSGVO: Recht auf Löschung ("Recht auf Vergessenwerden")'
+              >Art. 17 Abs. 3 DSGVO</a
+            >
+            erforderlich ist, auf Einschränkung der Verarbeitung nach Maßgabe
+            von
+            <a
+              href="http://dejure.org/gesetze/DSGVO/18.html"
+              target="_blank"
+              title="Art. 18 DSGVO: Recht auf Einschränkung der Verarbeitung"
+              >Art. 18 DSGVO</a
+            >;
+          </li>
 
-            <li>auf Berichtigung oder Vervollständigung unrichtiger bzw. unvollständiger Daten (vgl. auch <a
-                    href="http://dejure.org/gesetze/DSGVO/16.html" target="_blank"
-                    title="Art. 16 DSGVO: Recht auf Berichtigung">Art. 16 DSGVO</a>);</li>
+          <li>
+            auf Erhalt der sie betreffenden und von ihnen bereitgestellten Daten
+            und auf Übermittlung dieser Daten an andere Anbieter/Verantwortliche
+            (vgl. auch
+            <a
+              href="http://dejure.org/gesetze/DSGVO/20.html"
+              target="_blank"
+              title="Art. 20 DSGVO: Recht auf Datenübertragbarkeit"
+              >Art. 20 DSGVO</a
+            >);
+          </li>
 
-
-
-            <li>auf unverzügliche Löschung der sie betreffenden Daten (vgl. auch <a
-                    href="http://dejure.org/gesetze/DSGVO/17.html" target="_blank"
-                    title="Art. 17 DSGVO: Recht auf Löschung (&quot;Recht auf Vergessenwerden&quot;)">Art. 17
-                    DSGVO</a>), oder, alternativ, soweit eine weitere Verarbeitung gemäß <a
-                    href="http://dejure.org/gesetze/DSGVO/17.html" target="_blank"
-                    title="Art. 17 DSGVO: Recht auf Löschung (&quot;Recht auf Vergessenwerden&quot;)">Art. 17 Abs. 3
-                    DSGVO</a> erforderlich ist, auf Einschränkung der Verarbeitung nach Maßgabe von <a
-                    href="http://dejure.org/gesetze/DSGVO/18.html" target="_blank"
-                    title="Art. 18 DSGVO: Recht auf Einschränkung der Verarbeitung">Art. 18 DSGVO</a>;</li>
-
-
-
-            <li>auf Erhalt der sie betreffenden und von ihnen bereitgestellten Daten und auf Übermittlung dieser Daten
-                an andere Anbieter/Verantwortliche (vgl. auch <a href="http://dejure.org/gesetze/DSGVO/20.html"
-                    target="_blank" title="Art. 20 DSGVO: Recht auf Datenübertragbarkeit">Art. 20 DSGVO</a>);</li>
-
-
-
-            <li>auf Beschwerde gegenüber der Aufsichtsbehörde, sofern sie der Ansicht sind, dass die sie betreffenden
-                Daten durch den Anbieter unter Verstoß gegen datenschutzrechtliche Bestimmungen verarbeitet werden (vgl.
-                auch <a href="http://dejure.org/gesetze/DSGVO/77.html" target="_blank"
-                    title="Art. 77 DSGVO: Recht auf Beschwerde bei einer Aufsichtsbehörde">Art. 77 DSGVO</a>).</li>
+          <li>
+            auf Beschwerde gegenüber der Aufsichtsbehörde, sofern sie der
+            Ansicht sind, dass die sie betreffenden Daten durch den Anbieter
+            unter Verstoß gegen datenschutzrechtliche Bestimmungen verarbeitet
+            werden (vgl. auch
+            <a
+              href="http://dejure.org/gesetze/DSGVO/77.html"
+              target="_blank"
+              title="Art. 77 DSGVO: Recht auf Beschwerde bei einer Aufsichtsbehörde"
+              >Art. 77 DSGVO</a
+            >).
+          </li>
         </ul>
 
+        <p>
+          Darüber hinaus ist der Anbieter dazu verpflichtet, alle Empfänger,
+          denen gegenüber Daten durch den Anbieter offengelegt worden sind, über
+          jedwede Berichtigung oder Löschung von Daten oder die Einschränkung
+          der Verarbeitung, die aufgrund der
+          <a
+            href="http://dejure.org/gesetze/DSGVO/16.html"
+            target="_blank"
+            title="Art. 16 DSGVO: Recht auf Berichtigung"
+            >Artikel 16</a
+          >,
+          <a
+            href="http://dejure.org/gesetze/DSGVO/17.html"
+            target="_blank"
+            title='Art. 17 DSGVO: Recht auf Löschung ("Recht auf Vergessenwerden")'
+            >17 Abs. 1</a
+          >,
+          <a
+            href="http://dejure.org/gesetze/DSGVO/18.html"
+            target="_blank"
+            title="Art. 18 DSGVO: Recht auf Einschränkung der Verarbeitung"
+            >18 DSGVO</a
+          >
+          erfolgt, zu unterrichten. Diese Verpflichtung besteht jedoch nicht,
+          soweit diese Mitteilung unmöglich oder mit einem unverhältnismäßigen
+          Aufwand verbunden ist. Unbeschadet dessen hat der Nutzer ein Recht auf
+          Auskunft über diese Empfänger.
+        </p>
 
+        <p>
+          <strong
+            >Ebenfalls haben die Nutzer und Betroffenen nach
+            <a
+              href="http://dejure.org/gesetze/DSGVO/21.html"
+              target="_blank"
+              title="Art. 21 DSGVO: Widerspruchsrecht"
+              >Art. 21 DSGVO</a
+            >
+            das Recht auf Widerspruch gegen die künftige Verarbeitung der sie
+            betreffenden Daten, sofern die Daten durch den Anbieter nach Maßgabe
+            von
+            <a
+              href="http://dejure.org/gesetze/DSGVO/6.html"
+              target="_blank"
+              title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung"
+              >Art. 6 Abs. 1 lit. f) DSGVO</a
+            >
+            verarbeitet werden. Insbesondere ist ein Widerspruch gegen die
+            Datenverarbeitung zum Zwecke der Direktwerbung statthaft.</strong
+          >
+        </p>
+      </section>
 
-        <p>Darüber hinaus ist der Anbieter dazu verpflichtet, alle Empfänger, denen gegenüber Daten durch den Anbieter
-            offengelegt worden sind, über jedwede Berichtigung oder Löschung von Daten oder die Einschränkung der
-            Verarbeitung, die aufgrund der <a href="http://dejure.org/gesetze/DSGVO/16.html" target="_blank"
-                title="Art. 16 DSGVO: Recht auf Berichtigung">Artikel 16</a>, <a
-                href="http://dejure.org/gesetze/DSGVO/17.html" target="_blank"
-                title="Art. 17 DSGVO: Recht auf Löschung (&quot;Recht auf Vergessenwerden&quot;)">17 Abs. 1</a>, <a
-                href="http://dejure.org/gesetze/DSGVO/18.html" target="_blank"
-                title="Art. 18 DSGVO: Recht auf Einschränkung der Verarbeitung">18 DSGVO</a> erfolgt, zu unterrichten.
-            Diese Verpflichtung besteht jedoch nicht, soweit diese Mitteilung unmöglich oder mit einem
-            unverhältnismäßigen Aufwand verbunden ist. Unbeschadet dessen hat der Nutzer ein Recht auf Auskunft über
-            diese Empfänger.</p>
+      <div class="divider"></div>
 
+      <section class="impressum-card" id="datenschutz-iii">
+        <h3 class="wp-block-heading">
+          III. Informationen zur Datenverarbeitung
+        </h3>
 
-
-        <p><strong>Ebenfalls haben die Nutzer und Betroffenen nach <a href="http://dejure.org/gesetze/DSGVO/21.html"
-                    target="_blank" title="Art. 21 DSGVO: Widerspruchsrecht">Art. 21 DSGVO</a> das Recht auf Widerspruch
-                gegen die künftige Verarbeitung der sie betreffenden Daten, sofern die Daten durch den Anbieter nach
-                Maßgabe von <a href="http://dejure.org/gesetze/DSGVO/6.html" target="_blank"
-                    title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung">Art. 6 Abs. 1 lit. f) DSGVO</a> verarbeitet
-                werden. Insbesondere ist ein Widerspruch gegen die Datenverarbeitung zum Zwecke der Direktwerbung
-                statthaft.</strong></p>
-
-
-
-        <h3 class="wp-block-heading">III. Informationen zur Datenverarbeitung</h3>
-
-
-
-        <p>Ihre bei Nutzung unseres Internetauftritts verarbeiteten Daten werden gelöscht oder gesperrt, sobald der
-            Zweck der Speicherung entfällt, der Löschung der Daten keine gesetzlichen Aufbewahrungspflichten
-            entgegenstehen und nachfolgend keine anderslautenden Angaben zu einzelnen Verarbeitungsverfahren gemacht
-            werden.</p>
-        <h4 class="jet-listing-dynamic-field__content">Kontaktanfragen / Kontaktmöglichkeit</h4>
-        <p>Sofern Sie per Kontaktformular oder E-Mail mit uns in Kontakt treten, werden die dabei von Ihnen angegebenen
-            Daten zur Bearbeitung Ihrer Anfrage genutzt. Die Angabe der Daten ist zur Bearbeitung und Beantwortung Ihre
-            Anfrage erforderlich – ohne deren Bereitstellung können wir Ihre Anfrage nicht oder allenfalls eingeschränkt
-            beantworten.</p>
-        <p>Rechtsgrundlage für diese Verarbeitung ist <a href="http://dejure.org/gesetze/DSGVO/6.html" target="_blank"
-                title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung">Art. 6 Abs. 1 lit. b) DSGVO</a>.</p>
-        <p>Ihre Daten werden gelöscht, sofern Ihre Anfrage abschließend beantwortet worden ist und der Löschung keine
-            gesetzlichen Aufbewahrungspflichten entgegenstehen, wie bspw. bei einer sich etwaig anschließenden
-            Vertragsabwicklung.</p>
-        <h4 class="jet-listing-dynamic-field__content">Nutzerbeiträge, Kommentare und Bewertungen</h4>
-        <p>Wir bieten Ihnen an, auf unseren Internetseiten Fragen, Antworten, Meinungen oder Bewertungen, nachfolgend
-            nur „Beiträge genannt, zu veröffentlichen. Sofern Sie dieses Angebot in Anspruch nehmen, verarbeiten und
-            veröffentlichen wir Ihren Beitrag, Datum und Uhrzeit der Einreichung sowie das von Ihnen ggf. genutzte
-            Pseudonym.</p>
-        <p>Rechtsgrundlage hierbei ist <a href="http://dejure.org/gesetze/DSGVO/6.html" target="_blank"
-                title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung">Art. 6 Abs. 1 lit. a) DSGVO</a>. Die Einwilligung
-            können Sie gemäß <a href="http://dejure.org/gesetze/DSGVO/7.html" target="_blank"
-                title="Art. 7 DSGVO: Bedingungen für die Einwilligung">Art. 7 Abs. 3 DSGVO</a> jederzeit mit Wirkung für
-            die Zukunft widerrufen. Hierzu müssen Sie uns lediglich über Ihren Widerruf in Kenntnis setzen.</p>
-        <p>Darüber hinaus verarbeiten wir auch Ihre IP- und E-Mail-Adresse. Die IP-Adresse wird verarbeitet, weil wir
-            ein berechtigtes Interesse daran haben, weitere Schritte einzuleiten oder zu unterstützen, sofern Ihr
-            Beitrag in Rechte Dritter eingreift und/oder er sonst wie rechtswidrig erfolgt.</p>
-        <p>Rechtsgrundlage ist in diesem Fall <a href="http://dejure.org/gesetze/DSGVO/6.html" target="_blank"
-                title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung">Art. 6 Abs. 1 lit. f) DSGVO</a>. Unser
-            berechtigtes Interesse liegt in der ggf. notwendigen Rechtsverteidigung.</p>
-        <h4 class="jet-listing-dynamic-field__content">Online-Stellenbewerbungen / Veröffentlichung von Stellenanzeigen
+        <p>
+          Ihre bei Nutzung unseres Internetauftritts verarbeiteten Daten werden
+          gelöscht oder gesperrt, sobald der Zweck der Speicherung entfällt, der
+          Löschung der Daten keine gesetzlichen Aufbewahrungspflichten
+          entgegenstehen und nachfolgend keine anderslautenden Angaben zu
+          einzelnen Verarbeitungsverfahren gemacht werden.
+        </p>
+        <h4 class="jet-listing-dynamic-field__content">
+          Kontaktanfragen / Kontaktmöglichkeit
         </h4>
-        <p>Wir bieten Ihnen die Möglichkeit an, sich bei uns über unseren Internetauftritt bewerben zu können. Bei
-            diesen digitalen Bewerbungen werden Ihre Bewerber- und Bewerbungsdaten von uns zur Abwicklung des
-            Bewerbungsverfahrens elektronisch erhoben und verarbeitet.</p>
-        <p>Rechtsgrundlage für diese Verarbeitung ist <a href="http://dejure.org/gesetze/BDSG/26.html" target="_blank"
-                title="§ 26 BDSG: Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses">§ 26 Abs. 1 S. 1
-                BDSG</a> i.V.m. <a href="http://dejure.org/gesetze/DSGVO/88.html" target="_blank"
-                title="Art. 88 DSGVO: Datenverarbeitung im Beschäftigungskontext">Art. 88 Abs. 1 DSGVO</a>.</p>
-        <p>Sofern nach dem Bewerbungsverfahren ein Arbeitsvertrag geschlossen wird, speichern wir Ihre bei der Bewerbung
-            übermittelten Daten in Ihrer Personalakte zum Zwecke des üblichen Organisations- und Verwaltungsprozesses –
-            dies natürlich unter Beachtung der weitergehenden rechtlichen Verpflichtungen.</p>
-        <p>Rechtsgrundlage für diese Verarbeitung ist ebenfalls <a href="http://dejure.org/gesetze/BDSG/26.html"
-                target="_blank" title="§ 26 BDSG: Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses">§ 26
-                Abs. 1 S. 1 BDSG</a> i.V.m. <a href="http://dejure.org/gesetze/DSGVO/88.html" target="_blank"
-                title="Art. 88 DSGVO: Datenverarbeitung im Beschäftigungskontext">Art. 88 Abs. 1 DSGVO</a>.</p>
-        <p>Bei der Zurückweisung einer Bewerbung löschen wir die uns übermittelten Daten automatisch zwei Monate nach
-            der Bekanntgabe der Zurückweisung. Die Löschung erfolgt jedoch nicht, wenn die Daten aufgrund gesetzlicher
-            Bestimmungen, bspw. wegen der Beweispflichten nach dem AGG, eine längere Speicherung von bis zu vier Monaten
-            oder bis zum Abschluss eines gerichtlichen Verfahrens erfordern.</p>
-        <p>Rechtsgrundlage ist in diesem Fall <a href="http://dejure.org/gesetze/DSGVO/6.html" target="_blank"
-                title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung">Art. 6 Abs. 1 lit. f) DSGVO</a> und <a
-                href="http://dejure.org/gesetze/BDSG/24.html" target="_blank"
-                title="§ 24 BDSG: Verarbeitung zu anderen Zwecken durch nichtöffentliche Stellen">§ 24 Abs. 1 Nr. 2
-                BDSG</a>. Unser berechtigtes Interesse liegt in der Rechtsverteidigung bzw. -durchsetzung.</p>
-        <p>Sofern Sie ausdrücklich in eine längere Speicherung Ihrer Daten einwilligen, bspw. für Ihre Aufnahme in eine
-            Bewerber- oder Interessentendatenbank, werden die Daten aufgrund Ihrer Einwilligung weiterverarbeitet.
-            Rechtsgrundlage ist dann <a href="http://dejure.org/gesetze/DSGVO/6.html" target="_blank"
-                title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung">Art. 6 Abs. 1 lit. a) DSGVO</a>. Ihre Einwilligung
-            können Sie aber natürlich jederzeit nach <a href="http://dejure.org/gesetze/DSGVO/7.html" target="_blank"
-                title="Art. 7 DSGVO: Bedingungen für die Einwilligung">Art. 7 Abs. 3 DSGVO</a> durch Erklärung uns
-            gegenüber mit Wirkung für die Zukunft widerrufen.</p>
+        <p>
+          Sofern Sie per Kontaktformular oder E-Mail mit uns in Kontakt treten,
+          werden die dabei von Ihnen angegebenen Daten zur Bearbeitung Ihrer
+          Anfrage genutzt. Die Angabe der Daten ist zur Bearbeitung und
+          Beantwortung Ihre Anfrage erforderlich – ohne deren Bereitstellung
+          können wir Ihre Anfrage nicht oder allenfalls eingeschränkt
+          beantworten.
+        </p>
+        <p>
+          Rechtsgrundlage für diese Verarbeitung ist
+          <a
+            href="http://dejure.org/gesetze/DSGVO/6.html"
+            target="_blank"
+            title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung"
+            >Art. 6 Abs. 1 lit. b) DSGVO</a
+          >.
+        </p>
+        <p>
+          Ihre Daten werden gelöscht, sofern Ihre Anfrage abschließend
+          beantwortet worden ist und der Löschung keine gesetzlichen
+          Aufbewahrungspflichten entgegenstehen, wie bspw. bei einer sich etwaig
+          anschließenden Vertragsabwicklung.
+        </p>
+        <h4 class="jet-listing-dynamic-field__content">
+          Nutzerbeiträge, Kommentare und Bewertungen
+        </h4>
+        <p>
+          Wir bieten Ihnen an, auf unseren Internetseiten Fragen, Antworten,
+          Meinungen oder Bewertungen, nachfolgend nur „Beiträge genannt, zu
+          veröffentlichen. Sofern Sie dieses Angebot in Anspruch nehmen,
+          verarbeiten und veröffentlichen wir Ihren Beitrag, Datum und Uhrzeit
+          der Einreichung sowie das von Ihnen ggf. genutzte Pseudonym.
+        </p>
+        <p>
+          Rechtsgrundlage hierbei ist
+          <a
+            href="http://dejure.org/gesetze/DSGVO/6.html"
+            target="_blank"
+            title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung"
+            >Art. 6 Abs. 1 lit. a) DSGVO</a
+          >. Die Einwilligung können Sie gemäß
+          <a
+            href="http://dejure.org/gesetze/DSGVO/7.html"
+            target="_blank"
+            title="Art. 7 DSGVO: Bedingungen für die Einwilligung"
+            >Art. 7 Abs. 3 DSGVO</a
+          >
+          jederzeit mit Wirkung für die Zukunft widerrufen. Hierzu müssen Sie
+          uns lediglich über Ihren Widerruf in Kenntnis setzen.
+        </p>
+        <p>
+          Darüber hinaus verarbeiten wir auch Ihre IP- und E-Mail-Adresse. Die
+          IP-Adresse wird verarbeitet, weil wir ein berechtigtes Interesse daran
+          haben, weitere Schritte einzuleiten oder zu unterstützen, sofern Ihr
+          Beitrag in Rechte Dritter eingreift und/oder er sonst wie rechtswidrig
+          erfolgt.
+        </p>
+        <p>
+          Rechtsgrundlage ist in diesem Fall
+          <a
+            href="http://dejure.org/gesetze/DSGVO/6.html"
+            target="_blank"
+            title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung"
+            >Art. 6 Abs. 1 lit. f) DSGVO</a
+          >. Unser berechtigtes Interesse liegt in der ggf. notwendigen
+          Rechtsverteidigung.
+        </p>
+        <h4 class="jet-listing-dynamic-field__content">
+          Online-Stellenbewerbungen / Veröffentlichung von Stellenanzeigen
+        </h4>
+        <p>
+          Wir bieten Ihnen die Möglichkeit an, sich bei uns über unseren
+          Internetauftritt bewerben zu können. Bei diesen digitalen Bewerbungen
+          werden Ihre Bewerber- und Bewerbungsdaten von uns zur Abwicklung des
+          Bewerbungsverfahrens elektronisch erhoben und verarbeitet.
+        </p>
+        <p>
+          Rechtsgrundlage für diese Verarbeitung ist
+          <a
+            href="http://dejure.org/gesetze/BDSG/26.html"
+            target="_blank"
+            title="§ 26 BDSG: Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses"
+            >§ 26 Abs. 1 S. 1 BDSG</a
+          >
+          i.V.m.
+          <a
+            href="http://dejure.org/gesetze/DSGVO/88.html"
+            target="_blank"
+            title="Art. 88 DSGVO: Datenverarbeitung im Beschäftigungskontext"
+            >Art. 88 Abs. 1 DSGVO</a
+          >.
+        </p>
+        <p>
+          Sofern nach dem Bewerbungsverfahren ein Arbeitsvertrag geschlossen
+          wird, speichern wir Ihre bei der Bewerbung übermittelten Daten in
+          Ihrer Personalakte zum Zwecke des üblichen Organisations- und
+          Verwaltungsprozesses – dies natürlich unter Beachtung der
+          weitergehenden rechtlichen Verpflichtungen.
+        </p>
+        <p>
+          Rechtsgrundlage für diese Verarbeitung ist ebenfalls
+          <a
+            href="http://dejure.org/gesetze/BDSG/26.html"
+            target="_blank"
+            title="§ 26 BDSG: Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses"
+            >§ 26 Abs. 1 S. 1 BDSG</a
+          >
+          i.V.m.
+          <a
+            href="http://dejure.org/gesetze/DSGVO/88.html"
+            target="_blank"
+            title="Art. 88 DSGVO: Datenverarbeitung im Beschäftigungskontext"
+            >Art. 88 Abs. 1 DSGVO</a
+          >.
+        </p>
+        <p>
+          Bei der Zurückweisung einer Bewerbung löschen wir die uns
+          übermittelten Daten automatisch zwei Monate nach der Bekanntgabe der
+          Zurückweisung. Die Löschung erfolgt jedoch nicht, wenn die Daten
+          aufgrund gesetzlicher Bestimmungen, bspw. wegen der Beweispflichten
+          nach dem AGG, eine längere Speicherung von bis zu vier Monaten oder
+          bis zum Abschluss eines gerichtlichen Verfahrens erfordern.
+        </p>
+        <p>
+          Rechtsgrundlage ist in diesem Fall
+          <a
+            href="http://dejure.org/gesetze/DSGVO/6.html"
+            target="_blank"
+            title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung"
+            >Art. 6 Abs. 1 lit. f) DSGVO</a
+          >
+          und
+          <a
+            href="http://dejure.org/gesetze/BDSG/24.html"
+            target="_blank"
+            title="§ 24 BDSG: Verarbeitung zu anderen Zwecken durch nichtöffentliche Stellen"
+            >§ 24 Abs. 1 Nr. 2 BDSG</a
+          >. Unser berechtigtes Interesse liegt in der Rechtsverteidigung bzw.
+          -durchsetzung.
+        </p>
+        <p>
+          Sofern Sie ausdrücklich in eine längere Speicherung Ihrer Daten
+          einwilligen, bspw. für Ihre Aufnahme in eine Bewerber- oder
+          Interessentendatenbank, werden die Daten aufgrund Ihrer Einwilligung
+          weiterverarbeitet. Rechtsgrundlage ist dann
+          <a
+            href="http://dejure.org/gesetze/DSGVO/6.html"
+            target="_blank"
+            title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung"
+            >Art. 6 Abs. 1 lit. a) DSGVO</a
+          >. Ihre Einwilligung können Sie aber natürlich jederzeit nach
+          <a
+            href="http://dejure.org/gesetze/DSGVO/7.html"
+            target="_blank"
+            title="Art. 7 DSGVO: Bedingungen für die Einwilligung"
+            >Art. 7 Abs. 3 DSGVO</a
+          >
+          durch Erklärung uns gegenüber mit Wirkung für die Zukunft widerrufen.
+        </p>
         <h4 class="jet-listing-dynamic-field__content">Google-Maps</h4>
-        <p>In unserem Internetauftritt setzen wir Google Maps zur Darstellung unseres Standorts sowie zur Erstellung
-            einer Anfahrtsbeschreibung ein. Es handelt sich hierbei um einen Dienst der Google Ireland Limited, Gordon
-            House, Barrow Street, Dublin 4, Irland, nachfolgend nur „Google“ genannt.</p>
-        <p>Sofern Sie die in unseren Internetauftritt eingebundene Komponente Google Maps aufrufen, speichert Google
-            über Ihren Internet-Browser ein Cookie auf Ihrem Endgerät. Um unseren Standort anzuzeigen und eine
-            Anfahrtsbeschreibung zu erstellen, werden Ihre Nutzereinstellungen und -daten verarbeitet. Hierbei können
-            wir nicht ausschließen, dass Google Server in den USA einsetzt.</p>
-        <p>Im Falle einer von Ihnen erteilten Einwilligung für diese Verarbeitung ist Rechtsgrundlage <a
-                href="http://dejure.org/gesetze/DSGVO/6.html" target="_blank"
-                title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung">Art. 6 Abs. 1 lit. a DSGVO</a>. Rechtsgrundlage
-            kann auch <a href="http://dejure.org/gesetze/DSGVO/6.html" target="_blank"
-                title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung">Art. 6 Abs. 1 lit. f DSGVO</a> sein. Unser
-            berechtigtes Interesse liegt in der Optimierung der Funktionalität unseres Internetauftritts.</p>
-        <p>Durch die so hergestellte Verbindung zu Google kann Google ermitteln, von welcher Website Ihre Anfrage
-            gesendet worden ist und an welche IP-Adresse die Anfahrtsbeschreibung zu übermitteln ist.</p>
-        <p>Sofern Sie mit dieser Verarbeitung nicht einverstanden sind, haben Sie die Möglichkeit, die Installation der
-            Cookies durch die entsprechenden Einstellungen in Ihrem Internet-Browser zu verhindern. Einzelheiten hierzu
-            finden Sie vorstehend unter dem Punkt „Cookies“.</p>
-        <p>Zudem erfolgt die Nutzung von Google Maps sowie der über Google Maps erlangten Informationen nach den&nbsp;<a
-                href="https://policies.google.com/terms?gl=DE&amp;hl=de" rel="nofollow noopener"
-                target="_blank">Google-Nutzungsbedingungen</a>&nbsp; und den&nbsp;<a
-                href="https://www.google.com/intl/de_de/help/terms_maps.html" rel="nofollow noopener"
-                target="_blank">Geschäftsbedingungen für Google Maps</a> .</p>
+        <p>
+          In unserem Internetauftritt setzen wir Google Maps zur Darstellung
+          unseres Standorts sowie zur Erstellung einer Anfahrtsbeschreibung ein.
+          Es handelt sich hierbei um einen Dienst der Google Ireland Limited,
+          Gordon House, Barrow Street, Dublin 4, Irland, nachfolgend nur
+          „Google“ genannt.
+        </p>
+        <p>
+          Sofern Sie die in unseren Internetauftritt eingebundene Komponente
+          Google Maps aufrufen, speichert Google über Ihren Internet-Browser ein
+          Cookie auf Ihrem Endgerät. Um unseren Standort anzuzeigen und eine
+          Anfahrtsbeschreibung zu erstellen, werden Ihre Nutzereinstellungen und
+          -daten verarbeitet. Hierbei können wir nicht ausschließen, dass Google
+          Server in den USA einsetzt.
+        </p>
+        <p>
+          Im Falle einer von Ihnen erteilten Einwilligung für diese Verarbeitung
+          ist Rechtsgrundlage
+          <a
+            href="http://dejure.org/gesetze/DSGVO/6.html"
+            target="_blank"
+            title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung"
+            >Art. 6 Abs. 1 lit. a DSGVO</a
+          >. Rechtsgrundlage kann auch
+          <a
+            href="http://dejure.org/gesetze/DSGVO/6.html"
+            target="_blank"
+            title="Art. 6 DSGVO: Rechtmäßigkeit der Verarbeitung"
+            >Art. 6 Abs. 1 lit. f DSGVO</a
+          >
+          sein. Unser berechtigtes Interesse liegt in der Optimierung der
+          Funktionalität unseres Internetauftritts.
+        </p>
+        <p>
+          Durch die so hergestellte Verbindung zu Google kann Google ermitteln,
+          von welcher Website Ihre Anfrage gesendet worden ist und an welche
+          IP-Adresse die Anfahrtsbeschreibung zu übermitteln ist.
+        </p>
+        <p>
+          Sofern Sie mit dieser Verarbeitung nicht einverstanden sind, haben Sie
+          die Möglichkeit, die Installation der Cookies durch die entsprechenden
+          Einstellungen in Ihrem Internet-Browser zu verhindern. Einzelheiten
+          hierzu finden Sie vorstehend unter dem Punkt „Cookies“.
+        </p>
+        <p>
+          Zudem erfolgt die Nutzung von Google Maps sowie der über Google Maps
+          erlangten Informationen nach den&nbsp;<a
+            href="https://policies.google.com/terms?gl=DE&amp;hl=de"
+            rel="nofollow noopener"
+            target="_blank"
+            >Google-Nutzungsbedingungen</a
+          >&nbsp; und den&nbsp;<a
+            href="https://www.google.com/intl/de_de/help/terms_maps.html"
+            rel="nofollow noopener"
+            target="_blank"
+            >Geschäftsbedingungen für Google Maps</a
+          >
+          .
+        </p>
         <p>Überdies bietet Google unter</p>
-        <p><a href="https://adssettings.google.com/authenticated" rel="nofollow noopener"
-                target="_blank">https://adssettings.google.com/authenticated</a></p>
-        <p><a href="https://policies.google.com/privacy" rel="nofollow noopener"
-                target="_blank">https://policies.google.com/privacy</a></p>
+        <p>
+          <a
+            href="https://adssettings.google.com/authenticated"
+            rel="nofollow noopener"
+            target="_blank"
+            >https://adssettings.google.com/authenticated</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://policies.google.com/privacy"
+            rel="nofollow noopener"
+            target="_blank"
+            >https://policies.google.com/privacy</a
+          >
+        </p>
         <p>weitergehende Informationen an.</p>
 
-        <p><a href="https://www.generator-datenschutzerklärung.de" target="_blank"
-                rel="noopener">Muster-Datenschutzerklärung</a> der <a href="https://www.bewertung-löschen24.de"
-                rel="nofollow noopener" target="_blank">Anwaltskanzlei Weiß &amp; Partner</a></p>
-
+        <p>
+          <a
+            href="https://www.generator-datenschutzerklärung.de"
+            target="_blank"
+            rel="noopener"
+            >Muster-Datenschutzerklärung</a
+          >
+          der
+          <a
+            href="https://www.bewertung-löschen24.de"
+            rel="nofollow noopener"
+            target="_blank"
+            >Anwaltskanzlei Weiß &amp; Partner</a
+          >
+        </p>
+      </section>
     </main>
 
-   <footer>
-        <nav class="nav-footer">
-            <a href="contact.html" class="feature-link">Kontakt</a>
-            <a href="impressum.html" class="feature-link">Impressum</a>
-            <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
-        </nav>
-        <div class="divider"></div>
-        <p>Projektarbeit in "Grundlagen der Web-Technologien" </p>
-        <p>Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin <br>Wintersemester 2025/2026 </p>
-        <p>Fachbereich: Informatik - Hochschule Trier</p>
+    <footer>
+      <nav class="nav-footer">
+        <a href="contact.html" class="feature-link">Kontakt</a>
+        <a href="impressum.html" class="feature-link">Impressum</a>
+        <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
+      </nav>
+      <div class="divider"></div>
+      <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
+      <p>
+        Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
+        <br />Wintersemester 2025/2026
+      </p>
+      <p>Fachbereich: Informatik - Hochschule Trier</p>
 
-        <img src="images/logo/logo_mittext.png" class="logo" alt="">
-
+      <img src="images/logo/logo_mittext.png" class="logo" alt="" />
     </footer>
-     <script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
