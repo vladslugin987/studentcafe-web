@@ -180,7 +180,7 @@ nav {
 
 .feature-link {
   display: inline-block;
-  color: var(--link-color);
+  color: var(--line-color);
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -190,9 +190,20 @@ nav {
   transition: all 0.3s ease;
 }
 
+.feature-link:visited {
+  color: var(--line-color);
+}
+
 .feature-link:hover {
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--line-color);
+}
+
+.feature-link:focus-visible {
+  background-color: var(--accent-color);
+  color: var(--line-color);
+  outline: 3px solid color-mix(in srgb, var(--line-color), transparent 35%);
+  outline-offset: 2px;
 }
 
 

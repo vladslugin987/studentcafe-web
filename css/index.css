@@ -172,7 +172,7 @@
 
 .feature-link {
   display: inline-block;
-  color: var(--link-color);
+  color: var(--line-color);
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
@@ -184,7 +184,7 @@
 
 .feature-link:hover {
   background-color: var(--accent-color);
-  color: var(--main-color);
+  color: var(--line-color);
 }
 
 /* Footer */
