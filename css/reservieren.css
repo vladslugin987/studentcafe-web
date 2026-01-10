@@ -1,9 +1,100 @@
-#reservieren h2 {
-    position: sticky;
-    top: 0;
-    text-align: left;
-    background-color: var(--main-color);
-    border-radius: 12px;
-    padding: 30px;
-    margin: 0;
+.reservieren-page section {
+  background-color: var(--main-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1100px;
+}
+
+.reservieren-page h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--title-color);
+}
+
+.reservieren-page h2,
+.reservieren-page h3 {
+  color: var(--title-color);
+}
+
+.reservieren-intro {
+  text-align: center;
+}
+
+/* Divider (like index/events) */
+.reservieren-page .divider {
+  width: 80%;
+  height: 3px;
+  margin: 30px auto;
+  border: none;
+  border-radius: 10px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--main-color) 0px,
+    var(--main-color) 12px,
+    transparent 12px,
+    transparent 20px
+  );
+  opacity: 0.9;
+}
+
+/* Form */
+#reservieren form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+#reservieren .feld,
+#reservieren textarea {
+  width: 100%;
+  max-width: 720px;
+}
+
+#reservieren .feld,
+#reservieren textarea {
+  padding: 12px;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--title-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+#reservieren textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#reservieren input[type='submit'].feature-link,
+#reservieren input[type='reset'].feature-link {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .reservieren-page section {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .reservieren-page .divider {
+    width: 100%;
+    margin: 20px auto;
+  }
 }

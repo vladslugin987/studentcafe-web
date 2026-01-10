@@ -1,132 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/reservieren.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reservieren.css" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
 
     <title>Café für Studierende</title>
-</head>
+  </head>
 
-<body class="page-home">
+  <body class="page-home">
     <header id="header">
-        <div class="top-right">
-            <a href="reservieren.html" class="feature-link" id="reservieren-link">RESERVIEREN</a>
+      <div class="top-right">
+        <a href="reservieren.html" class="feature-link" id="reservieren-link"
+          >RESERVIEREN</a
+        >
 
-            <span>
-                Öffnungszeiten: <br>
-                Mo. bis Sa. 10 - 20 Uhr
-            </span>
+        <span>
+          Öffnungszeiten: <br />
+          Mo. bis Sa. 10 - 20 Uhr
+        </span>
+      </div>
+
+      <div class="logo-section">
+        <div class="logo-container">
+          <div class="logo">
+            <img
+              src="images/logo/logo_mittext.png"
+              id="logo-img"
+              alt="Logo des Studierendecafé Studierbar"
+            />
+          </div>
         </div>
+      </div>
 
-        <div class="logo-section">
-            <div class="logo-container">
-                <div class="logo">
-                    <img src="images/logo/logo_mittext.png" id="logo-img" alt="Logo des Studierendecafé Studierbar" />
-                </div>
-            </div>
+      <nav id="mainnav">
+        <div id="menutoggle">
+          <div></div>
         </div>
-
-        <nav id="mainnav">
-
-            <div id="menutoggle">
-                <div></div>
-            </div>
-            <div id="nav">
-                <a href="index.html" id="home-nav" class="nav-item">HOME</a>
-                <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
-                <a href="events.html" id="events-nav" class="nav-item">VERANSTALTUNGEN</a>
-                <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
-                <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
-                <a href="guest.html" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
-            </div>
-        </nav>
+        <div id="nav">
+          <a href="index.html" id="home-nav" class="nav-item">HOME</a>
+          <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
+          <a href="events.html" id="events-nav" class="nav-item"
+            >VERANSTALTUNGEN</a
+          >
+          <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
+          <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
+          <a href="guest.html" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
+        </div>
+      </nav>
     </header>
-    <h1>RESERVIEREN</h1>
 
-    <div class="formulare">
-        <section id="reservieren" class="bg">
-            <h2>Tisch reservieren</h2>
+    <main class="reservieren-page">
+      <h1>RESERVIEREN</h1>
 
-            <form action="index.html" onsubmit="return check(this)"
-                onreset="return confirm('Mit Ok Formulardaten löschen')">
+      <section class="reservieren-intro">
+        <p>
+          Hier kannst du ganz einfach einen Tisch in der Studierbar reservieren.
+          Bitte fülle das Formular aus – wir melden uns so schnell wie möglich
+          bei dir.
+        </p>
+      </section>
 
-                <!-- notes: 
-         <legend>Reservierung</legend> 
-          <label for="">First name:</label><br>
-         -->
+      <div class="divider"></div>
 
-                <h3>Wer?</h3>
-                <input type="text" id="name" name="textfeld" placeholder="Name" class="feld"><br>
+      <section id="reservieren">
+        <h2>Tisch reservieren</h2>
 
-                <!--<label for="personenanzahl">Personenanzahl?</label> <br>-->
+        <form
+          action="index.html"
+          onsubmit="return check(this)"
+          onreset="return confirm('Mit Ok Formulardaten löschen')"
+        >
+          <h3>Wer?</h3>
+          <input
+            type="text"
+            id="name"
+            name="textfeld"
+            placeholder="Name"
+            class="feld"
+          />
 
-                <input type="number" id="personenanzahl" name="textfeld" min="0" max="20" placeholder="Personenanzahl"
-                    class="feld"><br>
+          <input
+            type="number"
+            id="personenanzahl"
+            name="textfeld"
+            min="0"
+            max="20"
+            placeholder="Personenanzahl"
+            class="feld"
+          />
 
-                <h3>Wann?</h3>
-                <label for="zeitraum"></label>
-                <input type="datetime-local" id="zeitraum" name="textfeld" class="feld"> <br>
-                <!--
-          <label for="date">Tag:</label>
-          <input type="date" id="date" value=""><br>
-          <label for="uhrzeit">Uhrzeit:</label>
-          <input type="time" id="uhrzeit" min="0" max="1000"><br>
-          -->
-                <h3>Kontakt</h3>
-                <input type="email" id="email" name="textfeld" class="feld" placeholder="Email"><br>
+          <h3>Wann?</h3>
+          <input
+            type="datetime-local"
+            id="zeitraum"
+            name="textfeld"
+            class="feld"
+          />
 
-                <input type="tel" id="phone" name="textfeld" class="feld" placeholder="Telefonnummer"> <br>
+          <h3>Kontakt</h3>
+          <input
+            type="email"
+            id="email"
+            name="textfeld"
+            class="feld"
+            placeholder="Email"
+          />
 
+          <input
+            type="tel"
+            id="phone"
+            name="textfeld"
+            class="feld"
+            placeholder="Telefonnummer"
+          />
 
-                <textarea name="tipp" name="textfeld" placeholder="Anmerkungen"></textarea> <br>
+          <textarea name="tipp" placeholder="Anmerkungen"></textarea>
 
-
-                <input type="submit" class="feature-link" value="RESERVIEREN">
-
-                <input type="reset" class="feature-link" value="zurücksetzen">
-
-
-
-            </form>
-
-        </section>
-    </div>
+          <div class="form-actions">
+            <input type="submit" class="feature-link" value="RESERVIEREN" />
+            <input type="reset" class="feature-link" value="zurücksetzen" />
+          </div>
+        </form>
+      </section>
+    </main>
 
     <footer>
-        <nav class="nav-footer">
-            <a href="contact.html" class="feature-link">Kontakt</a>
-            <a href="impressum.html" class="feature-link">Impressum</a>
-            <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
-        </nav>
-        <div class="divider"></div>
-        <p>Projektarbeit in "Grundlagen der Web-Technologien" </p>
-        <p>Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin <br>Wintersemester 2025/2026 </p>
-        <p>Fachbereich: Informatik - Hochschule Trier</p>
+      <nav class="nav-footer">
+        <a href="contact.html" class="feature-link">Kontakt</a>
+        <a href="impressum.html" class="feature-link">Impressum</a>
+        <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
+      </nav>
+      <div class="divider"></div>
+      <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
+      <p>
+        Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
+        <br />Wintersemester 2025/2026
+      </p>
+      <p>Fachbereich: Informatik - Hochschule Trier</p>
 
-        <img src="images/logo/logo_mittext.png" class="logo" alt="">
-
+      <img src="images/logo/logo_mittext.png" class="logo" alt="" />
     </footer>
 
     <script src="js/script.js"></script>
     <script src="js/formulare.js"></script>
-</body>
-
+  </body>
 </html>
