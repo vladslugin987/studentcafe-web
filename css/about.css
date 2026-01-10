@@ -109,7 +109,7 @@ main a:visited {
 
 main a.feature-link,
 main a.feature-link:visited {
-  color: var(--link-color);
+  color: var(--line-color);
 }
 
 @media (max-width: 768px) {
