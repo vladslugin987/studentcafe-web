@@ -6,6 +6,7 @@
   padding: 30px;
   margin: 30px auto;
   max-width: 1100px;
+  text-align: center;
 }
 
 .home-page #welcome {
@@ -159,8 +160,9 @@
 .feature-card {
   flex: 1;
   max-width: 280px;
-  background-color: var(--main-color);
+  background-color: var(--background-color);
   border-radius: 12px;
+  border-color: var(--color4);
   padding: 35px 25px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -200,6 +202,7 @@
   border: 2px solid var(--accent-color);
   border-radius: 25px;
   transition: all 0.3s ease;
+  background-color: var(--color2);
 }
 
 .feature-link:hover {
