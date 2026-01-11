@@ -47,7 +47,7 @@
 .img-item img {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 3;
+  aspect-ratio: 1;
   object-fit: cover;
   border-radius: 12px;
 }
