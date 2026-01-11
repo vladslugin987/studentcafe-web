@@ -48,12 +48,12 @@
         <div></div>
       </div>
       <div id="nav">
-        <a href="index.html" id="home-nav" class="nav-item">HOME</a>
-        <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
-        <a href="events.html" id="events-nav" class="nav-item">VERANSTALTUNGEN</a>
-        <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
-        <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
-        <a href="guest.html" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
+        <a href="index.html" id="home-nav" class="nav-item" tabindex="0">HOME</a>
+        <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0">SPEISEKARTE</a>
+        <a href="events.html" id="events-nav" class="nav-item" tabindex="0">VERANSTALTUNGEN</a>
+        <a href="about.html" id="about-nav" class="nav-item" tabindex="0">ÜBER UNS</a>
+        <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0">KONTAKT</a>
+        <a href="guest.html" id="guest-nav" class="nav-item" tabindex="0">GÄSTEBUCH</a>
       </div>
     </nav>
   </header>
@@ -63,9 +63,8 @@
 
     <section class="reservieren-intro">
       <p>
-        Hier kannst du ganz einfach einen Tisch in der Studierbar reservieren.
-        Bitte fülle das Formular aus – wir melden uns so schnell wie möglich
-        bei dir.
+        Hier kannst du ganz einfach einen Tisch bei uns in der "StudierBar" reservieren. <br>
+        Bitte fülle das Formular aus – wir melden uns so schnell wie möglich bei dir.
       </p>
     </section>
 
@@ -76,20 +75,27 @@
 
       <form action="index.html" onsubmit="return check(this)" onreset="return confirm('Mit Ok Formulardaten löschen')">
         <h3>Wer?</h3>
-        <input type="text" id="name" name="textfeld" placeholder="Name" class="feld" />
 
-        <input type="number" id="personenanzahl" name="textfeld" min="0" max="20" placeholder="Personenanzahl"
+        <label for="namekontakt">Name</label><br>
+        <input type="text" id="name" name="textfeld" placeholder="Auf welchen Namen möchtest reservieren?"
           class="feld" />
 
+        <label for="namekontakt">Personenanzahl</label><br>
+        <input type="number" id="personenanzahl" name="textfeld" min="0" max="20"
+          placeholder="Für wie viele Personen möchtest du reservieren?" class="feld" />
+
         <h3>Wann?</h3>
+        <label for="namekontakt">Für welches Datum und welche Uhrzeit möchtest du reservieren</label><br>
         <input type="datetime-local" id="zeitraum" name="textfeld" class="feld" />
 
         <h3>Kontakt</h3>
         <input type="email" id="email" name="textfeld" class="feld" placeholder="Email" />
 
-        <input type="tel" id="phone" name="textfeld" class="feld" placeholder="Telefonnummer" />
+        <label for="namekontakt">Telefonnummer</label><br>
+        <input type="tel" id="phone" name="textfeld" class="feld" placeholder="Bitte gebe eine Telefonnummer an" />
 
-        <textarea name="tipp" placeholder="Anmerkungen"></textarea>
+        <label for="namekontakt">Anmerkungen</label><br>
+        <textarea name="tipp" placeholder="Hast du noch Anmerkungen für deine Reservierung bei uns?"></textarea>
 
         <div class="form-actions">
           <input type="submit" class="feature-link" value="RESERVIEREN" />
@@ -101,9 +107,9 @@
 
   <footer>
     <nav class="nav-footer">
-      <a href="contact.html" class="feature-link">Kontakt</a>
-      <a href="impressum.html" class="feature-link">Impressum</a>
-      <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
+      <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
+      <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
+      <a href="datenschutz.html" class="feature-link" tabindex="0">Datenschutzerklärung</a>
     </nav>
     <div class="divider"></div>
     <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>

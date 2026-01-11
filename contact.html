@@ -48,12 +48,12 @@
         <div></div>
       </div>
       <div id="nav">
-        <a href="index.html" id="home-nav" class="nav-item">HOME</a>
-        <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
-        <a href="events.html" id="events-nav" class="nav-item">VERANSTALTUNGEN</a>
-        <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
-        <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
-        <a href="guest.html" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
+        <a href="index.html" id="home-nav" class="nav-item" tabindex="0">HOME</a>
+        <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0">SPEISEKARTE</a>
+        <a href="events.html" id="events-nav" class="nav-item" tabindex="0">VERANSTALTUNGEN</a>
+        <a href="about.html" id="about-nav" class="nav-item" tabindex="0">ÜBER UNS</a>
+        <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0">KONTAKT</a>
+        <a href="guest.html" id="guest-nav" class="nav-item" tabindex="0">GÄSTEBUCH</a>
       </div>
     </nav>
   </header>
@@ -63,7 +63,7 @@
 
     <section id="kontaktinfos">
       <!--<h1>Kontaktinformationen</h1>-->
-      <div class="contact-item">
+      <div class="contact-item" tabindex="0">
         <img src="images/location_contact.svg" alt="Standort" />
         <p>
           Café - Gebäude Y <br />
@@ -72,14 +72,14 @@
           54293 Trier <br />
         </p>
       </div>
-      <div class="contact-item">
+      <div class="contact-item" tabindex="0">
         <img src="images/phone_contact.svg" alt="Telefon" />
         <p>
           <!--Tel.: -->
           0651/1234567890
         </p>
       </div>
-      <div class="contact-item">
+      <div class="contact-item" tabindex="0">
         <img src="images/mail_contact.svg" alt="E-Mail" />
         <p>
           <!--Email:-->
@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section id="oeffnungszeiten">
+    <section id="oeffnungszeiten" tabindex="0">
       <h2>Unsere Öffnungszeiten</h2>
 
       <p>
@@ -98,96 +98,48 @@
     </section>
 
     <div class="contact-actions">
-      <a href="reservieren.html" class="feature-link">Reservieren</a>
+      <a href="reservieren.html" class="feature-link" tabindex="0">Reservieren</a>
     </div>
 
     <div class="formulare">
-      <!-- <section id="reservieren">
-          <h2>Tisch reservieren</h2>
-
-          <form action="index.html">
-            <h3>Wer?</h3>
-            <input type="text" id="name" placeholder="Name" class="feld" />
-
-            <input
-              type="number"
-              id="personenanzahl"
-              min="0"
-              max="20"
-              placeholder="Personenanzahl"
-              class="feld"
-            />
-
-            <h3>Wann?</h3>
-            <input type="datetime-local" id="zeitraum" class="feld" />
-
-            <h3>Kontakt</h3>
-            <input type="email" id="email" class="feld" placeholder="Email" />
-
-            <input
-              type="tel"
-              id="phone"
-              class="feld"
-              placeholder="Telefonnummer"
-            />
-
-            <textarea name="tipp" placeholder="Anmerkungen"></textarea>
-
-            <div class="form-actions">
-              <input type="submit" class="feature-link" value="RESERVIEREN" />
-              <input type="reset" class="feature-link" value="zurücksetzen" />
-            </div>
-          </form>
-        </section> -->
-
       <section id="kontaktformular">
         <!--Kontaktformular-->
 
         <h2>Schreib uns!</h2>
 
         <form action="index.html">
-          <!-- Hier stehen die Eingabefelder -->
-
-          <!--  <fieldset>
-           Notizen: 
-           size="40" 
-           <label for="email">Email Adresse</label><br> 
-           name="email" value=""  
-           placeholder="email@web.de"
-          -->
           <label for="namekontakt">Name</label><br>
-          <input type="text" id="namekontakt" class="feld" placeholder="Dein Name" />
+          <input type="text" id="namekontakt" class="feld" placeholder="Dein Name" tabindex="0"/>
           
           <label for="namekontakt">Emailadresse:</label><br>
-          <input type="email" id="kontaktemail" class="feld" placeholder="Deine Emailadresse" />
+          <input type="email" id="kontaktemail" class="feld" placeholder="Deine Emailadresse" tabindex="0"/>
           
           <label for="namekontakt">Betreff:</label><br>
-          <input type="text" name="betreff" class="feld" placeholder="Was ist dein Anliegen?" />
+          <input type="text" name="betreff" class="feld" placeholder="Was ist dein Anliegen?" tabindex="0"/>
           
           <label for="namekontakt">Nachricht:</label><br>
-          <textarea name="tipp" placeholder="Deine Nachricht an uns..."></textarea>
+          <textarea name="tipp" placeholder="Deine Nachricht an uns..." tabindex="0"></textarea>
 
-          <input type="submit" class="feature-link" value="Nachricht abschicken" />
+          <input type="submit" class="feature-link" value="Nachricht abschicken" tabindex="0"/>
 
-          <!--- </fieldset> -->
         </form>
-      </section>
+      </section>    
     </div>
 
     <section id="anfahrt" class="bg">
-      <h2>Anfahrt</h2>
+      <h2 tabindex="0">Anfahrt</h2>
 
       <p>
         Unser Café befindet sich auf dem Campus der Hochschule Trier. Hier
         findet ihr uns im Gebäude Y, gleich neben den Sportplatz.
       </p>
 
-      <div class="karte">
+      <div class="karte" tabindex="0">
         <!--Google Maps Karte-->
         <div class="map-embed">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4200.750856207123!2d6.630072713218397!3d49.7706725713513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47957cbf62945a49%3A0xc5683715504c26c5!2sHochschule%20Trier%20%E2%80%93%20Trier%20University%20of%20Applied%20Sciences!5e1!3m2!1sde!2sde!4v1764507416930!5m2!1sde!2sde"
-            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer4-when-downgrade"></iframe>
+            style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer4-when-downgrade" tabindex="0"></iframe>
         </div>
 
         <!--
@@ -200,16 +152,16 @@
           54293 Trier </p>
           -->
       </div>
-      <a href="https://www.hochschule-trier.de/hauptcampus/anfahrt" class="feature-link" target="_blank">Anfahrt -
+      <a href="https://www.hochschule-trier.de/hauptcampus/anfahrt" class="feature-link" target="_blank" tabindex="0">Anfahrt -
         Hochschule Trier</a>
     </section>
   </main>
 
   <footer>
     <nav class="nav-footer">
-      <a href="contact.html" class="feature-link">Kontakt</a>
-      <a href="impressum.html" class="feature-link">Impressum</a>
-      <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
+      <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
+      <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
+      <a href="datenschutz.html" class="feature-link" tabindex="0">Datenschutzerklärung</a>
     </nav>
     <div class="divider"></div>
     <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
