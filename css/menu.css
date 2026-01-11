@@ -111,11 +111,6 @@ nav {
     font-size: 13px;
   }
 
-  body.page-home .nav-item {
-    flex: 1 1 calc(33.33% - 12px);
-    min-width: 160px;
-  }
-
   /*Body*/
   body {
     max-width: 100%;
