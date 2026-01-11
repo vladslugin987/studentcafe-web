@@ -70,10 +70,12 @@ main {
   margin-top: 230px;
 }
 
-h1 {
+body.page-home h1 {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: var(--title-color);
 }
 
 p {

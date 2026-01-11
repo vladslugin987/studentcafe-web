@@ -9,14 +9,15 @@ main section {
 
 h1 {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
   color: var(--title-color);
 }
 
 h2,
 h3 {
   color: var(--title-color);
+  margin-bottom: 12px;
 }
 
 /* Kontaktinfos */
@@ -54,7 +55,11 @@ h3 {
   text-align: center;
 }
 
-/* CTA */
+#oeffnugszeiten h2{
+  margin-bottom: 12px;
+}
+
+/* CTA Reservieren-Button*/
 .contact-actions {
   max-width: 1100px;
   margin: 0 auto 10px;
@@ -62,7 +67,16 @@ h3 {
   justify-content: center;
 }
 
+.contact-actions .feature-link{
+  background-color: var(--color2);
+}
+
+
 /* Kontaktformular */
+#kontaktformular{
+  text-align: center;
+}
+
 #reservieren form,
 #kontaktformular form {
   margin-top: 10px;
