@@ -167,6 +167,7 @@ nav {
   cursor: pointer;
   /*letter-spacing: 1px;*/
   transition: all 0.3s ease;
+  align-content: center;
 }
 
 .nav-item:hover {
@@ -279,6 +280,7 @@ body.page-home #nav {
 
   body.page-home {
     padding: 0 18px;
+    max-width: 90vw;
   }
 
   main {
@@ -295,6 +297,8 @@ body.page-home #nav {
   body.page-home nav {
     row-gap: 10px;
     margin: 0;
+    padding: 0 20px;
+    gap: 0;
   }
 
   #nav {
@@ -309,6 +313,7 @@ body.page-home #nav {
 
   .nav-footer a {
     width: 25vw;
+    align-content: center;
   }
 
   body.page-home footer .logo {
@@ -339,7 +344,8 @@ body.page-home #nav {
   }
 
   body.page-home nav {
-    gap: 8px !important;
+    /* gap: 8px !important; */
+    padding: 0 25px;
   }
 
   body.page-home .nav-item {
@@ -355,6 +361,7 @@ body.page-home #nav {
     padding: 6px 15px;
     width: 30vw;
     height: auto;
+    align-content: center;
   }
 
   footer .nav-footer {
@@ -364,10 +371,13 @@ body.page-home #nav {
   body.page-home footer .logo {
     height: 90px;
   }
+
+  body.page-home h1{
+    margin-top: 21rem; 
+  }
 }
 
 /* @media (max-width: 480px) {
-  
 } */
 
 /* Kleine Smartphones */
@@ -380,7 +390,7 @@ body.page-home #nav {
     padding: 0 10px;
   }
 
-  h1 {
+  body.page-home h1 {
     position: sticky;
     top: 165px;
     z-index: 3;
@@ -390,6 +400,7 @@ body.page-home #nav {
     padding-bottom: 10px;
     padding-top: 2px;
   }
+
 
   body.page-home .top-right {
     font-size: 2.5vw;
@@ -415,8 +426,8 @@ body.page-home #nav {
     align-items: center;
     height: 480px;
     width: 50%;
-    gap: 14px;
-    margin: 0;
+    gap: 18px;
+    margin: 60px 0 0;
     flex-wrap: nowrap;
   }
 
