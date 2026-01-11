@@ -60,11 +60,14 @@
   </header>
 
   <main>
+
+    <h1 class="menu">SPEISEKARTE</h1>
+
     <div class="img-section">
       <h2 class="section-title">Unsere Angebote</h2>
 
       <div class="category-select">
-        <select id="categoryDropdown">
+        <select id="categoryDropdown" aria-label="Alle Produkte">
           <option value="all">Alle Produkte</option>
           <option value="getraenke">Getränke</option>
           <option value="snacks">Snacks</option>
@@ -76,34 +79,34 @@
 
       <h3 class="section-subtitle" data-category="getraenke">Getränke</h3>
 
-      <div class="img-container" data-category="getraenke">
-        <div class="img-item">
-          <img src="images/menu/Getraenke/Kaffee/01/01_Espresso.png" alt="Espresso">
-          <div class="title">Espresso</div>
-          <div class="description">Kräftiger Espresso mit intensiver Aromafülle und samtigem Nachklang</div>
-          <div class="price">1,99 €</div>
-        </div>
+      <section class="img-container" data-category="getraenke" aria-label="Getränke Angebote">
+        <article class="img-item" tabindex="0" aria-labelledby="item-espresso">
+          <img src="images/menu/Getraenke/Kaffee/01/01_Espresso.png" alt="Espresso in einer kleinen Tasse mit Crema">
+          <h4 class="title" id="item-espresso">Espresso</h4>
+          <p class="description"> Kräftiger Espresso mit intensiver Aromafülle und samtigem Nachklang</p>
+          <p class="price">1,99 €</p>
+        </article>
 
-        <div class="img-item">
-          <img src="images/menu/Getraenke/Kaffee/01/02_KaffeeMitMilch.png" alt="Kaffee mit Milch">
-          <div class="title">Kaffee mit Milch</div>
-          <div class="description">Milchkaffee mit cremiger Milde und harmonisch rundem, wohltuendem Geschmack</div>
-          <div class="price">2,99 €</div>
-        </div>
+        <article class="img-item" tabindex="0" aria-labelledby="item-kaffee-milch">
+          <img src="images/menu/Getraenke/Kaffee/01/02_KaffeeMitMilch.png" alt="Große Tasse Kaffee mit aufgeschäumter Milch">
+          <h4 class="title" id="item-kaffee-milch">Kaffee mit Milch</h4>
+          <p class="description">Milchkaffee mit cremiger Milde und harmonisch rundem, wohltuendem Geschmack</p>
+          <p class="price">2,99 €</p>
+        </article>
 
-        <div class="img-item">
-          <img src="images/menu/Getraenke/Kaffee/01/03_DoppioKaffee.png" alt="Doppio Kaffee">
-          <div class="title">Doppio Kaffee</div>
-          <div class="description">Kräftiger Doppelkaffee mit tiefem Aroma und belebend vollmundigem Charakter</div>
-          <div class="price">2,99 €</div>
-        </div>
+        <article class="img-item" tabindex="0" aria-labelledby="item-doppio">
+          <img src="images/menu/Getraenke/Kaffee/01/03_DoppioKaffee.png" alt="Doppelter Espresso in kleiner Tasse mit intensiver Crema">
+          <h4 class="title" id="item-doppio">Doppio Kaffee</h4>
+          <p class="description">Kräftiger Doppelkaffee mit tiefem Aroma und belebend vollmundigem Charakter</p>
+          <p class="price">2,99 €</p>
+        </article>
 
-        <div class="img-item">
-          <img src="images/menu/Getraenke/Kaffee/01/04_KaffeeMitSahne.png" alt="Kaffee mit Sahne">
-          <div class="title">Kaffee mit Sahne</div>
-          <div class="description">Aromatischer Kaffee mit luftigem Sahneschaum für cremigen Genussmoment</div>
-          <div class="price">2,99 €</div>
-        </div>
+        <article class="img-item" tabindex="0" aria-labelledby="item-latte-macchiato">
+          <img src="images/menu/Getraenke/Kaffee/01/05_Latte_Macchiato.jpg" alt="Latte Macchiato im Glas mit drei Schichten">
+          <h4 class="title" id="item-latte-macchiato">Latte Macchiato</h4>
+          <p class="description">Schichtiger Latte Macchiato mit mildem Espresso und verführerisch cremiger Milchsüße</p>
+          <p class="price">3,49 €</p>
+        </article>
 
         <div class="img-item">
           <img src="images/menu/Getraenke/Kaffee/01/05_Latte_Macchiato.jpg" alt="Latte Macchiato">
@@ -891,7 +894,537 @@
         </div>
       </div>
     </div>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-cappuccino">
+          <img src="images/menu/Getraenke/Kaffee/01/07_Cappuccino.png" alt="Cappuccino mit Milchschaum">
+          <h4 class="title" id="item-cappuccino">Cappuccino</h4>
+          <p class="description">Cremiger Espresso mit Milchschaum, der harmonisch das Aroma in jeder Tasse vereint</p>
+          <p class="price">3,19 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-kaffee-latte">
+          <img src="images/menu/Getraenke/Kaffee/01/08_Kaffee_Latte.png" alt="Kaffee Latte mit Latte Art Herzmuster im Milchschaum">
+          <h4 class="title" id="item-kaffee-latte">Kaffee Latte</h4>
+          <p class="description">Sanfter Espresso trifft auf viel weiche Milch und schafft ein mildes Geschmackserlebnis</p>
+          <p class="price">3,99 €</p>
+        </article>
+          
+        <article class="img-item" tabindex="0" aria-labelledby="item-flat-white">
+          <img src="images/menu/Getraenke/Kaffee/01/09_Flat_White.png" alt="Flat White mit feinem Milchschaum und Latte Art">
+          <h4 class="title" id="item-flat-white">Flat White</h4>
+          <p class="description">Harmonischer Kaffeegenuss mit seidig-mildem Milchanteil, perfekt für entspannte Genussmomente</p>
+          <p class="price">3,99 €</p>
+        </article>
+          
+        <article class="img-item" tabindex="0" aria-labelledby="item-karamell-macchiato">
+          <img src="images/menu/Getraenke/Kaffee/01/12_Karamell_Macchiato.png" alt="Karamell Macchiato mit Karamellsauce und Sahne">
+          <h4 class="title" id="item-karamell-macchiato">Karamell Macchiato</h4>
+          <p class="description">Aromatischer Espresso und cremige Milch für einen verführerischen Genusserlebnis</p>
+          <p class="price">4,19 €</p>
+        </article>
+          
+        <article class="img-item" tabindex="0" aria-labelledby="item-vanille-latte">
+          <img src="images/menu/Getraenke/Kaffee/01/13_Vanille_Latte.png" alt="Vanille Latte mit cremigem Milchschaum">
+          <h4 class="title" id="item-vanille-latte">Vanille Latte</h4>
+          <p class="description">Feiner Espresso mit samtiger Milch und duftender Vanillenote für einen süß-eleganten Genussmoment</p>
+          <p class="price">4,19 €</p>
+        </article>
+          
+        <article class="img-item" tabindex="0" aria-labelledby="item-haselnuss-latte">
+          <img src="images/menu/Getraenke/Kaffee/01/14_Haselnuss_Latte.png" alt="Haselnuss Latte mit Haselnusssirup und Milchschaum">
+          <h4 class="title" id="item-haselnuss-latte">Haselnuss Latte</h4>
+          <p class="description">Sanfter Espresso mit cremiger Milch und nussigem Haselnussaroma</p>
+          <p class="price">4,19 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-eiskaffee-mokka">
+          <img src="images/menu/Getraenke/Kaffee/01/15_Eiskaffee_Mokka.png" alt="Eisgekühlter Mokka mit Schokolade, Eiswürfeln und Sahne">
+          <h4 class="title" id="item-eiskaffee-mokka">Eiskaffee Mokka</h4>
+          <p class="description">Gekühlter Espresso mit Schokolade und Milch, erfrischend cremig und unwiderstehlich schokoladig</p>
+          <p class="price">4,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-eiskaffee-schoko">
+          <img src="images/menu/Getraenke/Kaffee/01/16_Eiskaffee_Schoko.png" alt="Eiskaffee mit Schokoladensauce, Eis und Schlagsahne">
+          <h4 class="title" id="item-eiskaffee-schoko">Eiskaffee Schoko</h4>
+          <p class="description">Kalter Kaffee vereint sich mit zarter Schokolade zu einem angenehm erfrischenden Sommergenuss</p>
+          <p class="price">4,39 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-eiskaffee-karamell">
+          <img src="images/menu/Getraenke/Kaffee/01/17_Eiskaffee_Karamell.png" alt="Eiskaffee mit Karamellsauce und Eiswürfeln">
+          <h4 class="title" id="item-eiskaffee-karamell">Eiskaffee Karamell</h4>
+          <p class="description">Kalt gebrühter Kaffee mit cremigem Karamell und Eis, herrlich erfrischend und süß-aromatisch</p>
+          <p class="price">4,39 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-eis-latte">
+          <img src="images/menu/Getraenke/Kaffee/01/18_Eis_Latte.png" alt="Eis Latte mit kalter Milch, Espresso und Eiswürfeln">
+          <h4 class="title" id="item-eis-latte">Eis Latte</h4>
+          <p class="description">Gekühlter Espresso mit viel Milch und Eis, mild, erfrischend und perfekt für warme Tage</p>
+          <p class="price">3,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-frappe">
+          <img src="images/menu/Getraenke/Kaffee/01/23_Frappe.png" alt="Aufgeschäumter Frappé mit Eiswürfeln und Strohhalm">
+          <h4 class="title" id="item-frappe">Frappé</h4>
+          <p class="description">Kalt aufgeschäumter Kaffee mit Eis, herrlich cremig und belebend für pure sommerliche Erfrischung</p>
+          <p class="price">3,99 €</p>
+        </article>         
+      </section>
+
+      <h3 class="section-subtitle" data-category="snacks">Snacks</h3>
+
+      <section class="img-container" data-category="snacks" aria-label="Snacks Angebote"> 
+        <article class="img-item" tabindex="0" aria-labelledby="item-nussecke">
+          <img src="images/menu/Snacks/speisen/Nussecke.png" alt="Dreieckige Nussecke mit Haselnüssen und Schokoladenüberzug">
+          <h4 class="title" id="item-nussecke">Nussecke</h4>
+          <p class="description">Knuspriges Mürbeteiggebäck mit Haselnussauflage, umhüllt von feiner Schokoladenkuvertüre, für einen unwiderstehlichen Genussmoment und verführerischen Hochgenuss</p>
+          <p class="price">2,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-hefehoernchen">
+          <img src="images/menu/Snacks/speisen/Hefehoernchen.png" alt="Goldbraunes Hefehörnchen auf weißem Teller">
+          <h4 class="title" id="item-hefehoernchen">Hefehörnchen</h4>
+          <p class="description">Als köstlicher Genuss für zwischendurch bietet dieses süße Hefegebäck die perfekte Grundlage für einen Aufstrich und ist damit ein genussvoller Begleiter zum Frühstück</p>
+          <p class="price">0,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-laugenbrezel">
+          <img src="images/menu/Snacks/speisen/Laugenbrezel.png" alt="Frische Laugenbrezel mit grobem Salz bestreut">
+          <h4 class="title" id="item-laugenbrezel">Laugenbrezel</h4>
+          <p class="description">Eine knusprige Laugenbrezel mit grobem Salz ist pur ein Genuss und bietet die perfekte Grundlage für vielfältige, herzhafte Geschmackserlebnisse</p>
+          <p class="price">1,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-marzipanschnecke">
+          <img src="images/menu/Snacks/speisen/Marzipanschnecke.png" alt="Marzipanschnecke mit Streuseln und Zuckerguss">
+          <h4 class="title" id="item-marzipanschnecke">Marzipanschnecke</h4>
+          <p class="description">Zartes Plunderteilchen in Schneckenform mit knusprigen Streuseln und Fondant, köstlich gefüllt mit aromatischem Marzipan für verwöhnenden Genuss</p>
+          <p class="price">2,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-plunderkranz">
+          <img src="images/menu/Snacks/speisen/Plunderkranz.png" alt="Runder Plunderkranz mit Persipanfüllung">
+          <h4 class="title" id="item-plunderkranz">Plunderkranz</h4>
+          <p class="description">Saftiges Plunderteiggebäck mit zarter Persipanfüllung bietet langanhaltende Frische und einen wunderbar aromatischen, verwöhnenden Genussmoment</p>
+          <p class="price">2,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-puddingteilchen">
+          <img src="images/menu/Snacks/speisen/Puddingteilchen.png" alt="Plundergebäck in Brezelform mit Vanillepudding und Zuckerguss">
+          <h4 class="title" id="item-puddingteilchen">Puddingteilchen</h4>
+          <p class="description">Süßes Plundergebäck in Brezelform mit cremiger Puddingfüllung und zarter Zuckerglasur für einen unwiderstehlich liebevollen Genussmoment</p>
+          <p class="price">2,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-kaesekuchen">
+          <img src="images/menu/Snacks/speisen/Kaesekuchen.png" alt="Stück cremiger Käsekuchen auf Teller">
+          <h4 class="title" id="item-kaesekuchen">Käsekuchen</h4>
+          <p class="description">Fein cremiger Käsekuchen mit sanfter Vanillenote und zartem Schmelz, der durch seine harmonische Leichtigkeit unvergleichlich wohltuend wirkt</p>
+          <p class="price">6,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-schokobroetchen">
+          <img src="images/menu/Snacks/speisen/Schokob.png" alt="Süßes Brötchen mit Schokoladenstückchen">
+          <h4 class="title" id="item-schokobroetchen">Schokobrötchen</h4>
+          <p class="description">Süßes Hefebrötchen mit reichlichen Schokoladentropfen, dessen lockere Struktur und feiner Geschmack jeden Bissen besonders wohltuend erscheinen lassen</p>
+          <p class="price">0,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-rosinenbroetchen">
+          <img src="images/menu/Snacks/speisen/Rosinenb.png" alt="Rosinenbrötchen mit saftigen Sultaninen">
+          <h4 class="title" id="item-rosinenbroetchen">Rosinenbrötchen</h4>
+          <p class="description">Süßes Brötchen aus lockerem Hefeteig mit reichlich saftigen Sultaninen, das durch seine zarte Struktur und ausgewogene Süße wunderbar begeistert</p>
+          <p class="price">0,99 €</p>
+         </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-laugenstange">
+          <img src="images/menu/Snacks/speisen/Laugenstange.png" alt="Lange Laugenstange mit grobem Salz">
+          <h4 class="title" id="item-laugenstange">Laugenstange</h4>
+          <p class="description">Aromatische Laugenstange bestreut mit grobem Salz, eignet sich hervorragend für herzhafte Beläge oder einfach nur mit Butter und ideal für den Genuss unterwegs.</p>
+          <p class="price">0,79 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-haehnchenbroetchen">
+          <img src="images/menu/Snacks/speisen/HaehnchenBroetchen.png" alt="Knuspriges Brötchen belegt mit Hähnchenschnitzel und Ei">
+          <h4 class="title" id="item-haehnchenbroetchen">Hähnchenbrötchen</h4>
+          <p class="description">Unsere knusprigen Brötchen sind frisch belegt mit saftigen, würzigen Hähnchenformschnitzeln und reichlich hartgekochtem Ei für eine leckere Mahlzeit jederzeit</p>
+          <p class="price">5,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-fladen-kentucky">
+          <img src="images/menu/Snacks/speisen/FladenKentucky.png" alt="Fladenbrot gefüllt mit Hähnchen, Salat und Gemüse">
+          <h4 class="title" id="item-fladen-kentucky">Fladen Kentucky</h4>
+          <p class="description">Lockeres Fladenbrot mit herzhafter Currycreme, Hähnchenstreifen, reichlich Eisbergsalat, Tomaten und Ei, ein herzhafter Snack für den großen Hunger</p>
+          <p class="price">5,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-fladen-tonno">
+          <img src="images/menu/Snacks/speisen/FladenTonno.png" alt="Fladenbrot mit Thunfisch, Zwiebeln und frischem Salat">
+          <h4 class="title" id="item-fladen-tonno">Fladen Tonno</h4>
+          <p class="description">Unser lockeres Fladenbrot ist üppig belegt mit feinem Thunfisch, roten Zwiebelringen, Paprika und frischem Salat, ein herzhafter Snack für den großen Hunger</p>
+          <p class="price">4,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0"  aria-labelledby="item-camembert-broetchen">
+          <img src="images/menu/Snacks/speisen/BrötchenMitCamembert.png" alt="Vollkornbrötchen mit Camembert und frischem Salat">
+          <h4 class="title" id="item-camembert-broetchen">Camembert-Brötchen</h4>
+          <p class="description">Unser Dinkelvollkornbrötchen belegt mit cremigem Camembert, frischem Gemüse und knackigem Salat für köstlichen pflanzlichen Genuss jederzeit</p>
+          <p class="price">4,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-frikadellenbroetchen">
+          <img src="images/menu/Snacks/speisen/Frikadellenbrötchen.png" alt="Baguette belegt mit Frikadelle und Krautsalat">
+          <h4 class="title" id="item-frikadellenbroetchen">Frikadellenbrötchen</h4>
+          <p class="description">Unser knuspriges Baguettebrötchen ist dick belegt mit einer würzigen Frikadelle und saftigem Krautsalat, ein herzhafter Snack für den größeren Hunger unterwegs</p>
+          <p class="price">2,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-croissant">
+          <img src="images/menu/Snacks/speisen/Croissant.png" alt="Goldbraunes, blättriges Croissant">
+          <h4 class="title" id="item-croissant">Croissant</h4>
+          <p class="description">Zartblättriges Croissant mit goldbrauner Kruste und weicher Mitte, das durch seine leichte Textur unwiderstehlich französischen Charme versprüht</p>
+          <p class="price">0,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-schokocroissant">
+          <img src="images/menu/Snacks/speisen/Schokocroissant.png" alt="Croissant gefüllt mit Schokoladencreme">
+          <h4 class="title" id="item-schokocroissant">Schokocroissant</h4>
+          <p class="description">Knuspriges Schoko-Croissant mit zarter Blätterung und cremiger Schokoladenfüllung, das durch seinen harmonischen Süße-Kontrast wunderbar verwöhnt</p>
+          <p class="price">0,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-haselnuss-schokolade">
+          <img src="images/menu/Snacks/speisen/HaselnussSchokolade.png" alt="Tafel Haselnuss Schokolade mit ganzen Nüssen">
+          <h4 class="title" id="item-haselnuss-schokolade">Haselnuss Schokolade</h4>
+          <p class="description">Cremige Haselnuss Schokolade mit ausgewogenem Nussaroma und sanftem Schmelz, die durch ihre harmonische Tiefe wunderbar verwöhnend wirkt</p>
+          <p class="price">1,29 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-weisse-schokolade">
+          <img src="images/menu/Snacks/speisen/WeißeSchokolade.png" alt="Tafel weiße Schokolade">
+          <h4 class="title" id="item-weisse-schokolade">Weiße Schokolade</h4>
+          <p class="description">Feinste weiße Schokolade mit seidigem Schmelz und sanfter Süße, die durch ihre harmonische Leichtigkeit besonders edel und verführerisch wirkt</p>
+          <p class="price">1,29 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-bitter-schokolade">
+          <img src="images/menu/Snacks/speisen/BitterSchokolade.png" alt="Tafel dunkle Bitterschokolade">
+          <h4 class="title" id="item-bitter-schokolade">Bitterschokolade</h4>
+          <p class="description">Aromatische Bitterschokolade mit hohem Kakaoanteil und edler Herbe, die durch ihre Tiefe ein ausdrucksstarkes, elegantes Geschmackserlebnis bietet</p>
+          <p class="price">1,29 €</p>
+        </article>
+      </section>
+
+      <h3 class="section-subtitle" data-category="veganeGetraenke">Vegane Getränke</h3>
+
+      <section class="img-container" data-category="veganeGetraenke" aria-label="Vegane Getränke Angebote"> 
+        <article class="img-item" tabindex="0" aria-labelledby="item-eis-karamell-schoko">
+          <img src="images/menu/Getraenke/Soda/EisKaramell&Schoko.png" alt="Eisgekühltes Getränk mit Karamell und Schokolade">
+           <h4 class="title" id="item-eis-karamell-schoko">Eis Karamell & Schoko</h4>
+           <p class="description">Cremiger Eiskaffee mit Karamell, Schokoladenstücken, Sahne und intensiver Süße, perfekt geeignet für warme Sommertage oder gemütliche Genussmomente zwischendurch</p>
+           <p class="price">4,49 €</p>
+         </article>
+          
+        <article class="img-item" tabindex="0" aria-labelledby="item-caramel-latte">
+          <img src="images/menu/Getraenke/Soda/CaramelLatte.png" alt="Karamell Latte mit Karamellsauce und Milchschaum">
+          <h4 class="title" id="item-caramel-latte">Karamell Latte</h4>
+          <p class="description">Aromatischer Latte mit reichhaltigem Karamell, sanftem Milchschaum und weichem Kaffeearoma, ideal für Genießer, die süße Kaffeemomente besonders schätzen möchten</p>
+          <p class="price">4,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-grosser-cappuccino">
+          <img src="images/menu/Getraenke/Soda/GroßerCappuccino.png" alt="Großer Cappuccino im hohen Glas mit Schichten">
+          <h4 class="title" id="item-grosser-cappuccino">Großer Cappuccino</h4>
+          <p class="description">Luftiger Cappuccino in geschichtetem Glas, kräftiger Espresso mit cremigem Milchschaum, perfekt geeignet für energiegeladene Pausen oder entspannte Momente</p>
+          <p class="price">4,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-cappuccino-vegan">
+          <img src="images/menu/Getraenke/Soda/Cappuccino.png" alt="Veganer Cappuccino mit Latte Art Muster">
+          <h4 class="title" id="item-cappuccino-vegan">Cappuccino</h4>
+          <p class="description">Pflanzlicher Cappuccino mit schönem Latte-Art-Muster, mildem Espresso und cremiger Pflanzenmilch, hervorragend geeignet für bewussten Genuss</p>
+          <p class="price">2,49 €</p>
+        </article>          
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-latte-macciato-vegan">
+          <img src="images/menu/Getraenke/Soda/LatteMacciato.png" alt="Geschichteter Latte Macchiato im hohen Glas">
+          <h4 class="title" id="item-latte-macciato-vegan">Latte Macchiato</h4>
+          <p class="description">Klassischer Latte Macchiato mit geschichteter Milch, aromatischem Espresso und feinem Milchschaum, perfekt für sanften Kaffeegenuss während entspannter Momente</p>
+          <p class="price">3,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-eiskaramel-kaffee">
+          <img src="images/menu/Getraenke/Soda/EiskaramelKaffee.png" alt="Eisgekühlter Karamellkaffee mit Eiswürfeln">
+          <h4 class="title" id="item-eiskaramel-kaffee">Eiskaramell Kaffee</h4>
+          <p class="description">Erfrischender Eiskaffee mit Karamell, kühlem Eis, cremiger Milch und angenehmer Süße, ideal für heiße Tage und schnelle Erfrischung unterwegs</p>
+          <p class="price">4,79 €</p>
+         </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-kiwi-smoothie">
+          <img src="images/menu/Getraenke/Soda/GrünerKiwiSmoothie.png" alt="Grüner Smoothie mit Kiwi und Spinat">
+          <h4 class="title" id="item-kiwi-smoothie">Kiwi Smoothie</h4>
+          <p class="description">Nährstoffreicher Kiwi Smoothie mit Spinat, süßen Früchten und Beeren, cremig gemixt, perfekt geeignet für gesundheitsbewusste Genießer und energiegeladene Tagesstarts</p>
+          <p class="price">5,19 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-beeren-smoothie">
+          <img src="images/menu/Getraenke/Soda/BeerenSmoothie.png" alt="Rosa Beeren Smoothie mit frischen Beeren">
+          <h4 class="title" id="item-beeren-smoothie">Beeren Smoothie</h4>
+          <p class="description">Cremiger Joghurt-Smoothie mit Himbeeren, Blaubeeren und sanfter Süße, herrlich fruchtig und perfekt geeignet für erfrischende Pausen oder leichte Snacks zwischendurch</p>
+          <p class="price">5,19 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-mango-beeren">
+          <img src="images/menu/Getraenke/Soda/MangoBeerenTraum.png" alt="Mangosmoothie mit Beerentopping">
+          <h4 class="title" id="item-mango-beeren">Mango Beeren Traum</h4>
+          <p class="description">Samtig-cremiger Mangosmoothie mit fruchtigem Püree, garniert mit frischen Himbeeren und Blaubeeren für sommerliche Erfrischung, zu jedem Frühstück perfekt</p>
+          <p class="price">5,19 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-mango-smoothie">
+          <img src="images/menu/Getraenke/Soda/MangoSmoothie.png" alt="Orangefarbener Mango-Ananas Smoothie">
+          <h4 class="title" id="item-mango-smoothie">Mango Smoothie</h4>
+          <p class="description">Leuchtend-orangener Smoothie aus reifer Mango und Ananas, angenehm süß, extra cremig, ideal gekühlt als exotischer Energieboost für unterwegs</p>
+          <p class="description">4,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-erdbeer-smoothie">
+          <img src="images/menu/Getraenke/Soda/ErdbeerSamtSmoothie.png" alt="Roter Erdbeersmoothie mit frischen Erdbeeren">
+          <h4 class="title" id="item-erdbeer-smoothie">Erdbeer Smoothie</h4>
+          <p class="description">Intensiv roter Erdbeersmoothie mit feiner Süße, voller Fruchtstücke, herrlich cremig und perfekt als frischer Sommergenuss jederzeit für dich</p>
+          <p class="price">4,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-detox-smoothie">
+          <img src="images/menu/Getraenke/Soda/GrünerDetoxSmoothie.png" alt="Grüner Detox Smoothie mit Spinat">
+          <h4 class="title" id="item-detox-smoothie">Grüner Detox Smoothie</h4>
+          <p class="description">Frischer grüner Smoothie aus Spinat und Mango, voller Vitamine, angenehm mild und cremig süß, ideal für einen leichten Detox-Start am Morgen</p>
+          <p class="price">5,19 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-limetten-limo">
+          <img src="images/menu/Getraenke/Soda/NeonLimettenLimo.png" alt="Neon-grüne Limettenlimonade mit Eiswürfeln">
+          <h4 class="title" id="item-limetten-limo">Neon Limetten Limo</h4>
+          <p class="description">Spritzige Limettenlimonade mit intensiv grünem Glow, viel Eis und frischem Zitrusaroma, perfekt eisgekühlt an heißen Tagen für draußen</p>
+          <p class="price">4,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-johannisbeer-limo">
+          <img src="images/menu/Getraenke/Soda/RoteJohannisbeerLimo.png" alt="Rote Johannisbeer Schorle mit Beeren">
+          <h4 class="title" id="item-johannisbeer-limo">Johannisbeer Limo</h4>
+          <p class="description">Leuchtend rote Johannisbeer-Schorle mit intensiver Fruchtnote, angenehm säuerlich, prickelnd erfrischend und perfekt als alkoholfreier Aperitif vor jedem Abendessen</p>
+          <p class="price">4,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-orangen-limo">
+          <img src="images/menu/Getraenke/Soda/OrangenLimo.png" alt="Orangenlimonade mit Orangenscheiben und Beeren">
+          <h4 class="title" id="item-orangen-limo">Orangen Limo</h4>
+          <p class="description">Erfrischende Orangenlimonade mit feinen Orangennoten, perfekt gekühlt und dekoriert mit roten Johannisbeeren, spritzig leicht und außerordentlich lecker</p>
+          <p class="price">4,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-mojito-mocktail">
+          <img src="images/menu/Getraenke/Soda/ZitrusMojitoMocktail.png" alt="Alkoholfreier Mojito mit Minze und Zitrusfrüchten">
+          <h4 class="title" id="item-mojito-mocktail">Zitrus Mojito Mocktail</h4>
+          <p class="description">Kühler Mocktail mit frischer Minze, Limetten- und Orangenscheiben, viel Eis, ausgefallener Kräuterlimonade, herrlich spritzig und ideal für laue Sommerabende draußen</p>
+          <p class="price">4,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-grapefruit-cocktail">
+          <img src="images/menu/Getraenke/Soda/Grapefruitcocktail.png" alt="Erfrischender Grapefruitcocktail mit Eis">
+          <h4 class="title" id="item-grapefruit-cocktail">Grapefruitcocktail</h4>
+          <p class="description">Erfrischender Grapefruitcocktail mit Eiswürfeln, intensiv fruchtigem Aroma, zarter Süße und leichter Säure, ideal für warme Sommertage draußen gedacht</p>
+          <p class="price">4,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-pink-lemonade">
+          <img src="images/menu/Getraenke/Soda/PinkLemonadeTwist.png" alt="Rosa Limonade mit Minze und Zitrone">
+          <h4 class="title" id="item-pink-lemonade">Pink Lemonade Twist</h4>
+          <p class="description">Spritzige rosa Zitronenlimonade mit Minze, Zitronenscheiben und viel Eis, angenehm leicht, sommerlich frisch und perfekt für entspannte Nachmittage draußen</p>
+          <p class="price">4,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-orangensaft">
+          <img src="images/menu/Getraenke/Soda/FrischerOrangensaft.png" alt="Frisch gepresster Orangensaft">
+          <h4 class="title" id="item-orangensaft">Frischer Orangensaft</h4>
+          <p class="description">Sonnengereifter Orangensaft mit natürlicher Süße, cremiger Konsistenz, voll Vitamin C, perfekt für Frühstück, Erfrischung oder sonnige Pausen</p>
+          <p class="price">1,99 €</p>
+        </article>
+      </section>
+        
+      <h3 class="section-subtitle" data-category="veganeSpeisen">Vegane Speisen</h3>
+
+      <section class="img-container" data-category="veganeSpeisen" aria-label="Vegane Speisen Angebote"> 
+        <article class="img-item" tabindex="0" aria-labelledby="item-croissant-vegan">
+          <img src="images/menu/Snacks/vegan/Croissant.png" alt="Veganes goldbraunes Croissant">
+          <h4 class="title" id="item-croissant-vegan">Croissant</h4>
+          <p class="description">Zartblättriges veganes Croissant mit goldbrauner Kruste und weicher Mitte, das durch seine luftige Textur köstlichen französischen Charme ausstrahlt</p>
+          <p class="price">0,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-schokocroissant-vegan">
+          <img src="images/menu/Snacks/vegan/Schokocroissant.png" alt="Veganes Schokocroissant mit dunkler Schokolade">
+          <h4 class="title" id="item-schokocroissant-vegan">Schokocroissant</h4>
+          <p class="description">Knuspriges veganes Schokocroissant mit zarter Blätterung und cremiger Pflanzen-Schokoladenfüllung, das durch seinen harmonischen Süße-Kontrast wunderbar verwöhnt</p>
+          <p class="price">1,29 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-mandelcroissant">
+          <img src="images/menu/Snacks/vegan/Mandelcroissant.png" alt="Mandelcroissant mit Mandelblättchen">
+          <h4 class="title" id="item-mandelcroissant">Mandelcroissant</h4>
+          <p class="description">Zartblättriges veganes Mandelcroissant mit goldener Blätterung und reichhaltiger Mandelkruste, das besonders edel und einladend wirkt</p>
+          <p class="price">1,29 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-schokobroetchen-vegan">
+          <img src="images/menu/Snacks/vegan/Schokobroetchen.png" alt="Veganes Schokobrötchen mit Schokostückchen">
+          <h4 class="title" id="item-schokobroetchen-vegan">Schokobrötchen</h4>
+          <p class="description">Süßes Hefebrötchen mit reichlichen Schokoladentropfen, dessen lockere Struktur und feiner Geschmack jeden Bissen besonders wohltuend erscheinen lassen</p>
+          <p class="price">0,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-rosinenbroetchen-vegan">
+          <img src="images/menu/Snacks/vegan/Rosinenbroetchen.png" alt="Veganes Rosinenbrötchen mit Sultaninen">
+          <h4 class="title" id="item-rosinenbroetchen-vegan">Rosinenbrötchen</h4>
+          <p class="description">Süßes Brötchen aus lockerem Hefeteig mit reichlich saftigen Sultaninen, das durch seine zarte Struktur und ausgewogene Süße wunderbar begeistert</p>
+          <p class="price">0,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-puddingteilchen-vegan">
+          <img src="images/menu/Snacks/vegan/Puddingteilchen.png" alt="Veganes Puddingteilchen mit pflanzlicher Füllung">
+          <h4 class="title" id="item-puddingteilchen-vegan">Puddingteilchen</h4>
+          <p class="description">Süßes Plundergebäck in Brezelform mit cremiger Puddingfüllung und zarter Zuckerglasur für einen unwiderstehlich liebevollen Genussmoment</p>
+          <p class="price">2,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-hefehoernchen-vegan">
+          <img src="images/menu/Snacks/vegan/Hefehoernchen.png" alt="Veganes Hefehörnchen">
+          <h4 class="title" id="item-hefehoernchen-vegan">Hefehörnchen</h4>
+          <p class="description">Als köstlicher Genuss für zwischendurch bietet dieses süße Hefegebäck die perfekte Grundlage für einen Aufstrich und ist damit ein genussvoller Begleiter zum Frühstück</p>
+          <p class="price">0,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-fladen-kentucky-vegan">
+          <img src="images/menu/Snacks/vegan/VeganerFladenKentucky.png" alt="Veganer Fladen mit pflanzlichem Hähnchen und Gemüse">
+          <h4 class="title" id="item-fladen-kentucky-vegan">Fladen Kentucky</h4>
+          <p class="description">Lockeres Fladenbrot mit cremiger veganer Currycreme, pflanzlichen Hähnchenstreifen, Eisbergsalat, Tomaten und veganem Ei für großen Genuss unterwegs</p>
+          <p class="price">5,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-fladen-tonno-vegan">
+          <img src="images/menu/Snacks/vegan/VeganerFladenTonno.png" alt="Veganer Fladen mit pflanzlichem Thunfisch">
+          <h4 class="title" id="item-fladen-tonno-vegan">Fladen Tonno</h4>
+          <p class="description">Lockeres Fladenbrot mit würziger veganer Thunfischalternative, Zwiebelringen, Paprika und frischem Salat für herzhaften pflanzlichen Genuss, täglich unterwegs</p>
+          <p class="price">6,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-schokokekse">
+          <img src="images/menu/Snacks/vegan/Schokokekse.png" alt="Vegane Schokokekse mit Schokoladenstückchen">
+          <h4 class="title" id="item-schokokekse">Schokokekse</h4>
+          <p class="description">Knusprige vegane Schokokekse mit pflanzlicher Schokolade bieten Ihnen reinen süßen Genuss ganz ohne Milch und überzeugen dabei jederzeit durch ihren vollen Geschmack</p>
+          <p class="price">1,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-kekse">
+          <img src="images/menu/Snacks/vegan/Kekse.png" alt="Vegane klassische Kekse">
+          <h4 class="title" id="item-kekse">Kekse</h4>
+          <p class="description">Klassische vegane Kekse aus pflanzlichen Zutaten bieten knusprigen Genuss für jeden Anlass und überzeugen geschmacklich stets zuverlässig</p>
+          <p class="price">1,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-brownies">
+          <img src="images/menu/Snacks/vegan/Brownies.png" alt="Saftige vegane Brownies">
+          <h4 class="title" id="item-brownies">Brownies</h4>
+          <p class="description">Saftige vegane Brownies mit intensiver Schokolade bieten pflanzlichen Genuss und schmecken wunderbar reichhaltig, perfekt für jeden Anlass</p>
+          <p class="price">2,49 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-popcorn">
+          <img src="images/menu/Snacks/vegan/Popcorn.png" alt="Veganes Popcorn in Schale">
+          <h4 class="title" id="item-popcorn">Popcorn</h4>
+          <p class="description">Luftiges veganes Popcorn bietet süßen oder salzigen Genuss ganz pflanzlich und eignet sich hervorragend für entspannte Abende zuhause</p>
+          <p class="price">1,99 €</p>
+         </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-chips">
+          <img src="images/menu/Snacks/vegan/Chips.png" alt="Vegane Kartoffelchips">
+          <h4 class="title" id="item-chips">Chips</h4>
+          <p class="description">Knusprige vegane Chips bieten würzigen pflanzlichen Snackgenuss und schmecken jederzeit hervorragend als unkomplizierte herzhafte Begleitung überall</p>
+          <p class="price">1,29 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-pringles">
+          <img src="images/menu/Snacks/vegan/Pringles.png" alt="Vegane Pringles Stapelchips">
+          <h4 class="title" id="item-pringles">Pringles</h4>
+          <p class="description">Vegane Pringles bieten knusprigen pflanzlichen Snackgenuss ohne Milchbestandteile und überzeugen durch kräftige Würze sowie angenehme Textur jederzeit</p>
+          <p class="price">1,99 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-studentenfutter">
+          <img src="images/menu/Snacks/vegan/Studentenfutter.png" alt="Nussmischung mit Trockenfrüchten">
+          <h4 class="title" id="item-studentenfutter">Studentenfutter</h4>
+           <p class="description">Veganes Studentenfutter kombiniert Nüsse, Kerne und Trockenfrüchte zu energiereichem pflanzlichen Snackgenuss und eignet sich hervorragend für unterwegs</p>
+           <p class="price">2,99 €</p>
+         </article>
+      </section>   
+
+      <h3 class="section-subtitle" data-category="weihnachten">Weihnachtsspecial</h3>
+
+      <section class="img-container" data-category="weihnachten" aria-label="Weihnachtsspecial Angebote">
+        <article class="img-item" tabindex="0" aria-labelledby="item-macchiato-weihnacht">
+          <img src="images/menu/Getraenke/Kaffee/wSpecial/01_Macchiato.png" alt="Weihnachtlicher Macchiato mit Zuckerstange">
+          <h4 class="title" id="item-macchiato-weihnacht">Macchiato</h4>
+          <p class="description">Cremiger Weihnachts-Macchiato mit zartem Milchschaum, feiner Espressonote und dekorativer Zuckerstange, perfekt für gemütliche Wintertage</p>
+          <p class="price">3,20 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-latte-weihnacht">
+          <img src="images/menu/Getraenke/Kaffee/wSpecial/02_Latte.png" alt="Weihnachtlicher Latte mit festlicher Dekoration">
+          <h4 class="title" id="item-latte-weihnacht">Latte</h4>
+          <p class="description">Warmer Winter-Latte mit mildem Espresso, cremiger Milch und weihnachtlicher Verzierung, ideal für entspannte Genussmomente in der kalten Jahreszeit geeignet</p>
+          <p class="price">3,90 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-cappuccino-weihnacht">
+          <img src="images/menu/Getraenke/Kaffee/wSpecial/03_Cappuccino.png" alt="Weihnachtscappuccino mit festlichem Topping">
+          <h4 class="title" id="item-cappuccino-weihnacht">Cappuccino</h4>
+          <p class="description">Aromatischer Cappuccino mit cremigem Milchschaum, leichter Espressostärke und festlicher Deko, perfekt geeignet für gemütliche Pausen während winterlicher Tage</p>
+          <p class="price">3,50 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-irischer-kaffee">
+          <img src="images/menu/Getraenke/Kaffee/wSpecial/04_Irischer_Kaffee.png" alt="Irischer Kaffee mit Sahnehaube und Whiskey">
+          <h4 class="title" id="item-irischer-kaffee">Irischer Kaffee</h4>
+          <p class="description">Starker Kaffee mit Irisch-Whiskey, sahniger Haube und weihnachtlicher Verzierung, ideal für kalte Abende und besondere festliche Genussmomente geeignet</p>
+          <p class="price">6,50 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-frappe-weihnacht">
+          <img src="images/menu/Getraenke/Kaffee/wSpecial/05_Frappe.png" alt="Weihnachtlicher Frappé mit Sahne und Deko">
+          <h4 class="title" id="item-frappe-weihnacht">Frappé mit Sahne</h4>
+          <p class="description">Kalt geschlagener Weihnachts-Frappé mit cremiger Sahne, feiner Espressonote und festlicher Deko, perfekt geeignet für eine süße Wintererfrischung</p>
+          <p class="price">4,50 €</p>
+         </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-espresso-weihnacht">
+          <img src="images/menu/Getraenke/Kaffee/wSpecial/07_Espresso.png" alt="Weihnachtlicher Espresso mit Zuckerstange">
+          <h4 class="title" id="item-espresso-weihnacht">Espresso</h4>
+          <p class="description">Kräftiger Espresso mit weihnachtlicher Verzierung, feinem Aroma und süßer Zuckerstange, perfekt für kleine Genussmomente während festlicher Wintertage</p>
+          <p class="price">1,90 €</p>
+        </article>
+
+        <article class="img-item" tabindex="0" aria-labelledby="item-doppio-weihnacht">
+          <img src="images/menu/Getraenke/Kaffee/wSpecial/08_Doppio.png" alt="Doppelter Weihnachtsespresso mit festlicher Schleife">
+          <h4 class="title" id="item-doppio-weihnacht">Doppio Espresso</h4>
+          <p class="description">Intensiver doppelter Espresso mit festlicher Schleife, starkem Aroma und winterlicher Präsentation, ideal geeignet für Kaffeeliebhaber an kalten Tagen</p>
+          <p class="price">2,90 €</p>
+        </article>                  
+      </section>
+    </div>      
   </main>
+
   <footer>
     <nav class="nav-footer">
       <a href="contact.html" class="feature-link">Kontakt</a>
