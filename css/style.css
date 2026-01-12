@@ -182,7 +182,7 @@ nav {
   color: var(--line-color);
 }
 
-.feature-link {
+.page-home .feature-link {
   display: inline-block;
   color: var(--line-color);
   text-decoration: none;
@@ -194,16 +194,16 @@ nav {
   transition: all 0.3s ease;
 }
 
-.feature-link:visited {
+.page-home .feature-link:visited {
   color: var(--line-color);
 }
 
-.feature-link:hover {
+.page-home .feature-link:hover {
   background-color: var(--accent-color);
   color: var(--line-color);
 }
 
-.feature-link:focus-visible {
+.page-home .feature-link:focus-visible {
   background-color: var(--accent-color);
   color: var(--line-color);
   outline: 3px solid color-mix(in srgb, var(--line-color), transparent 35%);

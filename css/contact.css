@@ -69,6 +69,8 @@ h3 {
 
 .contact-actions .feature-link {
   background-color: var(--color2);
+  font-size: large;
+  padding: 8px 90px;
 }
 
 
@@ -193,10 +195,11 @@ h3 {
   font-weight: bold;
   box-shadow: 0 4px 12px rgba(0,0,0,0.45);
   background-color: var(--color2);
-  
+  background-color: var(--color2);
+  border: 2px solid var(--link-color)
 }
 
-.contact-form .form-actions{
+.contact-form .form-action{
   text-align: center;
 }
 
@@ -239,8 +242,9 @@ h3 {
   display: block;
 }
 
-#anfahrt .feature-link {
+.bg .feature-link {
   margin-top: 16px;
+  background-color: var(--color2);
 }
 
 
@@ -263,5 +267,16 @@ h3 {
 
   .contact-actions {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form{
+    padding: 0;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    font-size: 12px;
   }
 }
