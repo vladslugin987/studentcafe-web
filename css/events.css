@@ -42,7 +42,7 @@
 
 /* Karte */
 .event-card {
-  background-color: var(--main-color);
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
@@ -88,6 +88,7 @@
 
 .events-page .feature-link {
   margin-bottom: 0.75rem;
+  background-color: var(--color2);
 }
 
 .event-card .feature-link {

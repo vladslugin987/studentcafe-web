@@ -224,7 +224,7 @@ footer p {
   margin: 5px 0;
 }
 
-footer .feature-link {
+.page-home footer .feature-link {
   display: grid;
   color: var(--background-color);
   border: 2px solid var(--background-color);
