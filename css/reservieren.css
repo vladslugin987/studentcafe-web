@@ -41,7 +41,7 @@
 }
 
 /* Form */
-#reservieren form {
+/* #reservieren form {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@
 #reservieren textarea {
   min-height: 120px;
   resize: vertical;
-}
+} */
 
 #reservieren input[type='submit'].feature-link,
 #reservieren input[type='reset'].feature-link {
@@ -85,6 +85,96 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 4px;
+}
+
+.reservieren-form fieldset {
+  border: none;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 10px;
+}
+
+.reservieren-form select {
+  display: block;
+  width: 30%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-family: var(--font-main);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
+
+.reservieren-form select:hover,
+.reservieren-form select:focus-visible{
+  border: 2px solid var(--link-hover-color);
+  outline: none;
+}
+
+.reservieren-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.reservieren-form label{
+  color: var(--title-color);
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.reservieren-form input,
+.reservieren-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-main);
+  resize: vertical;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+  color: var(--text-color);
+  cursor: text;
+}
+
+.reservieren-form input:hover,
+.reservieren-form textarea:hover,
+.reservieren-form input:focus,
+.reservieren-form textarea:focus {
+  border: 3px solid var(--link-hover-color);
+  outline: none;
+}
+
+.reservieren-form .button {
+  width: 98%;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+  background-color: var(--color2);
+  
+}
+
+.reservieren-form .form-actions{
+  text-align: center;
+}
+
+.reservieren-form .button:hover{
+  background: var(--link-hover-color);
+  color: white;
+}
+
+.info{
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {

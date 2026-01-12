@@ -11,6 +11,10 @@ main section {
   line-height: 1.6;
 }
 
+#introduction{
+  text-align: center;
+}
+
 /* Allgemeine Layout-Anpassungen */
 h1 {
   text-align: center;

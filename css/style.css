@@ -79,6 +79,7 @@ body.page-home h1 {
 
 body.page-home p{
   font-family: var(--font-text);
+  line-height: 1.5;
 }
 
 /*LOGO*/
