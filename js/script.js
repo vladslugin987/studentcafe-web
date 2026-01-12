@@ -1,4 +1,5 @@
-//hamburgermenu
+//Hamburgermenu
+
 document.getElementById('mainnav').addEventListener('click', (e) => {
   document.getElementById('mainnav').classList.toggle('active')
 
