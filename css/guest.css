@@ -4,70 +4,88 @@
   width: 100%;
   max-width: 1100px;
   padding: 30px;
-  margin: 50px auto;
+  margin: 30px auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.guestbook-title {
-  font-size: 26px;
-  font-weight: bold;
-  color: var(--title-color);
-  margin-bottom: 20px;
-  text-align: center;
+.guestbook-form select {
+  display: block;
+  width: 30%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-family: var(--font-main);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
+
+.guestbook-form select:hover,
+.guestbook-form select:focus-visible{
+  border: 2px solid var(--link-hover-color);
+  outline: none;
 }
 
 .guestbook-form {
   display: flex;
   flex-direction: column;
+  padding: 20px;
   gap: 15px;
-  margin-bottom: 40px;
 }
 
-.guestbook-form input,.guestbook-form textarea {
+.guestbook-form fieldset {
+  border: none;
+}
+
+.guestbook-form label{
+  color: var(--title-color);
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
   width: 100%;
   padding: 12px;
-  border: 2px solid var(--accent-color);
+  border: none;
   border-radius: 8px;
   font-family: var(--font-main);
-  background: #fff;
-  resize: none;
+  resize: vertical;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+  color: var(--text-color);
+  cursor: text;
+}
+
+.guestbook-form input:hover,
+.guestbook-form textarea:hover,
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+  border: 3px solid var(--link-hover-color);
+  outline: none;
+}
+
+.form-action{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .guestbook-form button {
-  background: var(--accent-color);
+  width: 100%;
   border: none;
   padding: 12px 18px;
   border-radius: 8px;
-  font-size: 16px;
   font-weight: bold;
-  color: var(--text-color);
-  cursor: pointer;
-  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
 }
 
-.guestbook-form button:hover {
+.guestbook-form button:hover{
   background: var(--link-hover-color);
   color: white;
 }
 
-.entry {
-  background: #fff;
-  border-left: 6px solid var(--accent-color);
-  padding: 18px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.entry-name {
-  font-weight: bold;
-  color: var(--title-color);
-  margin-bottom: 5px;
-}
-
-.entry-date {
-  font-size: 12px;
-  color: #555;
-  margin-bottom: 10px;
+.info{
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
 }
