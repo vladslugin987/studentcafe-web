@@ -73,35 +73,49 @@
     <section id="reservieren">
       <h2>Tisch reservieren</h2>
 
-      <form action="index.html" onsubmit="return check(this)" onreset="return confirm('Mit Ok Formulardaten löschen')">
-        <h3>Wer?</h3>
+      <form class="reservieren-form" name="myForm" action="index.html" onsubmit="return validateFormReservieren()"
+        onreset="return confirm('Mit Ok Formulardaten löschen')">
 
-        <label for="namekontakt">Name</label><br>
-        <input type="text" id="name" name="textfeld" placeholder="Auf welchen Namen möchtest reservieren?"
-          class="feld" />
+        <h3>Wer?*</h3>
+        <fieldset>
+          <label for="namekontakt">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Auf welchen Namen möchtest reservieren?"
+            class="feld" />
+        </fieldset>
 
-        <label for="namekontakt">Personenanzahl</label><br>
-        <input type="number" id="personenanzahl" name="textfeld" min="0" max="20"
-          placeholder="Für wie viele Personen möchtest du reservieren?" class="feld" />
+        <fieldset>
+          <label for="namekontakt">Personenanzahl</label><br>
+          <input type="number" id="personenanzahl" name="personen" min="1" max="20"
+            placeholder="Für wie viele Personen möchtest du reservieren? (max. 20 Personen)" class="feld" />
+        </fieldset>
 
-        <h3>Wann?</h3>
-        <label for="namekontakt">Für welches Datum und welche Uhrzeit möchtest du reservieren</label><br>
-        <input type="datetime-local" id="zeitraum" name="textfeld" class="feld" />
+        <h3>Wann?*</h3>
+        <fieldset>
+
+          <label for="namekontakt">Für welches Datum und welche Uhrzeit möchtest du reservieren</label><br>
+          <input type="datetime-local" id="zeitraum" name="date" class="feld" />
+        </fieldset>
 
         <h3>Kontakt</h3>
-        <input type="email" id="email" name="textfeld" class="feld" placeholder="Email" />
-
-        <label for="namekontakt">Telefonnummer</label><br>
-        <input type="tel" id="phone" name="textfeld" class="feld" placeholder="Bitte gebe eine Telefonnummer an" />
-
-        <label for="namekontakt">Anmerkungen</label><br>
-        <textarea name="tipp" placeholder="Hast du noch Anmerkungen für deine Reservierung bei uns?"></textarea>
-
+        <fieldset>
+          <label for="namekontakt">Email*</label><br>
+          <input type="email" id="email" name="mail" class="feld" placeholder="Email" />
+        </fieldset>
+        <fieldset>
+          <label for="namekontakt">Telefonnummer*</label><br>
+          <input type="tel" id="phone" name="phone" class="feld" placeholder="Bitte gebe eine Telefonnummer an" />
+        </fieldset>
+        <fieldset>
+          <label for="namekontakt">Anmerkungen</label><br>
+          <textarea name="tipp" rows="9"
+            placeholder="Hast du noch Anmerkungen für deine Reservierung bei uns?"></textarea>
+        </fieldset>
         <div class="form-actions">
-          <input type="submit" class="feature-link" value="RESERVIEREN" />
-          <input type="reset" class="feature-link" value="zurücksetzen" />
+          <input type="submit" class="button" value="RESERVIEREN" />
+          <input type="reset" class="button" value="zurücksetzen" />
         </div>
       </form>
+      <p class="info">Felder, die mit * gekennzeichnet sind, sind Pflichtfelder.</p>
     </section>
   </main>
 
