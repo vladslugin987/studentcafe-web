@@ -16,10 +16,10 @@
   <link rel="stylesheet" href="css/guest.css">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 
   <title>Café für Studierende</title>
 </head>
@@ -27,7 +27,7 @@
 <body class="page-home">
   <header id="header">
     <div class="top-right">
-      <a href="reservieren.html" class="feature-link" id="reservieren-link" tabindex="0">RESERVIEREN</a>
+      <a href="reservieren.html" class="feature-link" id="reservieren-link">RESERVIEREN</a>
 
       <span>
         Öffnungszeiten: <br>
@@ -49,74 +49,94 @@
         <div></div>
       </div>
       <div id="nav">
-        <a href="index.html" id="home-nav" class="nav-item" tabindex="0">HOME</a>
-        <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0">SPEISEKARTE</a>
-        <a href="events.html" id="events-nav" class="nav-item" tabindex="0">VERANSTALTUNGEN</a>
-        <a href="about.html" id="about-nav" class="nav-item" tabindex="0">ÜBER UNS</a>
-        <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0">KONTAKT</a>
-        <a href="guest.html" id="guest-nav" class="nav-item" tabindex="0">GÄSTEBUCH</a>
+        <a href="index.html" id="home-nav" class="nav-item">HOME</a>
+        <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
+        <a href="events.html" id="events-nav" class="nav-item">VERANSTALTUNGEN</a>
+        <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
+        <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
+        <a href="forum.php" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
       </div>
     </nav>
   </header>
 
-  <main>
+    <main>
+
+    <h1 class="guestbook-title">GÄSTEBUCHEINTRAG</h1>
 
     <div class="guestbook-container">
-      <h2 class="guestbook-title">Gästebuch</h2>
 
-      <form class="guestbook-form">
-        <input type="text" placeholder="Dein Name" required>
-        <textarea id="message" rows="4" placeholder="Deine Nachricht" required></textarea>
-        <button type="submit">Eintrag hinzufügen</button>
-      </form>
+      <!-- action bedeutet: Sende die Formulardaten an diese Adresse z.B. ziel.php.-->
+      <!-- form steht für Formular-->
+      <form class="guestbook-form" action="forum.php" method="post">
 
-      <div id="entries">
-        <div class="entry">
-          <div class="entry-name">Frauke</div>
-          <div class="entry-date">20. September 2025</div>
-          <div>
-            <p>Hallo,<br><br>
-              mein Name ist Laura. Ich beginne im Oktober mein Studium. Da ich erst sehr kurzfristig entschieden habe
-              nach
-              Trier zu gehen, ist es sehr schwer auf den letzten Drücker eine Wohnung zu finden.
-              Ich suche jetzt schon seit 2 Wochen und bin leider erfolglos. Ich würde mich über Hilfe jederzeit freuen.
-              Ich brauche nur eine kleine Unterkunft die nicht allzu teuer ist. Ich bin 18 Jahre und Nichtraucherin.<br>
-              Ich würde mich über eine Antwort freuen.<br><br>
-              LG Laura</p>
-          </div>
+        <fieldset>
+          <label for="name">Name*</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name"  
+            placeholder="Beispiel: Max Mustermann" 
+            required>
+        </fieldset>
+
+        <!-- name=Name Der eingegebene Wert wird unter dem Schlüssel Name verschickt. -->
+        <!-- Die id ist die Kennung. Wenn ich in css was gestalten möchte, brauche ich diese. #Name{} 
+        Oder ich kann damit auch auf JavaScript zugreifen mit document.getElementById("Name").value; -->
+
+        <fieldset>
+          <label for="email">E-Mail</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Beispiel: mustermannM@hochschule-trier.de">
+        </fieldset>
+
+        <fieldset>
+          <label for="kategorie">Kategorie*</label>
+          <select id="kategorie" name="kategorie" required>
+            <option value="" selected disabled>Bitte auswählen</option>
+            <option value="Bewertung">Bewertung</option>
+            <option value="Suche">Suche</option>
+            <option value="Biete">Biete / Verkaufe</option>
+          </select>
+        </fieldset>
+
+
+        <fieldset>
+          <label for="inhalt">Inhalt*</label>
+          <textarea 
+            id="inhalt" 
+            name="inhalt" 
+            rows="9" 
+            placeholder="Schreib uns gerne Feedback, Lob oder Anregungen. Wir freuen uns darauf." 
+            required></textarea>
+        </fieldset>
+
+        <div class="form-action">
+          <button type="submit">Hinzufügen</button>
         </div>
 
-        <div class="entry">
-          <div class="entry-name">Maria</div>
-          <div class="entry-date">21. September 2025</div>
-          <div>
-            <p>Hallo,<br><br>
-              mein Freund und ich beginnen am 1. Oktober ein Studium in Weimar an und suchen dringend eine Wohnung.
-              Leider waren wir bisher noch nicht erfolgreich und würden uns deshalb umso mehr freuen, wenn uns jemand
-              weiterhelfen könnte. Die 2-3 Raum-Wohnung sollte zwischen 45 und 60 m2 groß sein. Vielen Dank schon im
-              Voraus.<br><br>
-              Liebe Grüße<br>
-              Sebastian und Maria</p>
-          </div>
-        </div>
-      </div>
+      </form>   
+      <p class="info">Felder, die mit * gekennzeichnet sind, sind Pflichtfelder.</p>
     </div>
   </main>
+
   <footer>
-    <nav class="nav-footer">
-      <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
-      <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
-      <a href="datenschutz.html" class="feature-link" tabindex="0">Datenschutzerklärung</a>
-    </nav>
-    <div class="divider"></div>
-    <p>Projektarbeit in "Grundlagen der Web-Technologien" </p>
-    <p>Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin <br>Wintersemester 2025/2026 </p>
-    <p>Fachbereich: Informatik - Hochschule Trier</p>
+        <nav class="nav-footer">
+            <a href="contact.html" class="feature-link">Kontakt</a>
+            <a href="impressum.html" class="feature-link">Impressum</a>
+            <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
+        </nav>
+        <div class="divider"></div>
+        <p>Projektarbeit in "Grundlagen der Web-Technologien" </p>
+        <p>Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin <br>Wintersemester 2025/2026 </p>
+        <p>Fachbereich: Informatik - Hochschule Trier</p>
 
-    <img src="images/logo/logo_mittext.png" class="logo" alt="">
+        <img src="images/logo/logo_mittext.png" class="logo" alt="">
 
-  </footer>
-  <script src="js/script.js"></script>
+    </footer>
+     <script src="js/script.js"></script>
 </body>
 
 </html>
