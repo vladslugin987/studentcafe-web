@@ -98,6 +98,12 @@
   outline-offset: 2px;
 }
 
+.delete-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
 .postbody {
   padding: 10px;
   background: var(--secondary-color);
