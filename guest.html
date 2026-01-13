@@ -65,18 +65,12 @@
 
     <div class="guestbook-container">
 
-      <!-- action bedeutet: Sende die Formulardaten an diese Adresse z.B. ziel.php.-->
-      <!-- form steht für Formular-->
       <form class="guestbook-form" action="forum.php" method="post">
 
         <fieldset>
           <label for="name">Name*</label>
           <input type="text" id="name" name="name" placeholder="Beispiel: Max Mustermann" required>
         </fieldset>
-
-        <!-- name=Name Der eingegebene Wert wird unter dem Schlüssel Name verschickt. -->
-        <!-- Die id ist die Kennung. Wenn ich in css was gestalten möchte, brauche ich diese. #Name{} 
-        Oder ich kann damit auch auf JavaScript zugreifen mit document.getElementById("Name").value; -->
 
         <fieldset>
           <label for="email">E-Mail</label>
