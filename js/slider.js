@@ -30,20 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     timerId = setInterval(goNext, 5000);
   };
 
-  // Some browsers are picky about key events on non-interactive elements like <img>.
-  // We handle keyboard activation both on the thumbnail itself and via event delegation on the container.
-  const isActivateKey = (e) =>
-    e.key === 'Enter' ||
-    e.key === ' ' ||
-    e.key === 'Spacebar' ||
-    e.code === 'Enter' ||
-    e.code === 'Space' ||
-    e.code === 'NumpadEnter';
-
   thumbnails.forEach((thumb, idx) => {
     if (!thumb.hasAttribute('tabindex')) thumb.setAttribute('tabindex', '0');
     if (!thumb.hasAttribute('role')) thumb.setAttribute('role', 'button');
-    thumb.dataset.sliderIndex = String(idx);
 
     thumb.addEventListener('click', () => {
       setActive(idx);
@@ -51,34 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     thumb.addEventListener('keydown', (e) => {
-      if (isActivateKey(e)) {
+      if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         setActive(idx);
         restartTimer();
       }
     });
-
-    thumb.addEventListener('keyup', (e) => {
-      if (isActivateKey(e)) {
-        e.preventDefault();
-        setActive(idx);
-        restartTimer();
-      }
-    });
-  });
-
-  container.addEventListener('keydown', (e) => {
-    if (!isActivateKey(e)) return;
-    const target = e.target;
-    if (!(target instanceof Element)) return;
-    const thumb = target.closest('.thumbnails img');
-    if (!thumb) return;
-    const idxStr = thumb.getAttribute('data-slider-index');
-    const idx = idxStr ? Number(idxStr) : NaN;
-    if (!Number.isFinite(idx)) return;
-    e.preventDefault();
-    setActive(idx);
-    restartTimer();
   });
 
   if (prevBtn) {
