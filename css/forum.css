@@ -6,7 +6,7 @@
   padding: 30px;
   margin: 30px auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .guestbook-subtitle {
@@ -54,10 +54,51 @@
   background: var(--title-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-left: 6px solid var(--accent-color);
+}
+
+.posthead-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.posthead-right {
+  display: flex;
+  align-items: center;
+}
+
+.delete-form {
+  margin: 0;
+}
+
+.delete-btn {
+  background: transparent;
+  border: 0;
+  padding: 2px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  border-radius: 6px;
+}
+
+.delete-btn:hover {
+  color: var(--accent-color);
+}
+
+.delete-btn:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.delete-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .postbody {
@@ -106,39 +147,35 @@
 /*Kleine Tablets und große Smartphones*/
 /*====================================*/
 @media (max-width: 768px) {
-  body.page-home .forum-topbar{
+  body.page-home .forum-topbar {
     font-size: 13px;
   }
 }
-
 
 /*====================*/
 /*        Handy       */
 /*====================*/
 
 @media (max-width: 600px) {
-
-  body.page-home .forum-topbar{
+  body.page-home .forum-topbar {
     font-size: 13px;
   }
 
-  body.page-home .posthead{
+  body.page-home .posthead {
     font-size: 10px;
   }
 }
-
 
 /*=====================*/
 /*    Kleines Handy    */
 /*=====================*/
 
 @media (max-width: 480px) {
-
-  body.page-home .forum-topbar{
+  body.page-home .forum-topbar {
     font-size: 10px;
   }
 
-  body.page-home .posthead{
+  body.page-home .posthead {
     font-size: 10px;
   }
 }
