@@ -79,26 +79,23 @@
 
 .delete-btn {
   background: transparent;
-  border: 0;
-  padding: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  padding: 4px 8px;
   cursor: pointer;
   color: var(--secondary-color);
   border-radius: 6px;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .delete-btn:hover {
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .delete-btn:focus-visible {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
-}
-
-.delete-icon {
-  width: 18px;
-  height: 18px;
-  display: block;
 }
 
 .postbody {
