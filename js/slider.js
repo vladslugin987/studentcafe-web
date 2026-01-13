@@ -31,9 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   thumbnails.forEach((thumb, idx) => {
+    if (!thumb.hasAttribute('tabindex')) thumb.setAttribute('tabindex', '0');
+    if (!thumb.hasAttribute('role')) thumb.setAttribute('role', 'button');
+
     thumb.addEventListener('click', () => {
       setActive(idx);
       restartTimer();
+    });
+
+    thumb.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setActive(idx);
+        restartTimer();
+      }
     });
   });
 
