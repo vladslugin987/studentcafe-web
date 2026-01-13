@@ -1,318 +1,230 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
 
-    <title>Café für Studierende</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="favicon_io/site.webmanifest" />
 
-  <body class="page-home">
-    <header id="header">
-      <div class="top-right">
-        <a
-          href="reservieren.html"
-          class="feature-link"
-          id="reservieren-link"
-          tabindex="0"
-          >RESERVIEREN</a
-        >
+  <title>Café für Studierende</title>
+</head>
 
-        <span>
-          Öffnungszeiten: <br />
-          Mo. bis Sa. 10 - 20 Uhr
-        </span>
-      </div>
+<body class="page-home">
+  <header id="header">
+    <div class="top-right">
+      <a href="reservieren.html" class="feature-link" id="reservieren-link" tabindex="0">RESERVIEREN</a>
 
-      <div class="logo-section">
-        <div class="logo-container">
-          <div class="logo">
-            <img
-              src="images/logo/logo_mittext.png"
-              id="logo-img"
-              alt="Logo des Studierendecafé Studierbar"
-            />
-          </div>
+      <span>
+        Öffnungszeiten: <br />
+        Mo. bis Sa. 10 - 20 Uhr
+      </span>
+    </div>
+
+    <div class="logo-section">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="images/logo/logo_mittext.png" id="logo-img" alt="Logo des Studierendecafé StudierBar">
         </div>
       </div>
+    </div>
 
-      <nav id="mainnav">
-        <div id="menutoggle">
-          <div></div>
+    <nav id="mainnav">
+      <div id="menutoggle">
+        <div></div>
+      </div>
+      <div id="nav">
+        <a href="index.html" id="home-nav" class="nav-item" tabindex="0">HOME</a>
+        <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0">SPEISEKARTE</a>
+        <a href="events.html" id="events-nav" class="nav-item" tabindex="0">VERANSTALTUNGEN</a>
+        <a href="about.html" id="about-nav" class="nav-item" tabindex="0">ÜBER UNS</a>
+        <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0">KONTAKT</a>
+        <a href="forum.php" id="guest-nav" class="nav-item" tabindex="0">GÄSTEBUCH</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="home-page">
+    <section class="home-card" id="welcome">
+      <h2>
+        Herzlich willkommen im „STUDIERBAR“ - das Studentencafé der Hochschule
+        Trier!
+      </h2>
+      <p>
+        Du findest uns <b>Montags</b> bis <b>Samstags</b> von
+        <b>10 bis 20 Uhr</b> im <b>Gebäude Y</b> auf dem Campus der Hochschule
+        Trier.
+      </p>
+    </section>
+
+    <!-- <div class="divider"></div> -->
+
+    <section class="home-card" id="impressions">
+      <!-- <h2>Impressionen</h2> -->
+      <div class="slider-container" aria-label="Bilder-Slider">
+        <div class="main-image">
+          <button class="slider-arrow prev" type="button" aria-label="Zurück">
+            &#10094;
+          </button>
+          <img src="images/slider-2.jpg"
+            alt="Gemütliches Studentencafé mit vielen Studierenden, die auf Sofas sitzen und an Laptops arbeiten, während ein Barista die Gäste bedient." />
+          <button class="slider-arrow next" type="button" aria-label="Weiter">
+            &#10095;
+          </button>
         </div>
-        <div id="nav">
-          <a href="index.html" id="home-nav" class="nav-item" tabindex="0">HOME</a>
-          <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0">SPEISEKARTE</a>
-          <a href="events.html" id="events-nav" class="nav-item" tabindex="0">VERANSTALTUNGEN</a>
-          <a href="about.html" id="about-nav" class="nav-item" tabindex="0">ÜBER UNS</a>
-          <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0">KONTAKT</a>
-          <a href="forum.php" id="guest-nav" class="nav-item" tabindex="0">GÄSTEBUCH</a>
+        <div class="thumbnails" aria-label="Vorschaubilder">
+          <img src="images/slider-2.jpg"
+            alt="Gemütliches Studentencafé mit vielen Studierenden, die auf Sofas sitzen und an Laptops arbeiten, während ein Barista die Gäste bedient."
+            role="button" tabindex="0" />
+          <img src="images/slider-3.jpg"
+            alt="Nahaufnahme eines Baristas, der Kaffee an der Espressomaschine zubereitet; im Hintergrund sitzen Studierende auf Sofas und lernen an ihren Laptops."
+            role="button" tabindex="0" />
+          <img src="images/slider-1.jpg"
+            alt="Studentinnen sitzen am Tisch, essen verschiedene Speisen und trinken Kaffee; sie unterhalten sich und lächeln, offene Bücher liegen auf dem Tisch. Im Hintergrund sitzt ein Student mit Laptop auf dem Sofa, und man sieht die Kasse, hinter der ein Barista steht."
+            role="button" tabindex="0" />
+          <img src="images/slider-2.jpg"
+            alt="Gemütliches Studentencafé mit vielen Studierenden, die auf Sofas sitzen und an Laptops arbeiten, während ein Barista die Gäste bedient."
+            role="button" tabindex="0" />
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main class="home-page">
-      <section class="home-card" id="welcome">
-        <h2>
-          Herzlich willkommen im „STUDIERBAR“ - das Studentencafé der Hochschule
-          Trier!
-        </h2>
-        <p>
-          Du findest uns <b>Montags</b> bis <b>Samstags</b> von
-          <b>10 bis 20 Uhr</b> im <b>Gebäude Y</b> auf dem Campus der Hochschule
-          Trier.
-        </p>
-      </section>
+    <div class="divider"></div>
 
-      <!-- <div class="divider"></div> -->
+    <section class="home-card" id="gallery">
+      <h2>Galerie</h2>
+      <p>Mehr Bilder und Impressionen findest du in unserer Galerie.</p>
+      <a href="gallery.html" class="feature-link">Zur Galerie</a>
+    </section>
 
-      <section class="home-card" id="impressions">
-        <!-- <h2>Impressionen</h2> -->
-        <div class="slider-container" aria-label="Bilder-Slider">
-          <div class="main-image">
-            <button class="slider-arrow prev" type="button" aria-label="Zurück">
-              &#10094;
-            </button>
-            <img
-              src="images/slider-2.jpg"
-              alt="Gemütliches Studentencafé mit vielen Studierenden, die auf Sofas sitzen und an Laptops arbeiten, während ein Barista die Gäste bedient."
-            />
-            <button class="slider-arrow next" type="button" aria-label="Weiter">
-              &#10095;
-            </button>
-          </div>
-          <div class="thumbnails" aria-label="Vorschaubilder">
-            <img
-              src="images/slider-2.jpg"
-              alt="Gemütliches Studentencafé mit vielen Studierenden, die auf Sofas sitzen und an Laptops arbeiten, während ein Barista die Gäste bedient."
-              role="button"
-              tabindex="0"
-            />
-            <img
-              src="images/slider-3.jpg"
-              alt="Nahaufnahme eines Baristas, der Kaffee an der Espressomaschine zubereitet; im Hintergrund sitzen Studierende auf Sofas und lernen an ihren Laptops."
-              role="button"
-              tabindex="0"
-            />
-            <img
-              src="images/slider-1.jpg"
-              alt="Studentinnen sitzen am Tisch, essen verschiedene Speisen und trinken Kaffee; sie unterhalten sich und lächeln, offene Bücher liegen auf dem Tisch. Im Hintergrund sitzt ein Student mit Laptop auf dem Sofa, und man sieht die Kasse, hinter der ein Barista steht."
-              role="button"
-              tabindex="0"
-            />
-            <img
-              src="images/slider-2.jpg"
-              alt="Gemütliches Studentencafé mit vielen Studierenden, die auf Sofas sitzen und an Laptops arbeiten, während ein Barista die Gäste bedient."
-              role="button"
-              tabindex="0"
-            />
-          </div>
-        </div>
-      </section>
+    <div class="divider"></div>
 
-      <div class="divider"></div>
-
-      <section class="home-card" id="gallery">
-        <h2>Galerie</h2>
-        <p>Mehr Bilder und Impressionen findest du in unserer Galerie.</p>
-        <a href="gallery.html" class="feature-link">Zur Galerie</a>
-      </section>
-
-      <div class="divider"></div>
-
-      <section class="home-card" id="quick-links">
-        <h2>Schnellzugriff</h2>
-        <div class="features-section">
-          <!-- Feature 1 -->
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <g>
-                  <path
-                    d="M207.103,23.875v109.219c0,7-5.656,12.641-12.625,12.641h-3.375c-6.969,0-12.641-5.641-12.641-12.641V23.375
+    <section class="home-card" id="quick-links">
+      <h2>Schnellzugriff</h2>
+      <div class="features-section">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <g>
+                <path d="M207.103,23.875v109.219c0,7-5.656,12.641-12.625,12.641h-3.375c-6.969,0-12.641-5.641-12.641-12.641V23.375
                   c0-18-12.109-23.375-23.719-23.375s-23.719,5.375-23.719,23.375v109.719c0,7-5.672,12.641-12.641,12.641h-3.375
                   c-6.969,0-12.625-5.641-12.625-12.641V23.875c0-32.219-45.938-31.125-45.938,0.359c0,37.703,0,104.297,0,104.297
                   c-0.219,57.906,13.625,72.953,36.469,91c18.422,14.531,34.156,22.859,34.156,58.953v232.188h55.344V278.484
                   c0-36.094,15.734-44.422,34.156-58.953c22.859-18.047,36.688-33.094,36.469-91c0,0,0-66.594,0-104.297
-                  C253.04-7.25,207.103-8.344,207.103,23.875z"
-                  />
-                  <path
-                    d="M385.228,34.75c-11.75,32.953-45.578,110.156-47.719,178.344c-3.313,105.844,61.547,90.188,62.703,159.531
+                  C253.04-7.25,207.103-8.344,207.103,23.875z" />
+                <path d="M385.228,34.75c-11.75,32.953-45.578,110.156-47.719,178.344c-3.313,105.844,61.547,90.188,62.703,159.531
                   v138.688h55.078l0.266,0.688c0,0,0-0.281,0-0.688c0-9.266,0-119.625,0-232.203c0-111.359,0-224.797,0-244.359
-                  C455.556-5.438,403.524-16.531,385.228,34.75z"
-                  />
-                </g>
-              </svg>
-            </div>
-            <h2 class="feature-title">UNSERE SPEISEKARTE</h2>
-            <a href="menu.html" class="feature-link">Hier klicken</a>
+                  C455.556-5.438,403.524-16.531,385.228,34.75z" />
+              </g>
+            </svg>
           </div>
-
-          <!-- Feature 2 -->
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg
-                viewBox="-1 0 32 32"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-              >
-                <title>calendar</title>
-                <desc>Created with Sketch Beta.</desc>
-                <defs></defs>
-                <g
-                  id="Page-1"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                  sketch:type="MSPage"
-                >
-                  <g
-                    id="Icon-Set-Filled"
-                    sketch:type="MSLayerGroup"
-                    transform="translate(-311.000000, -361.000000)"
-                    fill="#6b3a1f"
-                  >
-                    <path
-                      d="M325,379 L327,379 L327,377 L325,377 L325,379 Z M325,387 L327,387 L327,385 L325,385 L325,387 Z M333,379 L335,379 L335,377 L333,377 L333,379 Z M333,387 L335,387 L335,385 L333,385 L333,387 Z M317,387 L319,387 L319,385 L317,385 L317,387 Z M339,369 L313,369 L313,367 C313,365.896 313.896,365 315,365 L319,365 L319,366 C319,366.553 319.447,367 320,367 C320.553,367 321,366.553 321,366 L321,365 L331,365 L331,366 C331,366.553 331.447,367 332,367 C332.553,367 333,366.553 333,366 L333,365 L337,365 C338.104,365 339,365.896 339,367 L339,369 L339,369 Z M337,379 C337,380.104 336.104,381 335,381 L333,381 C331.896,381 331,380.104 331,379 L331,377 C331,375.896 331.896,375 333,375 L335,375 C336.104,375 337,375.896 337,377 L337,379 L337,379 Z M337,387 C337,388.104 336.104,389 335,389 L333,389 C331.896,389 331,388.104 331,387 L331,385 C331,383.896 331.896,383 333,383 L335,383 C336.104,383 337,383.896 337,385 L337,387 L337,387 Z M329,379 C329,380.104 328.104,381 327,381 L325,381 C323.896,381 323,380.104 323,379 L323,377 C323,375.896 323.896,375 325,375 L327,375 C328.104,375 329,375.896 329,377 L329,379 L329,379 Z M329,387 C329,388.104 328.104,389 327,389 L325,389 C323.896,389 323,388.104 323,387 L323,385 C323,383.896 323.896,383 325,383 L327,383 C328.104,383 329,383.896 329,385 L329,387 L329,387 Z M321,379 C321,380.104 320.104,381 319,381 L317,381 C315.896,381 315,380.104 315,379 L315,377 C315,375.896 315.896,375 317,375 L319,375 C320.104,375 321,375.896 321,377 L321,379 L321,379 Z M321,387 C321,388.104 320.104,389 319,389 L317,389 C315.896,389 315,388.104 315,387 L315,385 C315,383.896 315.896,383 317,383 L319,383 C320.104,383 321,383.896 321,385 L321,387 L321,387 Z M337,363 L333,363 L333,362 C333,361.448 332.553,361 332,361 C331.447,361 331,361.448 331,362 L331,363 L321,363 L321,362 C321,361.448 320.553,361 320,361 C319.447,361 319,361.448 319,362 L319,363 L315,363 C312.791,363 311,364.791 311,367 L311,389 C311,391.209 312.791,393 315,393 L337,393 C339.209,393 341,391.209 341,389 L341,367 C341,364.791 339.209,363 337,363 L337,363 Z M317,379 L319,379 L319,377 L317,377 L317,379 Z"
-                      id="calendar"
-                      sketch:type="MSShapeGroup"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <h2 class="feature-title">TISCH RESERVIEREN</h2>
-            <a href="reservieren.html" class="feature-link">Hier klicken</a>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg
-                viewBox="-4 0 32 32"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-              >
-                <title>location</title>
-                <desc>Created with Sketch Beta.</desc>
-                <defs></defs>
-                <g
-                  id="Page-1"
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                  sketch:type="MSPage"
-                >
-                  <g
-                    id="Icon-Set-Filled"
-                    sketch:type="MSLayerGroup"
-                    transform="translate(-106.000000, -413.000000)"
-                    fill="#6b3a1f"
-                  >
-                    <path
-                      d="M118,422 C116.343,422 115,423.343 115,425 C115,426.657 116.343,428 118,428 C119.657,428 121,426.657 121,425 C121,423.343 119.657,422 118,422 L118,422 Z M118,430 C115.239,430 113,427.762 113,425 C113,422.238 115.239,420 118,420 C120.761,420 123,422.238 123,425 C123,427.762 120.761,430 118,430 L118,430 Z M118,413 C111.373,413 106,418.373 106,425 C106,430.018 116.005,445.011 118,445 C119.964,445.011 130,429.95 130,425 C130,418.373 124.627,413 118,413 L118,413 Z"
-                      id="location"
-                      sketch:type="MSShapeGroup"
-                    ></path>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <h2 class="feature-title">ANFAHRT</h2>
-            <a href="contact.html#anfahrt" class="feature-link">Hier klicken</a>
-          </div>
+          <h2 class="feature-title">UNSERE SPEISEKARTE</h2>
+          <a href="menu.html" class="feature-link">Hier klicken</a>
         </div>
-      </section>
 
-      <div class="divider"></div>
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="-1 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+              <title>calendar</title>
+              <desc>Created with Sketch Beta.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-311.000000, -361.000000)"
+                  fill="#6b3a1f">
+                  <path
+                    d="M325,379 L327,379 L327,377 L325,377 L325,379 Z M325,387 L327,387 L327,385 L325,385 L325,387 Z M333,379 L335,379 L335,377 L333,377 L333,379 Z M333,387 L335,387 L335,385 L333,385 L333,387 Z M317,387 L319,387 L319,385 L317,385 L317,387 Z M339,369 L313,369 L313,367 C313,365.896 313.896,365 315,365 L319,365 L319,366 C319,366.553 319.447,367 320,367 C320.553,367 321,366.553 321,366 L321,365 L331,365 L331,366 C331,366.553 331.447,367 332,367 C332.553,367 333,366.553 333,366 L333,365 L337,365 C338.104,365 339,365.896 339,367 L339,369 L339,369 Z M337,379 C337,380.104 336.104,381 335,381 L333,381 C331.896,381 331,380.104 331,379 L331,377 C331,375.896 331.896,375 333,375 L335,375 C336.104,375 337,375.896 337,377 L337,379 L337,379 Z M337,387 C337,388.104 336.104,389 335,389 L333,389 C331.896,389 331,388.104 331,387 L331,385 C331,383.896 331.896,383 333,383 L335,383 C336.104,383 337,383.896 337,385 L337,387 L337,387 Z M329,379 C329,380.104 328.104,381 327,381 L325,381 C323.896,381 323,380.104 323,379 L323,377 C323,375.896 323.896,375 325,375 L327,375 C328.104,375 329,375.896 329,377 L329,379 L329,379 Z M329,387 C329,388.104 328.104,389 327,389 L325,389 C323.896,389 323,388.104 323,387 L323,385 C323,383.896 323.896,383 325,383 L327,383 C328.104,383 329,383.896 329,385 L329,387 L329,387 Z M321,379 C321,380.104 320.104,381 319,381 L317,381 C315.896,381 315,380.104 315,379 L315,377 C315,375.896 315.896,375 317,375 L319,375 C320.104,375 321,375.896 321,377 L321,379 L321,379 Z M321,387 C321,388.104 320.104,389 319,389 L317,389 C315.896,389 315,388.104 315,387 L315,385 C315,383.896 315.896,383 317,383 L319,383 C320.104,383 321,383.896 321,385 L321,387 L321,387 Z M337,363 L333,363 L333,362 C333,361.448 332.553,361 332,361 C331.447,361 331,361.448 331,362 L331,363 L321,363 L321,362 C321,361.448 320.553,361 320,361 C319.447,361 319,361.448 319,362 L319,363 L315,363 C312.791,363 311,364.791 311,367 L311,389 C311,391.209 312.791,393 315,393 L337,393 C339.209,393 341,391.209 341,389 L341,367 C341,364.791 339.209,363 337,363 L337,363 Z M317,379 L319,379 L319,377 L317,377 L317,379 Z"
+                    id="calendar" sketch:type="MSShapeGroup"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h2 class="feature-title">TISCH RESERVIEREN</h2>
+          <a href="reservieren.html" class="feature-link">Hier klicken</a>
+        </div>
 
-      <section class="home-card" id="about-short">
-        <h2>Über uns</h2>
-        <p>
-          Die Studierbar ist dein gemütlicher Treffpunkt und Lernort auf dem
-          Campus – perfekt für eine Pause zwischen Vorlesungen, zum Arbeiten mit
-          WLAN oder zum Kaffee mit Freunden.
-        </p>
-        <a href="about.html" class="feature-link">Mehr erfahren</a>
-      </section>
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+              <title>location</title>
+              <desc>Created with Sketch Beta.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-106.000000, -413.000000)"
+                  fill="#6b3a1f">
+                  <path
+                    d="M118,422 C116.343,422 115,423.343 115,425 C115,426.657 116.343,428 118,428 C119.657,428 121,426.657 121,425 C121,423.343 119.657,422 118,422 L118,422 Z M118,430 C115.239,430 113,427.762 113,425 C113,422.238 115.239,420 118,420 C120.761,420 123,422.238 123,425 C123,427.762 120.761,430 118,430 L118,430 Z M118,413 C111.373,413 106,418.373 106,425 C106,430.018 116.005,445.011 118,445 C119.964,445.011 130,429.95 130,425 C130,418.373 124.627,413 118,413 L118,413 Z"
+                    id="location" sketch:type="MSShapeGroup"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h2 class="feature-title">ANFAHRT</h2>
+          <a href="contact.html#anfahrt" class="feature-link">Hier klicken</a>
+        </div>
+      </div>
+    </section>
 
-      <div class="divider"></div>
+    <div class="divider"></div>
 
-      <section class="home-card" id="events-short">
-        <h2>Veranstaltungen</h2>
-        <p>
-          Bei uns ist regelmäßig etwas los: von Kaffeeverkostungen und
-          Lernabenden bis hin zu Open-Mic-Events – alle Termine findest du im
-          Kalender.
-        </p>
-        <a href="calender.html" class="feature-link">Veranstaltungskalender</a>
-      </section>
-    </main>
-    <footer>
-      <nav class="nav-footer">
-        <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
-        <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
-        <a href="datenschutz.html" class="feature-link" tabindex="0"
-          >Datenschutzerklärung</a
-        >
-      </nav>
-      <div class="divider"></div>
-      <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
+    <section class="home-card" id="about-short">
+      <h2>Über uns</h2>
       <p>
-        Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
-        <br />Wintersemester 2025/2026
+        Die Studierbar ist dein gemütlicher Treffpunkt und Lernort auf dem
+        Campus – perfekt für eine Pause zwischen Vorlesungen, zum Arbeiten mit
+        WLAN oder zum Kaffee mit Freunden.
       </p>
-      <p>Fachbereich: Informatik - Hochschule Trier</p>
+      <a href="about.html" class="feature-link">Mehr erfahren</a>
+    </section>
 
-      <img src="images/logo/logo_mittext.png" class="logo" alt="" />
-    </footer>
-    <script src="js/slider.js" defer></script>
-    <script src="js/script.js"></script>
-  </body>
+    <div class="divider"></div>
+
+    <section class="home-card" id="events-short">
+      <h2>Veranstaltungen</h2>
+      <p>
+        Bei uns ist regelmäßig etwas los: von Kaffeeverkostungen und
+        Lernabenden bis hin zu Open-Mic-Events – alle Termine findest du im
+        Kalender.
+      </p>
+      <a href="calender.html" class="feature-link">Veranstaltungskalender</a>
+    </section>
+  </main>
+  <footer>
+    <nav class="nav-footer">
+      <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
+      <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
+      <a href="datenschutz.html" class="feature-link" tabindex="0">Datenschutzerklärung</a>
+    </nav>
+    <div class="divider"></div>
+    <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
+    <p>
+      Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
+      <br />Wintersemester 2025/2026
+    </p>
+    <p>Fachbereich: Informatik - Hochschule Trier</p>
+
+    <img src="images/logo/logo_mittext.png" class="logo" alt="Logo des Studierendecafé StudierBar">
+  </footer>
+  <script src="js/slider.js" defer></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

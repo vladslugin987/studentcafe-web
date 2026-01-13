@@ -1,161 +1,121 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/guest.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/guest.css" />
 
-    <title>Café für Studierende</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="favicon_io/site.webmanifest" />
 
-  <body class="page-home">
-    <header id="header">
-      <div class="top-right">
-        <a href="reservieren.html" class="feature-link" id="reservieren-link"
-          >RESERVIEREN</a
-        >
+  <title>Café für Studierende</title>
+</head>
 
-        <span>
-          Öffnungszeiten: <br />
-          Mo. bis Sa. 10 - 20 Uhr
-        </span>
-      </div>
+<body class="page-home">
+  <header id="header">
+    <div class="top-right">
+      <a href="reservieren.html" class="feature-link" id="reservieren-link">RESERVIEREN</a>
 
-      <div class="logo-section">
-        <div class="logo-container">
-          <div class="logo">
-            <img
-              src="images/logo/logo_mittext.png"
-              id="logo-img"
-              alt="Logo des Studierendecafé Studierbar"
-            />
-          </div>
+      <span>
+        Öffnungszeiten: <br />
+        Mo. bis Sa. 10 - 20 Uhr
+      </span>
+    </div>
+
+    <div class="logo-section">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="images/logo/logo_mittext.png" id="logo-img" alt="Logo des Studierendecafé StudierBar">
         </div>
       </div>
+    </div>
 
-      <nav id="mainnav">
-        <div id="menutoggle">
-          <div></div>
-        </div>
-        <div id="nav">
-          <a href="index.html" id="home-nav" class="nav-item">HOME</a>
-          <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
-          <a href="events.html" id="events-nav" class="nav-item">VERANSTALTUNGEN</a>
-          <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
-          <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
-          <a href="forum.php" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <h1 class="guestbook-title">GÄSTEBUCHEINTRAG</h1>
-
-      <div class="guestbook-container">
-        <form class="guestbook-form" action="forum.php" method="post">
-          <fieldset>
-            <label for="name">Name*</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Beispiel: Max Mustermann"
-              required
-            />
-          </fieldset>
-
-          <fieldset>
-            <label for="email">E-Mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Beispiel: mustermannM@hochschule-trier.de"
-            />
-          </fieldset>
-
-          <fieldset>
-            <label for="kategorie">Kategorie*</label>
-            <select id="kategorie" name="kategorie" required>
-              <option value="" selected disabled>Bitte auswählen</option>
-              <option value="Bewertung">Bewertung</option>
-              <option value="Suche">Suche</option>
-              <option value="Biete">Biete / Verkaufe</option>
-            </select>
-          </fieldset>
-
-          <fieldset>
-            <label for="inhalt">Inhalt*</label>
-            <textarea
-              id="inhalt"
-              name="inhalt"
-              rows="9"
-              placeholder="Schreib uns gerne Feedback, Lob oder Anregungen. Wir freuen uns darauf."
-              required
-            ></textarea>
-          </fieldset>
-
-          <div class="form-action">
-            <button type="submit">Hinzufügen</button>
-          </div>
-        </form>
-        <p class="info">
-          Felder, die mit * gekennzeichnet sind, sind Pflichtfelder.
-        </p>
+    <nav id="mainnav">
+      <div id="menutoggle">
+        <div></div>
       </div>
-    </main>
+      <div id="nav">
+        <a href="index.html" id="home-nav" class="nav-item">HOME</a>
+        <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
+        <a href="events.html" id="events-nav" class="nav-item">VERANSTALTUNGEN</a>
+        <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
+        <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
+        <a href="forum.php" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
+      </div>
+    </nav>
+  </header>
 
-    <footer>
-      <nav class="nav-footer">
-        <a href="contact.html" class="feature-link">Kontakt</a>
-        <a href="impressum.html" class="feature-link">Impressum</a>
-        <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
-      </nav>
-      <div class="divider"></div>
-      <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
-      <p>
-        Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
-        <br />Wintersemester 2025/2026
+  <main>
+    <h1 class="guestbook-title">GÄSTEBUCHEINTRAG</h1>
+
+    <div class="guestbook-container">
+      <form class="guestbook-form" action="forum.php" method="post">
+        <fieldset>
+          <label for="name">Name*</label>
+          <input type="text" id="name" name="name" placeholder="Beispiel: Max Mustermann" required />
+        </fieldset>
+
+        <fieldset>
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" placeholder="Beispiel: mustermannM@hochschule-trier.de" />
+        </fieldset>
+
+        <fieldset>
+          <label for="kategorie">Kategorie*</label>
+          <select id="kategorie" name="kategorie" required>
+            <option value="" selected disabled>Bitte auswählen</option>
+            <option value="Bewertung">Bewertung</option>
+            <option value="Suche">Suche</option>
+            <option value="Biete">Biete / Verkaufe</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label for="inhalt">Inhalt*</label>
+          <textarea id="inhalt" name="inhalt" rows="9"
+            placeholder="Schreib uns gerne Feedback, Lob oder Anregungen. Wir freuen uns darauf." required></textarea>
+        </fieldset>
+
+        <div class="form-action">
+          <button type="submit">Hinzufügen</button>
+        </div>
+      </form>
+      <p class="info">
+        Felder, die mit * gekennzeichnet sind, sind Pflichtfelder.
       </p>
-      <p>Fachbereich: Informatik - Hochschule Trier</p>
+    </div>
+  </main>
 
-      <img src="images/logo/logo_mittext.png" class="logo" alt="" />
-    </footer>
-    <script src="js/script.js"></script>
-  </body>
+  <footer>
+    <nav class="nav-footer">
+      <a href="contact.html" class="feature-link">Kontakt</a>
+      <a href="impressum.html" class="feature-link">Impressum</a>
+      <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
+    </nav>
+    <div class="divider"></div>
+    <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
+    <p>
+      Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
+      <br />Wintersemester 2025/2026
+    </p>
+    <p>Fachbereich: Informatik - Hochschule Trier</p>
+
+    <img src="images/logo/logo_mittext.png" class="logo" alt="" />
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
