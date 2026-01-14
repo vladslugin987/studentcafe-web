@@ -25,7 +25,8 @@ section {
   max-width: 1100px;
   margin: 40px auto;
   padding: 30px;
-  background-color: var(--main-color); /* Weiß */
+  background-color: var(--main-color);
+  /* Weiß */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -81,11 +82,13 @@ section {
 .event-popover {
   display: none;
   position: absolute;
-  bottom: 100%; /* erscheint über dem Tag */
+  bottom: 100%;
+  /* erscheint über dem Tag */
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  width: max-content; /* das Feld ist so breit wie der Text */
+  width: max-content;
+  /* das Feld ist so breit wie der Text */
   min-width: 100px;
   padding: 8px 12px;
 
@@ -93,7 +96,8 @@ section {
   color: var(--main-color);
   border-radius: 4px;
   font-size: 0.8rem;
-  white-space: nowrap; /* verhindert, dass der Text in die nächste Zeile rutscht */
+  white-space: nowrap;
+  /* verhindert, dass der Text in die nächste Zeile rutscht */
   text-align: center;
   margin-bottom: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -101,4 +105,13 @@ section {
 
 .day.event-day:hover .event-popover {
   display: block;
+}
+
+@media (max-width: 600px) {
+
+  .calendar-container {
+    padding: 20px 10px;
+
+  }
+
 }

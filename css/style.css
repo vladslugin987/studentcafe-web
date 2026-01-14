@@ -381,6 +381,7 @@ body.page-home #nav {
 
   body.page-home h1{
     margin-top: 21rem; 
+    hyphens: auto;
   }
 }
 
@@ -406,6 +407,7 @@ body.page-home #nav {
     background-color: var(--background-color);
     padding-bottom: 10px;
     padding-top: 2px;
+    hyphens: auto;
   }
 
 
