@@ -1,3 +1,5 @@
+"use strict"
+
 //Hamburgermenu
 
 document.getElementById('mainnav').addEventListener('click', (e) => {
