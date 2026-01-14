@@ -310,7 +310,7 @@ $eintraege = array_reverse($eintraege);
     </p>
     <p>Fachbereich: Informatik - Hochschule Trier</p>
 
-    <img src="images/logo/logo_mittext.png" class="logo" alt="Logo des Studierendecafé StudierBar"/>
+    <a href="index.html"><img src="images/logo/logo_mittext.png" class="logo" alt="Logo des Studierendecafé StudierBar"></a>
   </footer>
 
   <script src="js/script.js"></script>
