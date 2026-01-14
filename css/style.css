@@ -472,7 +472,6 @@ body.page-home #nav {
   }
 
   /* >>Hamburgermenu */
-
   #mainnav {
     position: fixed;
     left: 0;
@@ -484,6 +483,7 @@ body.page-home #nav {
 
     background-color: color-mix(in srgb, var(--color2), transparent 2%);
     transition: height 0.5s;
+    cursor: pointer;
   }
 
   #mainnav.active {
@@ -497,6 +497,7 @@ body.page-home #nav {
     top: 0;
     padding: 1rem;
     margin: 0 1px;
+
   }
 
   #menutoggle:before,
@@ -526,17 +527,4 @@ body.page-home #nav {
   .active #menutoggle > div {
     opacity: 0;
   }
-
-  /* .shape {
-    height: 50px;
-    width: 60px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 1rem;
-    display: block;
-    margin: 0 0 0.5rem;
-    background-color: var(--color1);
-    z-index: 2000;
-  } */
 }

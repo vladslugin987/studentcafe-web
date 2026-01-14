@@ -166,7 +166,7 @@ $eintraege = array_reverse($eintraege);
     <div class="logo-section">
       <div class="logo-container">
         <div class="logo">
-          <img src="images/logo/logo_mittext.png" id="logo-img" alt="Logo des Studierendecafé StudierBar"/>
+          <a href="index.html"><img src="images/logo/logo_mittext.png" id="logo-img" alt="Logo des Studierendecafé StudierBar"></a>
         </div>
       </div>
     </div>
