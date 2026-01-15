@@ -47,7 +47,7 @@ function test_input($data)
 <body class="page-home">
     <header id="header">
         <div class="top-right">
-            <a href="reservieren.html" class="feature-link" id="reservieren-link" tabindex="0">RESERVIEREN</a>
+            <a href="reservieren.html" class="feature-link" id="reservieren-link">RESERVIEREN</a>
 
             <span>
                 Öffnungszeiten: <br />
@@ -68,12 +68,12 @@ function test_input($data)
                 <div></div>
             </div>
             <div id="nav">
-                <a href="index.html" id="home-nav" class="nav-item" tabindex="0">HOME</a>
-                <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0">SPEISEKARTE</a>
-                <a href="events.html" id="events-nav" class="nav-item" tabindex="0">VERANSTALTUNGEN</a>
-                <a href="about.html" id="about-nav" class="nav-item" tabindex="0">ÜBER UNS</a>
-                <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0">KONTAKT</a>
-                <a href="forum.php" id="guest-nav" class="nav-item" tabindex="0">GÄSTEBUCH</a>
+                <a href="index.html" id="home-nav" class="nav-item">HOME</a>
+                <a href="menu.html" id="menu-nav" class="nav-item">SPEISEKARTE</a>
+                <a href="events.html" id="events-nav" class="nav-item">VERANSTALTUNGEN</a>
+                <a href="about.html" id="about-nav" class="nav-item">ÜBER UNS</a>
+                <a href="contact.html" id="contact-nav" class="nav-item">KONTAKT</a>
+                <a href="forum.php" id="guest-nav" class="nav-item">GÄSTEBUCH</a>
             </div>
         </nav>
     </header>
@@ -129,9 +129,9 @@ function test_input($data)
 
     <footer>
         <nav class="nav-footer">
-            <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
-            <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
-            <a href="datenschutz.html" class="feature-link" tabindex="0">Datenschutzerklärung</a>
+            <a href="contact.html" class="feature-link">Kontakt</a>
+            <a href="impressum.html" class="feature-link">Impressum</a>
+            <a href="datenschutz.html" class="feature-link">Datenschutzerklärung</a>
         </nav>
         <div class="divider"></div>
         <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
