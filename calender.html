@@ -1,169 +1,230 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-
-  <!-- Local CSS -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="favicon_io/site.webmanifest">
-
-  <title>Café für Studierende</title>
-</head>
-
-<body class="page-home">
-  <header id="header">
-    <div class="top-right">
-      <a href="reservieren.html" class="feature-link" id="reservieren-link" tabindex="0">RESERVIEREN</a>
-
-      <span>
-        Öffnungszeiten: <br>
-        Mo. bis Sa. 10 - 20 Uhr
-      </span>
-    </div>
-
-    <div class="logo-section">
-      <div class="logo-container">
-        <div class="logo">
-          <a href="index.html"><img src="images/logo/logo_mittext.png" id="logo-img" alt="Logo des Studierendecafé StudierBar"></a>
-        </div>
-      </div>
-    </div>
-
-    <nav id="mainnav">
-
-      <div id="menutoggle">
-        <div></div>
-      </div>
-      <div id="nav">
-        <a href="index.html" id="home-nav" class="nav-item" tabindex="0">HOME</a>
-        <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0">SPEISEKARTE</a>
-        <a href="events.html" id="events-nav" class="nav-item" tabindex="0">VERANSTALTUNGEN</a>
-        <a href="about.html" id="about-nav" class="nav-item" tabindex="0">ÜBER UNS</a>
-        <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0">KONTAKT</a>
-        <a href="forum.php" id="guest-nav" class="nav-item" tabindex="0">GÄSTEBUCH</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Veranstaltungskalender</h1>
     <!-- Local CSS -->
-    <link rel="stylesheet" href="css/calender.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <section id="event-info">
-      <p>
-        In unserem Café ist immer etwas los! Unser Veranstaltungskalender gibt
-        dir einen Überblick über alle anstehenden Highlights – von gemeinsamen
-        Lerngruppen und Fachvorträgen bis hin zu entspannten Open-Mic-Abenden
-        und Spiele-Events.
-      </p>
-      <p>
-        Gehe einfach mit der Maus über die markierten Tage, um mehr Details zu
-        den einzelnen Events zu erfahren. Wir freuen uns darauf, dich bei
-        unserer nächsten Veranstaltung begrüßen zu dürfen!
-      </p>
-    </section>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
 
-    <div class="calendar-container">
-      <h2>Januar 2026</h2>
+    <title>Café für Studierende</title>
+  </head>
 
-      <div class="calendar-grid">
-        <div class="day-name">So</div>
-        <div class="day-name">Mo</div>
-        <div class="day-name">Di</div>
-        <div class="day-name">Mi</div>
-        <div class="day-name">Do</div>
-        <div class="day-name">Fr</div>
-        <div class="day-name">Sa</div>
+  <body class="page-home">
+    <header id="header">
+      <div class="top-right">
+        <a
+          href="reservieren.html"
+          class="feature-link"
+          id="reservieren-link"
+          tabindex="0"
+          >RESERVIEREN</a
+        >
 
-        <div class="day empty"></div>
-        <div class="day empty"></div>
-        <div class="day empty"></div>
-        <div class="day empty"></div>
-        <div class="day">1</div>
-        <div class="day">2</div>
-
-        <div class="day">3</div>
-        <div class="day">4</div>
-        <div class="day">5</div>
-        <div class="day">6</div>
-        <div class="day">7</div>
-        <div class="day">8</div>
-        <div class="day">9</div>
-
-        <div class="day">10</div>
-        <div class="day">11</div>
-        <div class="day">12</div>
-        <div class="day">13</div>
-        <div class="day">14</div>
-        <div class="day event-day">
-          15
-          <div class="event-popover">Kaffeeverkostung 18–20 Uhr</div>
-        </div>
-        <div class="day">16</div>
-
-        <div class="day">17</div>
-        <div class="day">18</div>
-        <div class="day">19</div>
-        <div class="day">20</div>
-        <div class="day">21</div>
-        <div class="day">22</div>
-        <div class="day">23</div>
-
-        <div class="day">24</div>
-        <div class="day">25</div>
-        <div class="day">26</div>
-        <div class="day">27</div>
-        <div class="day">28</div>
-        <div class="day">29</div>
-        <div class="day event-day">
-          30
-          <div class="event-popover">Lernnacht ab 19 Uhr</div>
-        </div>
-        <div class="day">31</div>
-
-        <div class="day empty"></div>
-        <div class="day empty"></div>
-        <div class="day empty"></div>
-        <div class="day empty"></div>
-        <div class="day empty"></div>
-        <div class="day empty"></div>
+        <span>
+          Öffnungszeiten: <br />
+          Mo. bis Sa. 10 - 20 Uhr
+        </span>
       </div>
-    </div>
 
-    <p style="text-align: center; margin-top: 30px; color: var(--title-color)">
-      Der Open-Mic-Abend am 14.02.2026 ist im nächsten Monatskalender.
-    </p>
-  </main>
+      <div class="logo-section">
+        <div class="logo-container">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="images/logo/logo_mittext.png"
+                id="logo-img"
+                alt="Logo des Studierendecafé StudierBar"
+            /></a>
+          </div>
+        </div>
+      </div>
 
-  <footer>
-    <nav class="nav-footer">
-      <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
-      <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
-      <a href="datenschutz.html" class="feature-link" tabindex="0">Datenschutzerklärung</a>
-    </nav>
-    <div class="divider"></div>
-    <p>Projektarbeit in "Grundlagen der Web-Technologien" </p>
-    <p>Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin <br>Wintersemester 2025/2026 </p>
-    <p>Fachbereich: Informatik - Hochschule Trier</p>
+      <nav id="mainnav">
+        <div id="menutoggle">
+          <div></div>
+        </div>
+        <div id="nav">
+          <a href="index.html" id="home-nav" class="nav-item" tabindex="0"
+            >HOME</a
+          >
+          <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0"
+            >SPEISEKARTE</a
+          >
+          <a href="events.html" id="events-nav" class="nav-item" tabindex="0"
+            >VERANSTALTUNGEN</a
+          >
+          <a href="about.html" id="about-nav" class="nav-item" tabindex="0"
+            >ÜBER UNS</a
+          >
+          <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0"
+            >KONTAKT</a
+          >
+          <a href="forum.php" id="guest-nav" class="nav-item" tabindex="0"
+            >GÄSTEBUCH</a
+          >
+        </div>
+      </nav>
+    </header>
 
-    <a href="index.html"><img src="images/logo/logo_mittext.png" class="logo" alt="Logo des Studierendecafé StudierBar"></a>
+    <main>
+      <h1>Veranstaltungskalender</h1>
+      <!-- Local CSS -->
+      <link rel="stylesheet" href="css/calender.css" />
 
-  </footer>
-  <script src="js/script.js"></script>
-</body>
+      <section id="event-info">
+        <p>
+          In unserem Café ist immer etwas los! Unser Veranstaltungskalender gibt
+          dir einen Überblick über alle anstehenden Highlights – von gemeinsamen
+          Lerngruppen und Fachvorträgen bis hin zu entspannten Open-Mic-Abenden
+          und Spiele-Events.
+        </p>
+        <p>
+          Gehe einfach mit der Maus über die markierten Tage, um mehr Details zu
+          den einzelnen Events zu erfahren. Wir freuen uns darauf, dich bei
+          unserer nächsten Veranstaltung begrüßen zu dürfen!
+        </p>
+      </section>
 
+      <div class="calendar-container">
+        <h2>Januar 2026</h2>
+
+        <div class="calendar-grid">
+          <div class="day-name">So</div>
+          <div class="day-name">Mo</div>
+          <div class="day-name">Di</div>
+          <div class="day-name">Mi</div>
+          <div class="day-name">Do</div>
+          <div class="day-name">Fr</div>
+          <div class="day-name">Sa</div>
+
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day">1</div>
+          <div class="day">2</div>
+
+          <div class="day">3</div>
+          <div class="day">4</div>
+          <div class="day">5</div>
+          <div class="day">6</div>
+          <div class="day">7</div>
+          <div class="day">8</div>
+          <div class="day">9</div>
+
+          <div class="day">10</div>
+          <div class="day">11</div>
+          <div class="day">12</div>
+          <div class="day">13</div>
+          <div class="day">14</div>
+          <div
+            class="day event-day"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            15
+            <div class="event-popover">Kaffeeverkostung 18–20 Uhr</div>
+          </div>
+          <div class="day">16</div>
+
+          <div class="day">17</div>
+          <div class="day">18</div>
+          <div class="day">19</div>
+          <div class="day">20</div>
+          <div class="day">21</div>
+          <div class="day">22</div>
+          <div class="day">23</div>
+
+          <div class="day">24</div>
+          <div class="day">25</div>
+          <div class="day">26</div>
+          <div class="day">27</div>
+          <div class="day">28</div>
+          <div class="day">29</div>
+          <div
+            class="day event-day"
+            tabindex="0"
+            role="button"
+            aria-expanded="false"
+          >
+            30
+            <div class="event-popover">Lernnacht ab 19 Uhr</div>
+          </div>
+          <div class="day">31</div>
+
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+        </div>
+      </div>
+
+      <p
+        style="text-align: center; margin-top: 30px; color: var(--title-color)"
+      >
+        Der Open-Mic-Abend am 14.02.2026 ist im nächsten Monatskalender.
+      </p>
+    </main>
+
+    <footer>
+      <nav class="nav-footer">
+        <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
+        <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
+        <a href="datenschutz.html" class="feature-link" tabindex="0"
+          >Datenschutzerklärung</a
+        >
+      </nav>
+      <div class="divider"></div>
+      <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
+      <p>
+        Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
+        <br />Wintersemester 2025/2026
+      </p>
+      <p>Fachbereich: Informatik - Hochschule Trier</p>
+
+      <a href="index.html"
+        ><img
+          src="images/logo/logo_mittext.png"
+          class="logo"
+          alt="Logo des Studierendecafé StudierBar"
+      /></a>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
