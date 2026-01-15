@@ -1,27 +1,27 @@
 /* Weiße Box */
-main section{
-background-color: var(--main-color);
-border-radius: 12px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+main section {
+  background-color: var(--main-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-/* Innen- und Außenabstand */
-padding: 30px;
-margin: 30px auto;
-max-width: 1100px;
-line-height: 1.6;
+  /* Innen- und Außenabstand */
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1100px;
+  line-height: 1.6;
 }
 
 #introduction {
   text-align: center;
 
-background-color: var(--main-color);
-border-radius: 12px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-/* Innen- und Außenabstand */
-padding: 30px;
-margin: 30px auto;
-max-width: 1100px;
-line-height: 1.6;
+  background-color: var(--main-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Innen- und Außenabstand */
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1100px;
+  line-height: 1.6;
 }
 
 /* Allgemeine Layout-Anpassungen */
@@ -66,8 +66,8 @@ section h3 {
   background-color: var(--background-color);
 }
 
-#history h3{
- margin-top: 0;
+#history h3 {
+  margin-top: 0;
 }
 
 /* Liste unter "Was uns besonders macht" */
@@ -141,6 +141,7 @@ main a.feature-link,
 main a.feature-link:visited {
   color: var(--line-color);
 }
+
 @media (max-width: 1300px) {
   .gallery {
     gap: 15px;
@@ -163,6 +164,12 @@ main a.feature-link:visited {
   .gallery img {
     width: 100%;
     max-width: none;
+  }
+
+  #history .gallery-link {
+    margin-bottom: 20px;
+    width: auto;
+    text-align: center;
   }
 
   .team-member {
