@@ -210,20 +210,6 @@
   color: var(--line-color);
 }
 
-/* Footer */
-footer {
-  background-color: var(--main-color);
-  padding: 25px 20px;
-  text-align: center;
-  color: var(--title-color);
-  font-size: 14px;
-  margin-top: 60px;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
 /* Große Tablets / kleine Desktops */
 @media (max-width: 1024px) {
   body.page-home .slider-container {
