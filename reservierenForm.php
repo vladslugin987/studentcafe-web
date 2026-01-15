@@ -81,17 +81,6 @@ function test_input($data)
     <main class="reservieren-page">
         <h1>RESERVIEREN</h1>
 
-        <div class="reservieren-intro">
-            <p>
-                Hier kannst du ganz einfach einen Tisch bei uns in der "StudierBar"
-                reservieren. <br>
-                Bitte fülle das Formular aus – wir melden uns so schnell wie möglich
-                bei dir.
-            </p>
-        </div>
-
-        <div class="divider"></div>
-
         <section id="reservieren">
             <h2>Danke, für deine Reservierung im Studierendencafé StudierBar!</h2>
 
