@@ -20,12 +20,13 @@
 .reservieren-page h3,
 .reservieren-page h4 {
   color: var(--title-color);
-}
-
-.reservieren-page h3 {
-  color: var(--title-color);
   margin: 15px 0 5px;
 }
+
+/* .reservieren-page h4 {
+  color: var(--title-color);
+  margin: 15px 0 5px;
+} */
 
 #reservieren h2 {
   position: sticky;
