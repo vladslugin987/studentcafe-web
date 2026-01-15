@@ -11,7 +11,7 @@ main section {
   line-height: 1.6;
 }
 
-#introduction{
+#introduction {
   text-align: center;
 }
 
@@ -87,6 +87,17 @@ main section li {
   border: 7px solid var(--background-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 /* Social Links */
 .social-links {
   list-style-type: none;
@@ -144,5 +155,4 @@ main a.feature-link:visited {
   .team-member img {
     margin-right: 0;
   }
-
 }
