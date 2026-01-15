@@ -35,7 +35,7 @@ h1 {
 section h2,
 section h3 {
   color: var(--title-color);
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin-bottom: 10px;
 }
 

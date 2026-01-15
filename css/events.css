@@ -3,7 +3,8 @@
 .events-page h2,
 .events-page h3,
 .events-page p {
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+  margin: 0 0 1rem 0;
 }
 
 .events-page h1 {
