@@ -22,24 +22,24 @@ function test_input($data)
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/reservieren.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reservieren.css">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 
     <title>Café für Studierende</title>
 </head>
@@ -50,7 +50,7 @@ function test_input($data)
             <a href="reservieren.html" class="feature-link" id="reservieren-link">RESERVIEREN</a>
 
             <span>
-                Öffnungszeiten: <br />
+                Öffnungszeiten: <br>
                 Mo. bis Sa. 10 - 20 Uhr
             </span>
         </div>
@@ -81,14 +81,14 @@ function test_input($data)
     <main class="reservieren-page">
         <h1>RESERVIEREN</h1>
 
-        <section class="reservieren-intro">
+        <div class="reservieren-intro">
             <p>
                 Hier kannst du ganz einfach einen Tisch bei uns in der "StudierBar"
-                reservieren. <br />
+                reservieren. <br>
                 Bitte fülle das Formular aus – wir melden uns so schnell wie möglich
                 bei dir.
             </p>
-        </section>
+        </div>
 
         <div class="divider"></div>
 
@@ -123,7 +123,7 @@ function test_input($data)
            Telefonnummer: <strong>$phone</strong> </p>";
 
             ?>
-            <h4><strong>Wir freuen uns auf deinen Besuch!</strong></h4>
+            <h3><strong>Wir freuen uns auf deinen Besuch!</strong></h3>
         </section>
     </main>
 
@@ -137,7 +137,7 @@ function test_input($data)
         <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
         <p>
             Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
-            <br />Wintersemester 2025/2026
+            <br>Wintersemester 2025/2026
         </p>
         <p>Fachbereich: Informatik - Hochschule Trier</p>
 

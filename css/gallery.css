@@ -37,9 +37,11 @@
     /* text-align: center; */
 }
 
-.page-home .gallery-card h3 {
+.page-home .gallery-card h2 {
     margin-bottom: 10px;
     padding: 5px;
+    font-size: larger;
+    color: var(--line-color);
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

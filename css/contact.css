@@ -26,10 +26,16 @@ h4 {
 }
 
 /* Kontaktinfos */
-#kontaktinfos {
+#kontaktinfos .kontaktinformationen {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+}
+
+#kontaktinfos h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: larger;
 }
 
 .contact-item {

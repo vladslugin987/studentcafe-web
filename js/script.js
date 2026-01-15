@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 //Hamburgermenu
 
@@ -21,16 +21,16 @@ navLinkEls.forEach(navLinkEl => {
 });
 
 //Header -> Shrink on Scroll
-const mediaQuery = window.matchMedia('(min-width: 600px)')
+const mediaQuery = window.matchMedia('(min-width: 600px)');
 
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {scrollFunction()};
 
 function scrollFunction() {
   if (mediaQuery.matches && (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35)) {
     document.getElementById("header").style.paddingTop = "7px";
 
-    document.querySelector(".top-right").style.fontSize = "12px"
-    document.querySelector(".top-right").style.gap = "5px"
+    document.querySelector(".top-right").style.fontSize = "12px";
+    document.querySelector(".top-right").style.gap = "5px";
 
     document.getElementById("reservieren-link").style.fontSize = "11px";
     document.getElementById("reservieren-link").style.padding = "4px 15px";
@@ -67,8 +67,8 @@ function scrollFunction() {
   } else if (mediaQuery.matches) {
     document.getElementById("header").style.paddingTop = "15px";
 
-    document.querySelector(".top-right").style.fontSize = "14px"
-    document.querySelector(".top-right").style.gap = "10px"
+    document.querySelector(".top-right").style.fontSize = "14px";
+    document.querySelector(".top-right").style.gap = "10px";
 
     document.getElementById("reservieren-link").style.fontSize = "14px";
     document.getElementById("reservieren-link").style.padding = "6px 25px";
@@ -103,4 +103,4 @@ function scrollFunction() {
     document.getElementById("guest-nav").style.fontWeight = "bold";
 
   }
-};
+}

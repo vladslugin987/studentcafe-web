@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 function validateForm() {
     let name = document.forms["myForm"]["fname"].value;
@@ -9,7 +9,7 @@ function validateForm() {
         alert("Bitte gebe deine Daten ein");
         return false;
     }
-};
+}
 
 function validateFormReservieren() {
     let name = document.forms["myForm"]["name"].value;
@@ -21,4 +21,4 @@ function validateFormReservieren() {
         alert("Bitte gebe deine Daten ein");
         return false;
     }
-};
+}
