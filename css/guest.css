@@ -91,6 +91,18 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+
+  .guestbook-container {
+    padding: 30px 0;
+
+  }
+
+  .guestbook-form select {
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
 
   .guestbook-container {
