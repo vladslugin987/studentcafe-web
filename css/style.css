@@ -226,8 +226,8 @@ footer p {
 
 .page-home footer .feature-link {
   display: grid;
-  color: var(--background-color);
-  border: 2px solid var(--background-color);
+  color: var(--line-color);
+  border: 2px solid var(--accent-color);
   background-color: var(--color2);
   
 }

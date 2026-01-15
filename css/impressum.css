@@ -27,7 +27,7 @@
 }
 
 .impressum-card a {
-  color: var(--link-color);
+  color: var(--title-color);
   overflow-wrap: anywhere;
 }
 

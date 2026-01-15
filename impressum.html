@@ -1,228 +1,326 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    >
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/impressum.css">
 
-  <!-- Local CSS -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/impressum.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    >
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
-  <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <title>Café für Studierende</title>
+  </head>
 
-  <title>Café für Studierende</title>
-</head>
+  <body class="page-home impressum-page">
+    <header id="header">
+      <div class="top-right">
+        <a
+          href="reservieren.html"
+          class="feature-link"
+          id="reservieren-link"
+          tabindex="0"
+          >RESERVIEREN</a
+        >
 
-<body class="page-home impressum-page">
-  <header id="header">
-    <div class="top-right">
-      <a href="reservieren.html" class="feature-link" id="reservieren-link" tabindex="0">RESERVIEREN</a>
+        <span>
+          Öffnungszeiten: <br>
+          Mo. bis Sa. 10 - 20 Uhr
+        </span>
+      </div>
 
-      <span>
-        Öffnungszeiten: <br />
-        Mo. bis Sa. 10 - 20 Uhr
-      </span>
-    </div>
-
-    <div class="logo-section">
-      <div class="logo-container">
-        <div class="logo">
-          <a href="index.html"><img src="images/logo/logo_mittext.png" id="logo-img" alt="Logo des Studierendecafé StudierBar"></a>
+      <div class="logo-section">
+        <div class="logo-container">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="images/logo/logo_mittext.png"
+                id="logo-img"
+                alt="Logo des Studierendecafé StudierBar"
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <nav id="mainnav">
-      <div id="menutoggle">
-        <div></div>
-      </div>
-      <div id="nav">
-        <a href="index.html" id="home-nav" class="nav-item" tabindex="0">HOME</a>
-        <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0">SPEISEKARTE</a>
-        <a href="events.html" id="events-nav" class="nav-item" tabindex="0">VERANSTALTUNGEN</a>
-        <a href="about.html" id="about-nav" class="nav-item" tabindex="0">ÜBER UNS</a>
-        <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0">KONTAKT</a>
-        <a href="forum.php" id="guest-nav" class="nav-item" tabindex="0">GÄSTEBUCH</a>
-      </div>
-    </nav>
-  </header>
+      <nav id="mainnav">
+        <div id="menutoggle">
+          <div></div>
+        </div>
+        <div id="nav">
+          <a href="index.html" id="home-nav" class="nav-item" tabindex="0"
+            >HOME</a
+          >
+          <a href="menu.html" id="menu-nav" class="nav-item" tabindex="0"
+            >SPEISEKARTE</a
+          >
+          <a href="events.html" id="events-nav" class="nav-item" tabindex="0"
+            >VERANSTALTUNGEN</a
+          >
+          <a href="about.html" id="about-nav" class="nav-item" tabindex="0"
+            >ÜBER UNS</a
+          >
+          <a href="contact.html" id="contact-nav" class="nav-item" tabindex="0"
+            >KONTAKT</a
+          >
+          <a href="forum.php" id="guest-nav" class="nav-item" tabindex="0"
+            >GÄSTEBUCH</a
+          >
+        </div>
+      </nav>
+    </header>
 
-  <main class="impressum-content">
-    <h1>Impressum</h1>
+    <main class="impressum-content">
+      <h1>Impressum</h1>
 
-    <section class="impressum-card" id="impressum-anschrift">
-      <p>
-        [Unternehmensname] <br />
+      <section class="impressum-card" id="impressum-anschrift">
+        <h2>Anschrift</h2>
+        <p>
+          StudierBar Café <br>
 
-        [Vor-, Nachname]<br />
+          Hochschule Trier<br>
 
-        [Straße + Nummer]<br />
-        [PLZ + Ort]<br />
+          Trier, Germany<br>
 
-        Telefon: [Telefon]<br />
-        E-Mail: [E-Mail]
-      </p>
-    </section>
+          Telefon: +49 123 456 7890<br>
+          E-Mail: studierbar@hochschule-trier.de<br>
+        </p>
+      </section>
 
-    <div class="divider"></div>
+      <div class="divider"></div>
 
-    <section class="impressum-card" id="projektinformationen">
-      <h2>Projektinformationen</h2>
+      <section class="impressum-card" id="projektinformationen">
+        <h2>Projektinformationen</h2>
 
+        <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
+        <p>
+          Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
+          <br>Wintersemester 2025/2026
+        </p>
+        <p>Fachbereich: Informatik - Hochschule Trier</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="impressum-card" id="bilderquellen">
+        <h3>Bilderquellen</h3>
+
+        <p>
+          <a
+            href="https://unsplash.com/de/fotos/flachfokusfotografie-von-kaffee-spat-in-der-tasse-auf-dem-tisch-zUNs99PGDg0"
+          >
+            https://unsplash.com/de/fotos/flachfokusfotografie-von-kaffee-spat-in-der-tasse-auf-dem-tisch-zUNs99PGDg0
+          </a>
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/tische-und-stuhle-draussen-BRQijJfRZvs"
+            >https://unsplash.com/de/fotos/tische-und-stuhle-draussen-BRQijJfRZvs</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/eine-person-die-mit-einem-laptop-an-einem-tisch-sitzt-jsVYWYv2lOc"
+            >https://unsplash.com/de/fotos/eine-person-die-mit-einem-laptop-an-einem-tisch-sitzt-jsVYWYv2lOc</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/ein-paar-leute-sitzen-an-einem-tisch-mit-tellern-mit-essen-HhdYy5xazQQ"
+            >https://unsplash.com/de/fotos/ein-paar-leute-sitzen-an-einem-tisch-mit-tellern-mit-essen-HhdYy5xazQQ</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/schwarze-espressomaschine-21tOEaJPM_o"
+            >https://unsplash.com/de/fotos/schwarze-espressomaschine-21tOEaJPM_o</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/eine-reihe-von-tischen-die-nachts-vor-einem-restaurant-stehen-nMwm6JeNxTI"
+            >https://unsplash.com/de/fotos/eine-reihe-von-tischen-die-nachts-vor-einem-restaurant-stehen-nMwm6JeNxTI</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/eine-gruppe-von-leuten-sitzt-an-einem-tisch-mit-getranken-M0kylppJDls"
+            >https://unsplash.com/de/fotos/eine-gruppe-von-leuten-sitzt-an-einem-tisch-mit-getranken-M0kylppJDls</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/blaugruner-keramikbecher-auf-braunem-holztisch-YgaZnuH2udI"
+            >https://unsplash.com/de/fotos/blaugruner-keramikbecher-auf-braunem-holztisch-YgaZnuH2udI</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/flat-lay-photography-of-eight-coffee-latte-in-mugs-on-round-table-pMW4jzELQCw"
+          >
+            https://unsplash.com/de/fotos/flat-lay-photography-of-eight-coffee-latte-in-mugs-on-round-table-pMW4jzELQCw
+          </a>
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/zwei-durchsichtige-trinkglaser-auf-braunem-holztisch-1k7TnX5GAww"
+            >https://unsplash.com/de/fotos/zwei-durchsichtige-trinkglaser-auf-braunem-holztisch-1k7TnX5GAww</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/eine-hand-die-eine-tasse-kaffee-halt-OFdqt1ECako"
+            >https://unsplash.com/de/fotos/eine-hand-die-eine-tasse-kaffee-halt-OFdqt1ECako</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/manner-sitzender-gruner-stuhl-liest-zeitung-4UGlx_OXqgs"
+            >https://unsplash.com/de/fotos/manner-sitzender-gruner-stuhl-liest-zeitung-4UGlx_OXqgs</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/braune-keramiktasse-auf-braunem-holztisch-u2znP6aY-t0"
+            >https://unsplash.com/de/fotos/braune-keramiktasse-auf-braunem-holztisch-u2znP6aY-t0</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/drei-personen-halten-becher-und-glas-mit-getrank-im-inneren-71u2fOofI-U"
+            >https://unsplash.com/de/fotos/drei-personen-halten-becher-und-glas-mit-getrank-im-inneren-71u2fOofI-U</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/zwei-kaffeetassen-mit-untertassen-auf-dem-tisch-vQXfuxm9zos"
+            >https://unsplash.com/de/fotos/zwei-kaffeetassen-mit-untertassen-auf-dem-tisch-vQXfuxm9zos</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/eine-tasse-kaffee-auf-einem-holztisch-sitzend-DSc8JFhUg3M"
+            >https://unsplash.com/de/fotos/eine-tasse-kaffee-auf-einem-holztisch-sitzend-DSc8JFhUg3M</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/interieur-eines-cafes-tKN1WXrzQ3s"
+            >https://unsplash.com/de/fotos/interieur-eines-cafes-tKN1WXrzQ3s</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/menschen-die-in-einem-gemutlichen-cafe-an-laptops-arbeiten-ZwzB7C8lPDI"
+            >https://unsplash.com/de/fotos/menschen-die-in-einem-gemutlichen-cafe-an-laptops-arbeiten-ZwzB7C8lPDI</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/ein-cafe-mit-einer-speisekarte-an-der-wand-hYzc-xNtC28"
+            >https://unsplash.com/de/fotos/ein-cafe-mit-einer-speisekarte-an-der-wand-hYzc-xNtC28</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/person-die-das-macbook-pro-auf-einem-braunen-holztisch-benutzt-7weXfu_XTSw"
+            >https://unsplash.com/de/fotos/person-die-das-macbook-pro-auf-einem-braunen-holztisch-benutzt-7weXfu_XTSw</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/tasse-kaffee-auf-untertasse-mit-teeloffel-auf-rosa-tischplatte-X2s8GhnQmds"
+            >https://unsplash.com/de/fotos/tasse-kaffee-auf-untertasse-mit-teeloffel-auf-rosa-tischplatte-X2s8GhnQmds</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/person-die-milchkaffee-ruhrt-QI-VBsqfJWw"
+            >https://unsplash.com/de/fotos/person-die-milchkaffee-ruhrt-QI-VBsqfJWw</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/grunblattrige-pflanze-in-der-nahe-des-tisches-QnUywvDdI1o"
+          >
+            https://unsplash.com/de/fotos/grunblattrige-pflanze-in-der-nahe-des-tisches-QnUywvDdI1o
+          </a>
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/tasse-und-untertasse-auf-dem-tisch-ZoAlN3-pJO8"
+            >https://unsplash.com/de/fotos/tasse-und-untertasse-auf-dem-tisch-ZoAlN3-pJO8</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/ein-tisch-mit-einer-tasse-kaffee-und-einem-stuck-kuchen-darauf-beJpXQWBJoI"
+            >https://unsplash.com/de/fotos/ein-tisch-mit-einer-tasse-kaffee-und-einem-stuck-kuchen-darauf-beJpXQWBJoI</a
+          >
+          <br>
+
+          <a
+            href="https://unsplash.com/de/fotos/mann-im-schwarzen-hemd-vor-tisch-mit-laptop-ywR-gKD0UWU"
+            >https://unsplash.com/de/fotos/mann-im-schwarzen-hemd-vor-tisch-mit-laptop-ywR-gKD0UWU</a
+          >
+          <br>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="nav-footer">
+        <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
+        <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
+        <a href="datenschutz.html" class="feature-link" tabindex="0"
+          >Datenschutzerklärung</a
+        >
+      </nav>
+      <div class="divider"></div>
       <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
       <p>
         Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
-        <br />Wintersemester 2025/2026
+        <br>Wintersemester 2025/2026
       </p>
       <p>Fachbereich: Informatik - Hochschule Trier</p>
-    </section>
 
-    <div class="divider"></div>
-
-    <section class="impressum-card" id="bilderquellen">
-      <h3>Bilderquellen</h3>
-
-      <p>
-        <a
-          href="https://unsplash.com/de/fotos/flachfokusfotografie-von-kaffee-spat-in-der-tasse-auf-dem-tisch-zUNs99PGDg0">
-          https://unsplash.com/de/fotos/flachfokusfotografie-von-kaffee-spat-in-der-tasse-auf-dem-tisch-zUNs99PGDg0
-        </a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/tische-und-stuhle-draussen-BRQijJfRZvs">https://unsplash.com/de/fotos/tische-und-stuhle-draussen-BRQijJfRZvs</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/eine-person-die-mit-einem-laptop-an-einem-tisch-sitzt-jsVYWYv2lOc">https://unsplash.com/de/fotos/eine-person-die-mit-einem-laptop-an-einem-tisch-sitzt-jsVYWYv2lOc</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/ein-paar-leute-sitzen-an-einem-tisch-mit-tellern-mit-essen-HhdYy5xazQQ">https://unsplash.com/de/fotos/ein-paar-leute-sitzen-an-einem-tisch-mit-tellern-mit-essen-HhdYy5xazQQ</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/schwarze-espressomaschine-21tOEaJPM_o">https://unsplash.com/de/fotos/schwarze-espressomaschine-21tOEaJPM_o</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/eine-reihe-von-tischen-die-nachts-vor-einem-restaurant-stehen-nMwm6JeNxTI">https://unsplash.com/de/fotos/eine-reihe-von-tischen-die-nachts-vor-einem-restaurant-stehen-nMwm6JeNxTI</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/eine-gruppe-von-leuten-sitzt-an-einem-tisch-mit-getranken-M0kylppJDls">https://unsplash.com/de/fotos/eine-gruppe-von-leuten-sitzt-an-einem-tisch-mit-getranken-M0kylppJDls</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/blaugruner-keramikbecher-auf-braunem-holztisch-YgaZnuH2udI">https://unsplash.com/de/fotos/blaugruner-keramikbecher-auf-braunem-holztisch-YgaZnuH2udI</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/flat-lay-photography-of-eight-coffee-latte-in-mugs-on-round-table-pMW4jzELQCw">
-          https://unsplash.com/de/fotos/flat-lay-photography-of-eight-coffee-latte-in-mugs-on-round-table-pMW4jzELQCw
-        </a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/zwei-durchsichtige-trinkglaser-auf-braunem-holztisch-1k7TnX5GAww">https://unsplash.com/de/fotos/zwei-durchsichtige-trinkglaser-auf-braunem-holztisch-1k7TnX5GAww</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/eine-hand-die-eine-tasse-kaffee-halt-OFdqt1ECako">https://unsplash.com/de/fotos/eine-hand-die-eine-tasse-kaffee-halt-OFdqt1ECako</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/manner-sitzender-gruner-stuhl-liest-zeitung-4UGlx_OXqgs">https://unsplash.com/de/fotos/manner-sitzender-gruner-stuhl-liest-zeitung-4UGlx_OXqgs</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/braune-keramiktasse-auf-braunem-holztisch-u2znP6aY-t0">https://unsplash.com/de/fotos/braune-keramiktasse-auf-braunem-holztisch-u2znP6aY-t0</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/drei-personen-halten-becher-und-glas-mit-getrank-im-inneren-71u2fOofI-U">https://unsplash.com/de/fotos/drei-personen-halten-becher-und-glas-mit-getrank-im-inneren-71u2fOofI-U</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/zwei-kaffeetassen-mit-untertassen-auf-dem-tisch-vQXfuxm9zos">https://unsplash.com/de/fotos/zwei-kaffeetassen-mit-untertassen-auf-dem-tisch-vQXfuxm9zos</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/eine-tasse-kaffee-auf-einem-holztisch-sitzend-DSc8JFhUg3M">https://unsplash.com/de/fotos/eine-tasse-kaffee-auf-einem-holztisch-sitzend-DSc8JFhUg3M</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/interieur-eines-cafes-tKN1WXrzQ3s">https://unsplash.com/de/fotos/interieur-eines-cafes-tKN1WXrzQ3s</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/menschen-die-in-einem-gemutlichen-cafe-an-laptops-arbeiten-ZwzB7C8lPDI">https://unsplash.com/de/fotos/menschen-die-in-einem-gemutlichen-cafe-an-laptops-arbeiten-ZwzB7C8lPDI</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/ein-cafe-mit-einer-speisekarte-an-der-wand-hYzc-xNtC28">https://unsplash.com/de/fotos/ein-cafe-mit-einer-speisekarte-an-der-wand-hYzc-xNtC28</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/person-die-das-macbook-pro-auf-einem-braunen-holztisch-benutzt-7weXfu_XTSw">https://unsplash.com/de/fotos/person-die-das-macbook-pro-auf-einem-braunen-holztisch-benutzt-7weXfu_XTSw</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/tasse-kaffee-auf-untertasse-mit-teeloffel-auf-rosa-tischplatte-X2s8GhnQmds">https://unsplash.com/de/fotos/tasse-kaffee-auf-untertasse-mit-teeloffel-auf-rosa-tischplatte-X2s8GhnQmds</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/person-die-milchkaffee-ruhrt-QI-VBsqfJWw">https://unsplash.com/de/fotos/person-die-milchkaffee-ruhrt-QI-VBsqfJWw</a>
-        <br />
-
-        <a href="https://unsplash.com/de/fotos/grunblattrige-pflanze-in-der-nahe-des-tisches-QnUywvDdI1o">
-          https://unsplash.com/de/fotos/grunblattrige-pflanze-in-der-nahe-des-tisches-QnUywvDdI1o
-        </a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/tasse-und-untertasse-auf-dem-tisch-ZoAlN3-pJO8">https://unsplash.com/de/fotos/tasse-und-untertasse-auf-dem-tisch-ZoAlN3-pJO8</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/ein-tisch-mit-einer-tasse-kaffee-und-einem-stuck-kuchen-darauf-beJpXQWBJoI">https://unsplash.com/de/fotos/ein-tisch-mit-einer-tasse-kaffee-und-einem-stuck-kuchen-darauf-beJpXQWBJoI</a>
-        <br />
-
-        <a
-          href="https://unsplash.com/de/fotos/mann-im-schwarzen-hemd-vor-tisch-mit-laptop-ywR-gKD0UWU">https://unsplash.com/de/fotos/mann-im-schwarzen-hemd-vor-tisch-mit-laptop-ywR-gKD0UWU</a>
-        <br />
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <nav class="nav-footer">
-      <a href="contact.html" class="feature-link" tabindex="0">Kontakt</a>
-      <a href="impressum.html" class="feature-link" tabindex="0">Impressum</a>
-      <a href="datenschutz.html" class="feature-link" tabindex="0">Datenschutzerklärung</a>
-    </nav>
-    <div class="divider"></div>
-    <p>Projektarbeit in "Grundlagen der Web-Technologien"</p>
-    <p>
-      Gruppe 3: Daniil Bavin, Lia Duppel, Sarah Hofmann, Vladislav Slugin
-      <br />Wintersemester 2025/2026
-    </p>
-    <p>Fachbereich: Informatik - Hochschule Trier</p>
-
-    <a href="index.html"><img src="images/logo/logo_mittext.png" class="logo" alt="Logo des Studierendecafé StudierBar"></a>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
-
+      <a href="index.html"
+        ><img
+          src="images/logo/logo_mittext.png"
+          class="logo"
+          alt="Logo des Studierendecafé StudierBar"
+      ></a>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
