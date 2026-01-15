@@ -225,4 +225,8 @@
   .reservieren-form textarea {
     font-size: 12px;
   }
+  
+  .info {
+    margin-top: 15px;
+  }
 }

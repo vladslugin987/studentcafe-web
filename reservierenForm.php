@@ -82,7 +82,7 @@ function test_input($data)
         <h1>RESERVIEREN</h1>
 
         <section id="reservieren">
-            <h2>Danke, für deine Reservierung im Studierendencafé StudierBar!</h2>
+            <h2>Danke für deine Reservierung im Studierendencafé StudierBar!</h2>
 
             <?php
 
