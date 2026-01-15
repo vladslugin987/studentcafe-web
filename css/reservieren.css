@@ -35,6 +35,7 @@
   right: 0;
   background: var(--color1);
   padding: 20px 0 20px;
+  margin: 0;
 }
 
 .reservieren-page .reservieren-intro{
