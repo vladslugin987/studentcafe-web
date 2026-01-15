@@ -20,6 +20,10 @@
 
 }
 
+.events-page h2 {
+  margin: 0 0 1rem 0;
+}
+
 /* Weiße Karten */
 .events-page section {
   background-color: var(--main-color);
