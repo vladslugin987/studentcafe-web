@@ -1,6 +1,6 @@
 <?php
 // Alle Variablen definieren und leere Werte zuweisen
-$name = $personen = $date = $mail = $phone = $anmerkungen = "";
+$name = $mail = $betreff = $nachricht = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["fname"]);
     $mail = test_input($_POST["mail"]);
